@@ -1,0 +1,720 @@
+{
+  "description": "Agricultural crop knowledge base based on FAO/ICAR guidelines",
+  "features": [
+    "N",
+    "P",
+    "K",
+    "temperature",
+    "humidity",
+    "ph",
+    "rainfall"
+  ],
+  "crops": [
+    "apple",
+    "banana",
+    "blackgram",
+    "chickpea",
+    "coconut",
+    "coffee",
+    "cotton",
+    "grapes",
+    "jute",
+    "kidneybeans",
+    "lentil",
+    "maize",
+    "mango",
+    "mothbeans",
+    "mungbean",
+    "muskmelon",
+    "orange",
+    "papaya",
+    "pigeonpeas",
+    "pomegranate",
+    "rice",
+    "watermelon"
+  ],
+  "rules": {
+    "apple": {
+      "N_range": [
+        20,
+        60
+      ],
+      "P_range": [
+        30,
+        60
+      ],
+      "K_range": [
+        40,
+        80
+      ],
+      "temperature_range": [
+        5,
+        25
+      ],
+      "humidity_range": [
+        50,
+        90
+      ],
+      "ph_range": [
+        5.5,
+        7.0
+      ],
+      "rainfall_range": [
+        100,
+        150
+      ],
+      "season": "Annual"
+    },
+    "banana": {
+      "N_range": [
+        80,
+        150
+      ],
+      "P_range": [
+        30,
+        60
+      ],
+      "K_range": [
+        100,
+        200
+      ],
+      "temperature_range": [
+        20,
+        35
+      ],
+      "humidity_range": [
+        70,
+        90
+      ],
+      "ph_range": [
+        5.5,
+        7.0
+      ],
+      "rainfall_range": [
+        100,
+        200
+      ],
+      "season": "Annual"
+    },
+    "blackgram": {
+      "N_range": [
+        10,
+        40
+      ],
+      "P_range": [
+        40,
+        80
+      ],
+      "K_range": [
+        20,
+        50
+      ],
+      "temperature_range": [
+        25,
+        35
+      ],
+      "humidity_range": [
+        50,
+        80
+      ],
+      "ph_range": [
+        6.0,
+        7.5
+      ],
+      "rainfall_range": [
+        60,
+        100
+      ],
+      "season": "Kharif"
+    },
+    "chickpea": {
+      "N_range": [
+        10,
+        40
+      ],
+      "P_range": [
+        40,
+        80
+      ],
+      "K_range": [
+        20,
+        50
+      ],
+      "temperature_range": [
+        15,
+        30
+      ],
+      "humidity_range": [
+        30,
+        60
+      ],
+      "ph_range": [
+        6.0,
+        8.0
+      ],
+      "rainfall_range": [
+        40,
+        80
+      ],
+      "season": "Rabi"
+    },
+    "coconut": {
+      "N_range": [
+        20,
+        60
+      ],
+      "P_range": [
+        30,
+        60
+      ],
+      "K_range": [
+        50,
+        100
+      ],
+      "temperature_range": [
+        25,
+        38
+      ],
+      "humidity_range": [
+        70,
+        90
+      ],
+      "ph_range": [
+        5.0,
+        8.0
+      ],
+      "rainfall_range": [
+        100,
+        300
+      ],
+      "season": "Annual"
+    },
+    "coffee": {
+      "N_range": [
+        20,
+        60
+      ],
+      "P_range": [
+        20,
+        50
+      ],
+      "K_range": [
+        20,
+        50
+      ],
+      "temperature_range": [
+        15,
+        30
+      ],
+      "humidity_range": [
+        70,
+        90
+      ],
+      "ph_range": [
+        5.0,
+        6.5
+      ],
+      "rainfall_range": [
+        150,
+        250
+      ],
+      "season": "Annual"
+    },
+    "cotton": {
+      "N_range": [
+        60,
+        120
+      ],
+      "P_range": [
+        30,
+        60
+      ],
+      "K_range": [
+        30,
+        60
+      ],
+      "temperature_range": [
+        25,
+        40
+      ],
+      "humidity_range": [
+        40,
+        70
+      ],
+      "ph_range": [
+        6.0,
+        8.0
+      ],
+      "rainfall_range": [
+        50,
+        100
+      ],
+      "season": "Kharif"
+    },
+    "grapes": {
+      "N_range": [
+        20,
+        50
+      ],
+      "P_range": [
+        30,
+        60
+      ],
+      "K_range": [
+        40,
+        80
+      ],
+      "temperature_range": [
+        15,
+        35
+      ],
+      "humidity_range": [
+        40,
+        70
+      ],
+      "ph_range": [
+        5.5,
+        7.0
+      ],
+      "rainfall_range": [
+        50,
+        80
+      ],
+      "season": "Annual"
+    },
+    "jute": {
+      "N_range": [
+        60,
+        120
+      ],
+      "P_range": [
+        20,
+        50
+      ],
+      "K_range": [
+        20,
+        50
+      ],
+      "temperature_range": [
+        24,
+        38
+      ],
+      "humidity_range": [
+        70,
+        90
+      ],
+      "ph_range": [
+        5.5,
+        7.5
+      ],
+      "rainfall_range": [
+        150,
+        200
+      ],
+      "season": "Kharif"
+    },
+    "kidneybeans": {
+      "N_range": [
+        10,
+        40
+      ],
+      "P_range": [
+        40,
+        80
+      ],
+      "K_range": [
+        20,
+        50
+      ],
+      "temperature_range": [
+        15,
+        27
+      ],
+      "humidity_range": [
+        40,
+        70
+      ],
+      "ph_range": [
+        6.0,
+        7.5
+      ],
+      "rainfall_range": [
+        40,
+        90
+      ],
+      "season": "Kharif"
+    },
+    "lentil": {
+      "N_range": [
+        10,
+        40
+      ],
+      "P_range": [
+        40,
+        80
+      ],
+      "K_range": [
+        20,
+        50
+      ],
+      "temperature_range": [
+        10,
+        25
+      ],
+      "humidity_range": [
+        35,
+        65
+      ],
+      "ph_range": [
+        6.0,
+        8.0
+      ],
+      "rainfall_range": [
+        25,
+        60
+      ],
+      "season": "Rabi"
+    },
+    "maize": {
+      "N_range": [
+        60,
+        120
+      ],
+      "P_range": [
+        30,
+        60
+      ],
+      "K_range": [
+        20,
+        50
+      ],
+      "temperature_range": [
+        18,
+        35
+      ],
+      "humidity_range": [
+        50,
+        80
+      ],
+      "ph_range": [
+        5.5,
+        7.5
+      ],
+      "rainfall_range": [
+        50,
+        100
+      ],
+      "season": "Kharif"
+    },
+    "mango": {
+      "N_range": [
+        20,
+        60
+      ],
+      "P_range": [
+        20,
+        50
+      ],
+      "K_range": [
+        30,
+        60
+      ],
+      "temperature_range": [
+        24,
+        38
+      ],
+      "humidity_range": [
+        50,
+        80
+      ],
+      "ph_range": [
+        5.5,
+        7.5
+      ],
+      "rainfall_range": [
+        75,
+        125
+      ],
+      "season": "Annual"
+    },
+    "mothbeans": {
+      "N_range": [
+        10,
+        30
+      ],
+      "P_range": [
+        30,
+        60
+      ],
+      "K_range": [
+        20,
+        40
+      ],
+      "temperature_range": [
+        25,
+        40
+      ],
+      "humidity_range": [
+        30,
+        60
+      ],
+      "ph_range": [
+        5.5,
+        8.0
+      ],
+      "rainfall_range": [
+        25,
+        60
+      ],
+      "season": "Kharif"
+    },
+    "mungbean": {
+      "N_range": [
+        10,
+        40
+      ],
+      "P_range": [
+        40,
+        80
+      ],
+      "K_range": [
+        20,
+        50
+      ],
+      "temperature_range": [
+        25,
+        35
+      ],
+      "humidity_range": [
+        50,
+        80
+      ],
+      "ph_range": [
+        6.0,
+        7.5
+      ],
+      "rainfall_range": [
+        50,
+        100
+      ],
+      "season": "Kharif"
+    },
+    "muskmelon": {
+      "N_range": [
+        30,
+        80
+      ],
+      "P_range": [
+        40,
+        80
+      ],
+      "K_range": [
+        50,
+        100
+      ],
+      "temperature_range": [
+        28,
+        42
+      ],
+      "humidity_range": [
+        70,
+        90
+      ],
+      "ph_range": [
+        6.0,
+        7.5
+      ],
+      "rainfall_range": [
+        30,
+        60
+      ],
+      "season": "Summer"
+    },
+    "orange": {
+      "N_range": [
+        20,
+        60
+      ],
+      "P_range": [
+        30,
+        60
+      ],
+      "K_range": [
+        40,
+        80
+      ],
+      "temperature_range": [
+        15,
+        35
+      ],
+      "humidity_range": [
+        60,
+        90
+      ],
+      "ph_range": [
+        5.5,
+        7.5
+      ],
+      "rainfall_range": [
+        75,
+        125
+      ],
+      "season": "Annual"
+    },
+    "papaya": {
+      "N_range": [
+        30,
+        80
+      ],
+      "P_range": [
+        30,
+        60
+      ],
+      "K_range": [
+        40,
+        80
+      ],
+      "temperature_range": [
+        22,
+        35
+      ],
+      "humidity_range": [
+        70,
+        90
+      ],
+      "ph_range": [
+        5.5,
+        7.0
+      ],
+      "rainfall_range": [
+        100,
+        200
+      ],
+      "season": "Annual"
+    },
+    "pigeonpeas": {
+      "N_range": [
+        10,
+        40
+      ],
+      "P_range": [
+        40,
+        80
+      ],
+      "K_range": [
+        20,
+        50
+      ],
+      "temperature_range": [
+        18,
+        35
+      ],
+      "humidity_range": [
+        40,
+        70
+      ],
+      "ph_range": [
+        5.5,
+        7.5
+      ],
+      "rainfall_range": [
+        60,
+        150
+      ],
+      "season": "Kharif"
+    },
+    "pomegranate": {
+      "N_range": [
+        20,
+        60
+      ],
+      "P_range": [
+        30,
+        60
+      ],
+      "K_range": [
+        40,
+        80
+      ],
+      "temperature_range": [
+        25,
+        38
+      ],
+      "humidity_range": [
+        30,
+        60
+      ],
+      "ph_range": [
+        5.5,
+        7.5
+      ],
+      "rainfall_range": [
+        50,
+        75
+      ],
+      "season": "Annual"
+    },
+    "rice": {
+      "N_range": [
+        60,
+        140
+      ],
+      "P_range": [
+        30,
+        60
+      ],
+      "K_range": [
+        35,
+        60
+      ],
+      "temperature_range": [
+        20,
+        35
+      ],
+      "humidity_range": [
+        70,
+        100
+      ],
+      "ph_range": [
+        5.5,
+        7.0
+      ],
+      "rainfall_range": [
+        150,
+        300
+      ],
+      "season": "Kharif"
+    },
+    "watermelon": {
+      "N_range": [
+        30,
+        80
+      ],
+      "P_range": [
+        40,
+        80
+      ],
+      "K_range": [
+        50,
+        100
+      ],
+      "temperature_range": [
+        25,
+        40
+      ],
+      "humidity_range": [
+        70,
+        90
+      ],
+      "ph_range": [
+        6.0,
+        7.5
+      ],
+      "rainfall_range": [
+        40,
+        80
+      ],
+      "season": "Summer"
+    }
+  }
+}

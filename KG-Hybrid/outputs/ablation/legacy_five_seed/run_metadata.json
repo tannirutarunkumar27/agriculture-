@@ -1,0 +1,127 @@
+{
+  "timestamp": "2026-10-07T20:57:11.627417",
+  "execution_time_seconds": 179475.55,
+  "seeds": [
+    42,
+    123,
+    2024,
+    3407,
+    9999
+  ],
+  "split_sizes": {
+    "train": 1540,
+    "validation": 330,
+    "test": 330,
+    "num_classes": 22
+  },
+  "feature_names": [
+    "N",
+    "P",
+    "K",
+    "temperature",
+    "humidity",
+    "ph",
+    "rainfall"
+  ],
+  "ablation_configs": {
+    "Full": {
+      "name": "Full KG-Hybrid",
+      "use_knowledge": true,
+      "use_gate": true,
+      "disable_xgb": false,
+      "disable_ft": false,
+      "alpha_distill": 0.5,
+      "alpha_contrast": 0.1
+    },
+    "A1": {
+      "name": "w/o Knowledge Matrix",
+      "use_knowledge": false,
+      "use_gate": true,
+      "disable_xgb": false,
+      "disable_ft": false,
+      "alpha_distill": 0.5,
+      "alpha_contrast": 0.1
+    },
+    "A2": {
+      "name": "w/o Adaptive Gate",
+      "use_knowledge": true,
+      "use_gate": false,
+      "disable_xgb": false,
+      "disable_ft": false,
+      "alpha_distill": 0.5,
+      "alpha_contrast": 0.1
+    },
+    "A3": {
+      "name": "w/o XGBoost Branch",
+      "use_knowledge": true,
+      "use_gate": true,
+      "disable_xgb": true,
+      "disable_ft": false,
+      "alpha_distill": 0.0,
+      "alpha_contrast": 0.1
+    },
+    "A4": {
+      "name": "w/o FT-Transformer Branch",
+      "use_knowledge": true,
+      "use_gate": true,
+      "disable_xgb": false,
+      "disable_ft": true,
+      "alpha_distill": 0.5,
+      "alpha_contrast": 0.1
+    },
+    "A5": {
+      "name": "w/o Distillation Loss",
+      "use_knowledge": true,
+      "use_gate": true,
+      "disable_xgb": false,
+      "disable_ft": false,
+      "alpha_distill": 0.0,
+      "alpha_contrast": 0.1
+    },
+    "A6": {
+      "name": "w/o Contrastive Loss",
+      "use_knowledge": true,
+      "use_gate": true,
+      "disable_xgb": false,
+      "disable_ft": false,
+      "alpha_distill": 0.5,
+      "alpha_contrast": 0.0
+    },
+    "A7": {
+      "name": "w/o Auxiliary Losses",
+      "use_knowledge": true,
+      "use_gate": true,
+      "disable_xgb": false,
+      "disable_ft": false,
+      "alpha_distill": 0.0,
+      "alpha_contrast": 0.0
+    },
+    "A8": {
+      "name": "w/o Adaptive Fusion (Static + Pure CE)",
+      "use_knowledge": true,
+      "use_gate": false,
+      "disable_xgb": false,
+      "disable_ft": false,
+      "alpha_distill": 0.0,
+      "alpha_contrast": 0.0
+    }
+  },
+  "training_hyperparameters": {
+    "batch_size": 32,
+    "max_epochs": 100,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 1e-05,
+    "gradient_clipping": 1.0,
+    "early_stopping_patience": 15,
+    "scheduler": "ReduceLROnPlateau(mode='min', factor=0.5, patience=5)"
+  },
+  "environment": {
+    "python_version": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+    "torch_version": "2.10.0+cpu",
+    "xgboost_version": "2.1.1",
+    "sklearn_version": "1.8.0",
+    "numpy_version": "2.4.6",
+    "cuda_available": false
+  }
+}

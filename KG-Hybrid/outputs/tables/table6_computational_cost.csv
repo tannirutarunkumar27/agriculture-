@@ -1,0 +1,7 @@
+Model,inference_ms,params,Timing_Context,Edge_Latency,Peak_RAM
+Logistic Regression,0.229,176,Recorded direct-model batch inference; not cascade latency,Not measured,Not measured
+Decision Tree,0.189,73 nodes,Recorded direct-model batch inference; not cascade latency,Not measured,Not measured
+Random Forest,8.361,14464 nodes,Recorded direct-model batch inference; not cascade latency,Not measured,Not measured
+XGBoost,4.542,200 trees,Recorded direct-model batch inference; not cascade latency,Not measured,Not measured
+FT-Transformer,11.979,212054,Recorded direct-model batch inference; not cascade latency,Not measured,Not measured
+KG-Hybrid,61.242,15521606,Recorded direct-model batch inference; not cascade latency,Not measured,Not measured

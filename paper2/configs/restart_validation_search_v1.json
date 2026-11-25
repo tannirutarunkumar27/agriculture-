@@ -1,0 +1,31 @@
+{
+  "version": "restart-validation-search-v1",
+  "seed": 42,
+  "rounds": 80,
+  "hidden": 32,
+  "batch_size": 32,
+  "learning_rates": [0.0003, 0.001, 0.003],
+  "algorithms": ["centralized", "fedavg", "fedprox", "fednova"],
+  "mu": 0.01,
+  "references": [
+    {"model": "training_mean"},
+    {"model": "ridge", "alpha": 0.1},
+    {"model": "ridge", "alpha": 1.0},
+    {"model": "ridge", "alpha": 10.0},
+    {"model": "random_forest", "trees": 100, "min_samples_leaf": 1},
+    {"model": "random_forest", "trees": 100, "min_samples_leaf": 3},
+    {"model": "xgboost", "rounds": 100, "max_depth": 2, "learning_rate": 0.05},
+    {"model": "xgboost", "rounds": 100, "max_depth": 3, "learning_rate": 0.05}
+  ],
+  "selection": "equal_inner_group_mean_validation_RMSE_common_LR_across_four_neural_algorithms_per_outer_fold",
+  "tie_rule": "first_candidate_in_frozen_order",
+  "outer_neural_refit_rule": "algorithm_specific_median_best_round_across_seven_inner_folds_at_selected_common_LR",
+  "target_transform": "identity",
+  "participation": 1.0,
+  "local_epochs": 1,
+  "optimizer": "constant_LR_plain_SGD_no_momentum_no_weight_decay",
+  "test_inference": false,
+  "knowledge_enabled": false,
+  "ranking_enabled": false,
+  "privacy_enabled": false
+}

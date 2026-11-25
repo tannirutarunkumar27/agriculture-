@@ -1,0 +1,50 @@
+{
+  "shape": [
+    22,
+    7
+  ],
+  "classes": [
+    "apple",
+    "banana",
+    "blackgram",
+    "chickpea",
+    "coconut",
+    "coffee",
+    "cotton",
+    "grapes",
+    "jute",
+    "kidneybeans",
+    "lentil",
+    "maize",
+    "mango",
+    "mothbeans",
+    "mungbean",
+    "muskmelon",
+    "orange",
+    "papaya",
+    "pigeonpeas",
+    "pomegranate",
+    "rice",
+    "watermelon"
+  ],
+  "features": [
+    "N",
+    "P",
+    "K",
+    "temperature",
+    "humidity",
+    "ph",
+    "rainfall"
+  ],
+  "matrix_sha256_float32": "d6491e6b1f69a6d59860ba8dce73b567ebef78b99af629b5b47fe58fe0ae0745",
+  "definition": "Manually specified crop-feature profile weights; exact values are the published prior",
+  "range_to_weight_rule": null,
+  "range_to_weight_rule_status": "No transformation from agronomic bounds to these weights exists in the implementation",
+  "institutional_source_verification": "UNVERIFIED: no per-cell document/page/source-range records",
+  "warning": "The separate cardinal-bound knowledge base is not the source of this matrix; do not conflate the two representations",
+  "supported_policies": {
+    "fixed": "K=K0",
+    "anchored_trainable": "loss += lambda * mean((K-K0)^2), lambda explicitly recorded"
+  },
+  "learned_bounds": "L2 anchoring does not impose hard box constraints; report drift and extrema"
+}

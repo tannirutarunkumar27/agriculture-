@@ -1,0 +1,10 @@
+{
+  "pipeline": "Full Production Recommender (KNN + Early Exit + Lightweight)",
+  "clean_accuracy": 99.39,
+  "missing_40pct_knn_acc": 83.82,
+  "noise_sigma_0.2_acc": 88.91,
+  "extrapolation_x1.5_acc": 90.3,
+  "avg_latency_ms": 5.05,
+  "early_exit_rate_pct": 96.36,
+  "safety_alerts_count": 2
+}

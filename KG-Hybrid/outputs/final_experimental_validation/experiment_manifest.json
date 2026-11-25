@@ -1,0 +1,118 @@
+{
+  "manifest_version": "1.0.0",
+  "audited_at_utc": "2026-10-25T17:09:10.583718+00:00",
+  "project_name": "KG-Hybrid Crop Recommendation",
+  "auditor_role": "Senior ML Research Engineer & IEEE Access Reproducibility Auditor",
+  "checks": {
+    "check_01_live_processes": {
+      "status": "NOT_CHECKED",
+      "findings": "Completed recovery artifacts were audited from disk; no running process is required for metric reproduction."
+    },
+    "check_02_five_fold_cv_completion": {
+      "status": "PASS",
+      "findings": "The isolated recovery run contains six models, five folds per model, and 13,200 OOF rows (2,200 unique samples per model)."
+    },
+    "check_03_independent_metric_recalculation": {
+      "status": "PASS",
+      "findings": "All 45 ablation prediction CSVs and all six complete CV OOF prediction sets were independently recalculated."
+    },
+    "check_04_sample_counts_and_boundaries": {
+      "status": "PASS (WITH CAVEAT)",
+      "findings": "OOF sample identities, true labels, fold assignments, fold metrics, and confusion matrices verified against raw data. Legacy ablation sample IDs and historical fit-time preprocessing state are unavailable."
+    },
+    "check_05_validated_tables_generated": {
+      "status": "PASS",
+      "findings": "Generated Table 1 (5-seed ablation), Table 2 (CV results), Table 3 (per-class metrics), Table 4 (calibration), and Confusion Matrices JSON."
+    },
+    "check_06_statistical_tests_and_limitations": {
+      "status": "PASS",
+      "findings": "Paired t-test and Wilcoxon signed-rank tests documented. Documented no statistical difference (p>0.10) between Full and ablated variants. Documented power limitations for N=5."
+    },
+    "check_07_code_audit_leakage_and_architecture": {
+      "status": "PARTIAL",
+      "findings": "Current code fits scalers per training partition; saved historical fit-time state is not independently recoverable. Active prior source derivation is unverified. Historical corrected checkpoint anchoring must not be inferred from current code."
+    },
+    "check_08_results_package_and_manifest": {
+      "status": "PASS",
+      "findings": "Saved validation report, manifest, and reproducible instructions."
+    },
+    "check_09_no_mutation_or_fabrication": {
+      "status": "PASS",
+      "findings": "This generator recomputes results from saved evidence; current code does not manufacture missing measurements."
+    },
+    "check_10_critical_issue_reported": {
+      "status": "PASS",
+      "findings": "The previous incomplete neural-CV run remains preserved. The paper tables use the separately completed recovery run, retain the Decision Tree depth=6 limitation, and show XGBoost\u2014not KG-Hybrid\u2014as the highest pooled-accuracy model."
+    }
+  },
+  "paper_ready_status": "REQUIRES_MANUSCRIPT_AND_PROVENANCE_RECONCILIATION",
+  "paper_ready_verdict": "The saved experiment package is internally reproducible from complete five-fold OOF evidence. Submission readiness is not established: source derivation, manuscript metrics, and historical knowledge-policy evidence require reconciliation. Submission claims must retain repeated-held-out-test and Decision Tree depth=6 limitations, and must not claim KG-Hybrid outperforms XGBoostBaseline on this CV protocol.",
+  "cv_evidence": {
+    "selected_directory": "outputs\\cross_validation_neural_recovery",
+    "legacy_incomplete_directory_preserved": "outputs\\cross_validation",
+    "models_validated": [
+      "LogisticRegression",
+      "DecisionTree",
+      "RandomForest",
+      "XGBoostBaseline",
+      "FTTransformerBaseline",
+      "KG-HybridProposed"
+    ],
+    "oof_rows_per_model": 2200,
+    "ranking_by_pooled_oof_accuracy": [
+      {
+        "Model": "XGBoostBaseline",
+        "Pooled_OOF_Accuracy": 0.995,
+        "Pooled_OOF_Macro_F1": 0.995
+      },
+      {
+        "Model": "KG-HybridProposed",
+        "Pooled_OOF_Accuracy": 0.9932,
+        "Pooled_OOF_Macro_F1": 0.9932
+      },
+      {
+        "Model": "RandomForest",
+        "Pooled_OOF_Accuracy": 0.99,
+        "Pooled_OOF_Macro_F1": 0.99
+      },
+      {
+        "Model": "FTTransformerBaseline",
+        "Pooled_OOF_Accuracy": 0.9818,
+        "Pooled_OOF_Macro_F1": 0.9818
+      },
+      {
+        "Model": "LogisticRegression",
+        "Pooled_OOF_Accuracy": 0.9709,
+        "Pooled_OOF_Macro_F1": 0.9709
+      },
+      {
+        "Model": "DecisionTree",
+        "Pooled_OOF_Accuracy": 0.5564,
+        "Pooled_OOF_Macro_F1": 0.5172
+      }
+    ],
+    "integrity_checks": {
+      "sample_ids_match_raw_dataset": true,
+      "true_labels_match_raw_dataset": true,
+      "all_models_share_expected_fold_assignments": true,
+      "n_models": 6,
+      "n_rows": 13200,
+      "all_fold_metrics_match_saved_predictions": true
+    }
+  },
+  "historical_checkpoint_knowledge_policy": {
+    "recorded_policy": "trainable_adapted_prior",
+    "recorded_anchor_weight": null,
+    "anchoring_confirmed_by_training_metadata": false,
+    "note": "Current code policy does not retroactively change completed experiments"
+  },
+  "output_paths": {
+    "table1_ablation": "outputs\\final_experimental_validation\\tables\\table1_ablation_5seed_validated.csv",
+    "table2_cross_validation": "outputs\\final_experimental_validation\\tables\\table2_cv_results_all_models.csv",
+    "table3_per_class": "outputs\\final_experimental_validation\\tables\\table3_cv_per_class_metrics.csv",
+    "table4_calibration": "outputs\\final_experimental_validation\\tables\\table4_calibration_recalculated.csv",
+    "confusion_matrices": "outputs\\final_experimental_validation\\tables\\confusion_matrices_cv_oof.json",
+    "validation_report": "outputs\\final_experimental_validation\\validation_report.txt",
+    "instructions": "outputs\\final_experimental_validation\\reproduce_tables_instructions.md"
+  }
+}

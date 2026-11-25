@@ -1,0 +1,77 @@
+{
+  "version": "paper2-regression-claims-v1",
+  "task": "Retrospective conditional harvest seed-dry-matter regression for recorded cereal-legume systems",
+  "claim_policy": "Only supported claims may appear as findings; conditional claims require their qualifier; blocked claims must not appear as conclusions.",
+  "claims": [
+    {
+      "id": "C01",
+      "status": "SUPPORTED",
+      "claim": "The prepared benchmark contains 607 crop-management systems in eight geographic groups, evaluated with grouped outer holdouts and five declared seeds.",
+      "evidence": ["paper2/results/restart_regression_verified_v1", "paper2/results/restart_outer_verified_v3"],
+      "qualifier": "Seeds measure computational variability and are not independent regional trials."
+    },
+    {
+      "id": "C02",
+      "status": "SUPPORTED",
+      "claim": "In the original frozen eight-method outer study, XGBoost had the lowest observed equal-group RMSE (1.2461 t/ha) and pooled RMSE (1.7335 t/ha).",
+      "evidence": ["paper2/results/restart_outer_analysis_v1/analysis.json"],
+      "qualifier": "Descriptive within this benchmark; no inferential superiority or field-generalization claim."
+    },
+    {
+      "id": "C03",
+      "status": "SUPPORTED_WITH_EXPOSURE_QUALIFIER",
+      "claim": "A training-only zero-support guard substantially reduced neural errors in a fixed-model sensitivity analysis.",
+      "evidence": ["paper2/results/restart_guard_analysis_v1/analysis.json"],
+      "qualifier": "Designed after outer-test failures were exposed; post-hoc sensitivity, not independent confirmation or a replacement for original results."
+    },
+    {
+      "id": "C04",
+      "status": "SUPPORTED",
+      "claim": "The prospectively frozen fixed-public unnoised refit achieved equal-group RMSE 1.067407 +/- 0.021053 t/ha and pooled RMSE 1.201189 +/- 0.038476 across five seeds.",
+      "evidence": ["paper2/results/restart_public_refit_analysis_v1/analysis.json"],
+      "qualifier": "Descriptive seed SD, not a geographic confidence interval; four groups had negative mean outer R2."
+    },
+    {
+      "id": "C05",
+      "status": "SUPPORTED_SIMULATION_ONLY",
+      "claim": "In the matched aggregation-noise simulation, equal-group RMSE increased from 1.067407 for the cached reference/clipped control to 1.182853, 2.218085 and 5.628243 at noise multipliers 2, 4 and 8.",
+      "evidence": ["paper2/results/restart_matched_noise_analysis_v1/analysis.json"],
+      "qualifier": "Utility simulation only; no application differential-privacy certification, secure aggregation, or private release claim."
+    },
+    {
+      "id": "C06",
+      "status": "SUPPORTED_LIMITATION",
+      "claim": "The fixed inner search does not establish universal convergence: 80/224 candidates reached the 240-round boundary and 11/56 selected checkpoints were worse than their matched training constant.",
+      "evidence": ["paper2/results/restart_control_search_verified_v4", "paper2/results/restart_control_search_integrity_v1"],
+      "qualifier": "Preserve as a limitation; budgets were not extended after outer-score exposure."
+    },
+    {
+      "id": "C07",
+      "status": "BLOCKED",
+      "claim": "The system recommends the best crop or improves yield, profit, resource use, or farmer outcomes.",
+      "evidence": [],
+      "qualifier": "No valid counterfactual ranking labels, economic utility, or prospective field trial."
+    },
+    {
+      "id": "C08",
+      "status": "BLOCKED",
+      "claim": "The method is knowledge-guided or validates agronomic rules.",
+      "evidence": [],
+      "qualifier": "No independent compatible unit/scope-validated rules are eligible for this regression study."
+    },
+    {
+      "id": "C09",
+      "status": "BLOCKED",
+      "claim": "The implementation provides formal end-to-end privacy or secure aggregation.",
+      "evidence": [],
+      "qualifier": "Application accounting, private preprocessing/release policy, established SecAgg deployment, and threat-model closure are incomplete."
+    },
+    {
+      "id": "C10",
+      "status": "BLOCKED",
+      "claim": "The work establishes a novel knowledge-guided federated crop-recommendation method or numerical superiority to published papers.",
+      "evidence": [],
+      "qualifier": "The active task is conditional regression; closest-paper review is not exhaustive and external protocols are not comparable."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "version": "paper2-release-licensing-v1",
+  "status": "REVIEW_REQUIRED_NO_REDISTRIBUTION_AUTHORIZED",
+  "dataset": {
+    "name": "A global dataset gathering 37 field experiments involving cereal-legume intercrops and their corresponding sole crops",
+    "version": "2.0.0",
+    "doi": "10.5281/zenodo.14160885",
+    "record_url": "https://zenodo.org/records/14160885",
+    "license_identifier": null,
+    "license_locator": null,
+    "redistribution_approved": false,
+    "release_policy": "Do not redistribute raw source files; direct users to the versioned DOI until rights are documented."
+  },
+  "project_code": {
+    "license_identifier": null,
+    "license_file": null,
+    "redistribution_approved": false,
+    "required_action": "Project owner must choose and add an appropriate code license after ownership review."
+  },
+  "derived_artifacts": {
+    "models_predictions_caches": "NOT_CLEARED_FOR_REDISTRIBUTION",
+    "tables_figures": "REVIEW_SOURCE_RIGHTS_AND_JOURNAL_POLICY",
+    "required_action": "Review whether each artifact embeds or reconstructs source data and record the release decision."
+  },
+  "third_party_dependencies": {
+    "license_inventory_complete": false,
+    "required_action": "Generate and independently review the dependency license inventory in the final Linux environment."
+  }
+}

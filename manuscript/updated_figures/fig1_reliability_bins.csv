@@ -1,0 +1,41 @@
+model,bin_index,bin_lower,bin_upper,accuracy,confidence,sample_count
+KG-Hybrid (noncompact),0,0.0,0.1,0.0,0.05,0
+KG-Hybrid (noncompact),1,0.1,0.2,0.0,0.15,0
+KG-Hybrid (noncompact),2,0.2,0.3,0.0,0.25,0
+KG-Hybrid (noncompact),3,0.3,0.4,0.0,0.35,0
+KG-Hybrid (noncompact),4,0.4,0.5,0.0,0.45,0
+KG-Hybrid (noncompact),5,0.5,0.6,0.75,0.547732,4
+KG-Hybrid (noncompact),6,0.6,0.7,1.0,0.628119,5
+KG-Hybrid (noncompact),7,0.7,0.8,1.0,0.77002,15
+KG-Hybrid (noncompact),8,0.8,0.9,1.0,0.861319,177
+KG-Hybrid (noncompact),9,0.9,1.0,1.0,0.926029,129
+XGBoost (saved),0,0.0,0.1,0.0,0.05,0
+XGBoost (saved),1,0.1,0.2,0.0,0.118224,1
+XGBoost (saved),2,0.2,0.3,0.0,0.25,0
+XGBoost (saved),3,0.3,0.4,0.0,0.35,0
+XGBoost (saved),4,0.4,0.5,0.0,0.45,0
+XGBoost (saved),5,0.5,0.6,0.0,0.597558,1
+XGBoost (saved),6,0.6,0.7,1.0,0.667628,3
+XGBoost (saved),7,0.7,0.8,1.0,0.776481,1
+XGBoost (saved),8,0.8,0.9,0.857143,0.839139,7
+XGBoost (saved),9,0.9,1.0,1.0,0.989618,317
+FT-Transformer,0,0.0,0.1,0.0,0.05,0
+FT-Transformer,1,0.1,0.2,0.0,0.15,0
+FT-Transformer,2,0.2,0.3,0.0,0.25,0
+FT-Transformer,3,0.3,0.4,0.0,0.35,0
+FT-Transformer,4,0.4,0.5,0.0,0.45,0
+FT-Transformer,5,0.5,0.6,0.0,0.55,0
+FT-Transformer,6,0.6,0.7,0.666667,0.663902,3
+FT-Transformer,7,0.7,0.8,0.5,0.795044,2
+FT-Transformer,8,0.8,0.9,1.0,0.839795,3
+FT-Transformer,9,0.9,1.0,0.993789,0.997417,322
+Random Forest (unrestricted),0,0.0,0.1,0.0,0.05,0
+Random Forest (unrestricted),1,0.1,0.2,0.0,0.15,0
+Random Forest (unrestricted),2,0.2,0.3,0.0,0.25,0
+Random Forest (unrestricted),3,0.3,0.4,0.0,0.35,0
+Random Forest (unrestricted),4,0.4,0.5,1.0,0.48,1
+Random Forest (unrestricted),5,0.5,0.6,0.666667,0.58,3
+Random Forest (unrestricted),6,0.6,0.7,1.0,0.656667,6
+Random Forest (unrestricted),7,0.7,0.8,1.0,0.76375,8
+Random Forest (unrestricted),8,0.8,0.9,1.0,0.863143,35
+Random Forest (unrestricted),9,0.9,1.0,1.0,0.980397,277

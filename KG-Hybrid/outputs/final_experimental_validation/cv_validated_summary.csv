@@ -1,0 +1,7 @@
+model,oof_rows,unique_sample_ids,duplicate_sample_id_rows,folds_present,oof_accuracy_recomputed,oof_macro_f1_recomputed,complete_5_fold_oof
+DecisionTree,2200,2200,0,1|2|3|4|5,0.5563636363636364,0.5171853742020083,True
+FTTransformerBaseline,2200,2200,0,1|2|3|4|5,0.9818181818181818,0.9818482033478794,True
+KG-HybridProposed,2200,2200,0,1|2|3|4|5,0.9931818181818182,0.993169369132777,True
+LogisticRegression,2200,2200,0,1|2|3|4|5,0.9709090909090909,0.9708593925614228,True
+RandomForest,2200,2200,0,1|2|3|4|5,0.99,0.9899671030862077,True
+XGBoostBaseline,2200,2200,0,1|2|3|4|5,0.995,0.9949998863607953,True

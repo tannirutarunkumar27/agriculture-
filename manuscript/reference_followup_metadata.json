@@ -1,0 +1,643 @@
+[
+  {
+    "key": "fttransformer2026benchmarking",
+    "supplied": {
+      "key": "fttransformer2026benchmarking",
+      "kind": "article",
+      "title": "Benchmarking TabNet, NODE, and FT-Transformer for Software Defect Prediction: An Empirical Comparison and Explainability Analysis",
+      "doi": "10.1109/ACCESS.2026.3656247"
+    },
+    "doi_lookup": {
+      "DOI": "10.1109/access.2026.3656247",
+      "title": [
+        "Benchmarking TabNet, NODE, and FT-Transformer for Software Defect Prediction: An Empirical Comparison and Explainability Analysis"
+      ],
+      "author": [
+        {
+          "ORCID": "https://orcid.org/0009-0003-3729-8170",
+          "authenticated-orcid": false,
+          "given": "Burcak",
+          "family": "Asal",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Computer Engineering, Adana Alparslan T&#x00FC;rkes Science and Technology University, Adana, T&#x00FC;rkiye"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5799-530X",
+          "authenticated-orcid": false,
+          "given": "Burcu",
+          "family": "Yalciner",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Engineering, Hacettepe University, Ankara, T&#x00FC;rkiye"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Access"
+      ],
+      "volume": "14",
+      "issue": null,
+      "page": "11660-11681",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published-online": null,
+      "type": "journal-article",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.1109/access.2026.3656247"
+    },
+    "title_candidates": [],
+    "doi_title_matches": true
+  },
+  {
+    "key": "ai2024comprehensive",
+    "supplied": {
+      "key": "ai2024comprehensive",
+      "kind": "inproceedings",
+      "title": "Comprehensive Analysis of Artificial Intelligence based Crop Recommendation and Soil Analysis",
+      "doi": "10.1109/ICDSIS61070.2024.10594125"
+    },
+    "doi_lookup": {
+      "DOI": "10.1109/icdsis61070.2024.10594125",
+      "title": [
+        "Comprehensive Analysis of Artificial Intelligence based Crop Recommendation and Soil Analysis"
+      ],
+      "author": [
+        {
+          "given": "Shweta Babarao",
+          "family": "Barshe",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Bharati Vidyapeeth College of Engineering,Department of Computer,Navi Mumbai,India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Aruna Sanjay",
+          "family": "Kamble",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Bharati Vidyapeeth College of Engineering,Department of Computer,Navi Mumbai,India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Ponmalar",
+          "family": "Ramanathan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "G H Raisoni Institute of Engineering and Technology,Department of CSE(cyber Security),Nagpur,India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Monali Vasantrao",
+          "family": "Deshmukh",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "SIES GST Nerul,Department of AIML,Navi Mumbai,India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Nilima Ramchandra",
+          "family": "Patil",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Bharati Vidyapeeth (Deemed to be University),Department of Computer science and Engineering,Navi Mumbai,India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        },
+        {
+          "given": "Sandhya D.",
+          "family": "Jadhav",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Bharati Vidyapeeth College of Engineering,Navi Mumbai,India"
+            }
+          ],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2024 Second International Conference on Data Science and Information System (ICDSIS)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1-5",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            5,
+            17
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2024,
+            5,
+            17
+          ]
+        ]
+      },
+      "published-online": null,
+      "type": "proceedings-article",
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/icdsis61070.2024.10594125"
+    },
+    "title_candidates": [],
+    "doi_title_matches": true
+  },
+  {
+    "key": "fuzzy2026comprehensive",
+    "supplied": {
+      "key": "fuzzy2026comprehensive",
+      "kind": "inproceedings",
+      "title": "A Comprehensive Review of Fuzzy Expert Systems for Region Specific Crop Recommendation",
+      "doi": "10.1109/ICECA66444.2025.11382821"
+    },
+    "doi_lookup": {
+      "DOI": "10.1109/iceca66444.2025.11382821",
+      "title": [
+        "A Comprehensive Review of Fuzzy Expert Systems for Region Specific Crop Recommendation"
+      ],
+      "author": [
+        {
+          "given": "Arpit",
+          "family": "Subhash",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Lovely Professional University,School of CSE,Phagwara,Punjab,India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gaurav Kumar",
+          "family": "Patel",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Lovely Professional University,School of CSE,Phagwara,Punjab,India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "family": "Nikita",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Lovely Professional University,School of CSE,Phagwara,Punjab,India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "2025 9th International Conference on Electronics, Communication and Aerospace Technology (ICECA)"
+      ],
+      "volume": null,
+      "issue": null,
+      "page": "1351-1356",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2025,
+            11,
+            5
+          ]
+        ]
+      },
+      "published-online": null,
+      "type": "proceedings-article",
+      "publisher": "IEEE",
+      "URL": "https://doi.org/10.1109/iceca66444.2025.11382821"
+    },
+    "title_candidates": [],
+    "doi_title_matches": true
+  },
+  {
+    "key": "karpatne2017theory",
+    "supplied": {
+      "key": "karpatne2017theory",
+      "kind": "article",
+      "title": "Theory-Guided Data Science: A New Paradigm for Scientific Discovery from Data",
+      "doi": "10.1109/TKDE.2017.2720168"
+    },
+    "doi_lookup": {
+      "DOI": "10.1109/tkde.2017.2720168",
+      "title": [
+        "Theory-Guided Data Science: A New Paradigm for Scientific Discovery from Data"
+      ],
+      "author": [
+        {
+          "given": "Anuj",
+          "family": "Karpatne",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gowtham",
+          "family": "Atluri",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "James H.",
+          "family": "Faghmous",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Michael",
+          "family": "Steinbach",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Arindam",
+          "family": "Banerjee",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Auroop",
+          "family": "Ganguly",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shashi",
+          "family": "Shekhar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Nagiza",
+          "family": "Samatova",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Vipin",
+          "family": "Kumar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "IEEE Transactions on Knowledge and Data Engineering"
+      ],
+      "volume": "29",
+      "issue": "10",
+      "page": "2318-2331",
+      "article-number": null,
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            10,
+            1
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2017,
+            10,
+            1
+          ]
+        ]
+      },
+      "published-online": null,
+      "type": "journal-article",
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "URL": "https://doi.org/10.1109/tkde.2017.2720168"
+    },
+    "title_candidates": [],
+    "doi_title_matches": true
+  },
+  {
+    "key": "yang2023kgmlda",
+    "supplied": {
+      "key": "yang2023kgmlda",
+      "kind": "article",
+      "title": "A flexible and efficient knowledge-guided machine learning data assimilation (KGML-DA) framework for agroecosystem prediction in the US Midwest",
+      "doi": "10.1016/j.rse.2023.113880"
+    },
+    "doi_lookup": {
+      "DOI": "10.1016/j.rse.2023.113880",
+      "title": [
+        "A flexible and efficient knowledge-guided machine learning data assimilation (KGML-DA) framework for agroecosystem prediction in the US Midwest"
+      ],
+      "author": [
+        {
+          "given": "Qi",
+          "family": "Yang",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Licheng",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Junxiong",
+          "family": "Zhou",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rahul",
+          "family": "Ghosh",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bin",
+          "family": "Peng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kaiyu",
+          "family": "Guan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jinyun",
+          "family": "Tang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wang",
+          "family": "Zhou",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Vipin",
+          "family": "Kumar",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhenong",
+          "family": "Jin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "container-title": [
+        "Remote Sensing of Environment"
+      ],
+      "volume": "299",
+      "issue": null,
+      "page": "113880",
+      "article-number": "113880",
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            12
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2023,
+            12
+          ]
+        ]
+      },
+      "published-online": null,
+      "type": "journal-article",
+      "publisher": "Elsevier BV",
+      "URL": "https://doi.org/10.1016/j.rse.2023.113880"
+    },
+    "title_candidates": [],
+    "doi_title_matches": true
+  }
+]

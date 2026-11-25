@@ -1,0 +1,132 @@
+{
+  "no_retraining": true,
+  "existing_manuscript_and_images_modified": false,
+  "figure1": {
+    "n": 330,
+    "bins": 10,
+    "ece": {
+      "KG-Hybrid (Proposed)": 0.121839,
+      "XGBoost Baseline": 0.016223,
+      "FT-Transformer Baseline": 0.00681,
+      "Random Forest": 0.045303
+    },
+    "sources": [
+      {
+        "model": "KG-Hybrid (Proposed)",
+        "source": "outputs\\calibration_reconciled\\probabilities\\kg-hybrid_proposed_corrected_v2_test_probas.npy",
+        "sha256": "ad73532acf618b435ae30ed4d42890c1ebcf3687226db8c84fe09d18bc010203"
+      },
+      {
+        "model": "XGBoost Baseline",
+        "source": "outputs\\calibration_reconciled\\probabilities\\xgboost_baseline_saved_checkpoint_test_probas.npy",
+        "sha256": "65a77f33bcb1c2a47814e8b2de1759c84418db5c3580b7ac81c7605b691b6d40"
+      },
+      {
+        "model": "FT-Transformer Baseline",
+        "source": "outputs\\calibration_reconciled\\probabilities\\ft-transformer_baseline_test_probas.npy",
+        "sha256": "e5070c7bc35061f37e248de3ee6d212cbcc59ab204ef1b6a92f1fb14ac62f0e2"
+      },
+      {
+        "model": "Random Forest",
+        "source": "outputs\\calibration_reconciled\\probabilities\\random_forest_unconstrained_test_probas.npy",
+        "sha256": "06a6d23d4c5c285b80a562977ce576a23d68260cdc3a3089ae30b65a66006e5a"
+      }
+    ]
+  },
+  "figure2": {
+    "n": 2200,
+    "correct": 2185,
+    "errors": 15,
+    "support_per_class": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "class_order": [
+      "apple",
+      "banana",
+      "blackgram",
+      "chickpea",
+      "coconut",
+      "coffee",
+      "cotton",
+      "grapes",
+      "jute",
+      "kidneybeans",
+      "lentil",
+      "maize",
+      "mango",
+      "mothbeans",
+      "mungbean",
+      "muskmelon",
+      "orange",
+      "papaya",
+      "pigeonpeas",
+      "pomegranate",
+      "rice",
+      "watermelon"
+    ],
+    "normalization": "row",
+    "validation": {
+      "sample_ids_match_raw_dataset": true,
+      "true_labels_match_raw_dataset": true,
+      "all_models_share_expected_fold_assignments": true,
+      "n_models": 6,
+      "n_rows": 13200,
+      "all_fold_metrics_match_saved_predictions": true
+    },
+    "source": {
+      "path": "KG-Hybrid\\outputs\\cross_validation_neural_recovery\\oof_predictions\\oof_predictions.csv",
+      "sha256": "bb503a83815f371f9c4020050d80e121e761b5e468e52a09c2874addeca3693a"
+    }
+  },
+  "figure3": {
+    "n": 330,
+    "errors": 1,
+    "full_coverage_risk": 0.0030303030303030303,
+    "selection": "direct hybrid maximum class probability >= threshold; ties retained together",
+    "excludes": [
+      "XGBoost early-exit cascade",
+      "MC-Dropout",
+      "latency"
+    ],
+    "probability_source_sha256": "ad73532acf618b435ae30ed4d42890c1ebcf3687226db8c84fe09d18bc010203"
+  },
+  "reference_sources": [
+    {
+      "path": "KG-Hybrid\\outputs\\final_experimental_validation\\tables\\table4_calibration_recalculated.csv",
+      "sha256": "fbee671d03c8a7c486db0ba3b72fb3c971063e529903c1aac38ade4936fe0e5b"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\final_experimental_validation\\tables\\confusion_matrices_cv_oof.json",
+      "sha256": "cb35456faf506207a97de001b0c382f22cdcc6222ffacb4c831a3ba610907fa3"
+    },
+    {
+      "path": "KG-Hybrid\\data\\processed\\test.csv",
+      "sha256": "244e0ce95db8790a73414eb43d1728d135710d6a2104982f7115d9d07dc2d8eb"
+    },
+    {
+      "path": "KG-Hybrid\\data\\raw\\Crop_recommendation.csv",
+      "sha256": "54a5a6e5408668e668667efc50de2fc867c1b875e0431b4f54dd331b0a109a4e"
+    }
+  ]
+}

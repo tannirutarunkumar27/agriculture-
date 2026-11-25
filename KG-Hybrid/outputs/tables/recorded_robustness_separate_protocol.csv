@@ -1,0 +1,49 @@
+experiment,recorded_model,setting,accuracy,source,provenance
+missing_features,Random Forest,0%,0.997,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+missing_features,Random Forest,20%,0.8048,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+missing_features,Random Forest,40%,0.603,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+missing_features,Random Forest,60%,0.3824,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+missing_features,XGBoost,0%,0.9909,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+missing_features,XGBoost,20%,0.8376,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+missing_features,XGBoost,40%,0.6564,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+missing_features,XGBoost,60%,0.4267,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+missing_features,FT-Transformer,0%,0.9879,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+missing_features,FT-Transformer,20%,0.7121,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+missing_features,FT-Transformer,40%,0.4812,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+missing_features,FT-Transformer,60%,0.2539,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+missing_features,KG-Hybrid,0%,0.997,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+missing_features,KG-Hybrid,20%,0.7442,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+missing_features,KG-Hybrid,40%,0.5327,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+missing_features,KG-Hybrid,60%,0.3139,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+noise_injection,Random Forest,s=0.0,0.997,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+noise_injection,Random Forest,s=0.1,0.9642,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+noise_injection,Random Forest,s=0.2,0.8661,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+noise_injection,Random Forest,s=0.3,0.7564,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+noise_injection,XGBoost,s=0.0,0.9909,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+noise_injection,XGBoost,s=0.1,0.9164,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+noise_injection,XGBoost,s=0.2,0.797,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+noise_injection,XGBoost,s=0.3,0.6836,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+noise_injection,FT-Transformer,s=0.0,0.9879,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+noise_injection,FT-Transformer,s=0.1,0.9679,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+noise_injection,FT-Transformer,s=0.2,0.8848,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+noise_injection,FT-Transformer,s=0.3,0.7885,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+noise_injection,KG-Hybrid,s=0.0,0.997,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+noise_injection,KG-Hybrid,s=0.1,0.9448,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+noise_injection,KG-Hybrid,s=0.2,0.8097,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+noise_injection,KG-Hybrid,s=0.3,0.6715,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+cross_dataset,standard_test,Random Forest,0.997,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+cross_dataset,standard_test,XGBoost,0.9909,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+cross_dataset,standard_test,FT-Transformer,0.9879,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+cross_dataset,standard_test,KG-Hybrid,0.997,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+cross_dataset,validation_set,Random Forest,0.9909,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+cross_dataset,validation_set,XGBoost,0.9939,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+cross_dataset,validation_set,FT-Transformer,0.9909,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+cross_dataset,validation_set,KG-Hybrid,0.997,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+cross_dataset,extrapolation_1_5,Random Forest,0.8,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+cross_dataset,extrapolation_1_5,XGBoost,0.8333,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+cross_dataset,extrapolation_1_5,FT-Transformer,0.9212,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+cross_dataset,extrapolation_1_5,KG-Hybrid,0.8242,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+cross_dataset,single_feature_min,Random Forest,0.7909,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+cross_dataset,single_feature_min,XGBoost,0.8182,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+cross_dataset,single_feature_min,FT-Transformer,0.6788,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study
+cross_dataset,single_feature_min,KG-Hybrid,0.6424,outputs\robustness\full_robustness_report.json,Historical recorded experiment; not the new compact-model study

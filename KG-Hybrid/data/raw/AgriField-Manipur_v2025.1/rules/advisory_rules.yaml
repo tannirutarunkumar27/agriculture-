@@ -1,0 +1,835 @@
+Amaranth:
+  NPK_required: 12
+  fertilizer_interval_days: 10
+  humidity_range:
+  - 60
+  - 85
+  irrigation_ml: 300
+  pH_range:
+  - 6.0
+  - 7.5
+  pest_risk:
+    leaf_miner: low
+  soil_moisture_min: 30
+  temp_range:
+  - 18
+  - 30
+Banana:
+  NPK_required: 40
+  fertilizer_interval_days: 14
+  humidity_range:
+  - 70
+  - 90
+  irrigation_ml: 800
+  pH_range:
+  - 5.5
+  - 7.0
+  pest_risk:
+    nematodes: medium
+  soil_moisture_min: 40
+  temp_range:
+  - 22
+  - 32
+Bitter gourd:
+  NPK_required: 18
+  fertilizer_interval_days: 7
+  humidity_range:
+  - 65
+  - 85
+  irrigation_ml: 500
+  pH_range:
+  - 6.0
+  - 7.0
+  pest_risk:
+    viral: medium
+  soil_moisture_min: 35
+  temp_range:
+  - 22
+  - 30
+Black gram:
+  NPK_required: 15
+  fertilizer_interval_days: 14
+  humidity_range:
+  - 55
+  - 80
+  irrigation_ml: 350
+  pH_range:
+  - 6.0
+  - 7.0
+  pest_risk:
+    low: low
+  soil_moisture_min: 30
+  temp_range:
+  - 20
+  - 32
+Bottle gourd:
+  NPK_required: 15
+  fertilizer_interval_days: 10
+  humidity_range:
+  - 60
+  - 80
+  irrigation_ml: 500
+  pH_range:
+  - 6.0
+  - 7.5
+  pest_risk:
+    viral: medium
+  soil_moisture_min: 35
+  temp_range:
+  - 20
+  - 30
+Brinjal:
+  NPK_required: 18
+  fertilizer_interval_days: 7
+  humidity_range:
+  - 60
+  - 80
+  irrigation_ml: 450
+  pH_range:
+  - 6.0
+  - 6.8
+  pest_risk:
+    fruit_borer: medium
+  soil_moisture_min: 30
+  temp_range:
+  - 22
+  - 30
+Cabbage:
+  NPK_required: 20
+  fertilizer_interval_days: 10
+  humidity_range:
+  - 65
+  - 80
+  irrigation_ml: 500
+  pH_range:
+  - 6.0
+  - 7.0
+  pest_risk:
+    caterpillars: medium
+  soil_moisture_min: 35
+  temp_range:
+  - 15
+  - 22
+Carrot:
+  NPK_required: 12
+  fertilizer_interval_days: 14
+  humidity_range:
+  - 60
+  - 80
+  irrigation_ml: 350
+  pH_range:
+  - 6.0
+  - 6.8
+  pest_risk:
+    root_rot: low
+  soil_moisture_min: 30
+  temp_range:
+  - 10
+  - 22
+Cauliflower:
+  NPK_required: 20
+  fertilizer_interval_days: 10
+  humidity_range:
+  - 60
+  - 80
+  irrigation_ml: 450
+  pH_range:
+  - 6.0
+  - 7.5
+  pest_risk:
+    caterpillars: medium
+  soil_moisture_min: 35
+  temp_range:
+  - 15
+  - 22
+Celosia:
+  NPK_required: 10
+  fertilizer_interval_days: 10
+  humidity_range:
+  - 60
+  - 85
+  irrigation_ml: 300
+  pH_range:
+  - 6.0
+  - 7.5
+  pest_risk:
+    low: low
+  soil_moisture_min: 30
+  temp_range:
+  - 18
+  - 30
+Chickpea:
+  NPK_required: 12
+  fertilizer_interval_days: 21
+  humidity_range:
+  - 40
+  - 70
+  irrigation_ml: 300
+  pH_range:
+  - 6.0
+  - 7.5
+  pest_risk:
+    low: low
+  soil_moisture_min: 25
+  temp_range:
+  - 18
+  - 28
+Chilli (other):
+  NPK_required: 18
+  fertilizer_interval_days: 7
+  humidity_range:
+  - 60
+  - 85
+  irrigation_ml: 400
+  pH_range:
+  - 6.0
+  - 7.0
+  pest_risk:
+    thrips: medium
+  soil_moisture_min: 30
+  temp_range:
+  - 22
+  - 32
+Coriander:
+  NPK_required: 8
+  fertilizer_interval_days: 14
+  humidity_range:
+  - 60
+  - 85
+  irrigation_ml: 200
+  pH_range:
+  - 6.0
+  - 7.0
+  pest_risk:
+    aphids: low
+  soil_moisture_min: 30
+  temp_range:
+  - 12
+  - 28
+Cowpea:
+  NPK_required: 12
+  fertilizer_interval_days: 14
+  humidity_range:
+  - 55
+  - 80
+  irrigation_ml: 350
+  pH_range:
+  - 6.0
+  - 7.0
+  pest_risk:
+    pod_borer: medium
+  soil_moisture_min: 30
+  temp_range:
+  - 20
+  - 32
+Fenugreek:
+  NPK_required: 8
+  fertilizer_interval_days: 14
+  humidity_range:
+  - 60
+  - 80
+  irrigation_ml: 200
+  pH_range:
+  - 6.0
+  - 7.0
+  pest_risk:
+    low: low
+  soil_moisture_min: 30
+  temp_range:
+  - 12
+  - 26
+Finger millet:
+  NPK_required: 20
+  fertilizer_interval_days: 14
+  humidity_range:
+  - 50
+  - 75
+  irrigation_ml: 400
+  pH_range:
+  - 5.5
+  - 7.0
+  pest_risk:
+    leaf_spot: low
+  soil_moisture_min: 30
+  temp_range:
+  - 20
+  - 30
+French bean:
+  NPK_required: 12
+  fertilizer_interval_days: 10
+  humidity_range:
+  - 60
+  - 85
+  irrigation_ml: 300
+  pH_range:
+  - 6.0
+  - 7.0
+  pest_risk:
+    pod_borer: medium
+  soil_moisture_min: 30
+  temp_range:
+  - 18
+  - 28
+Garlic:
+  NPK_required: 15
+  fertilizer_interval_days: 21
+  humidity_range:
+  - 55
+  - 75
+  irrigation_ml: 300
+  pH_range:
+  - 6.0
+  - 7.0
+  pest_risk:
+    thrips: low
+  soil_moisture_min: 30
+  temp_range:
+  - 12
+  - 24
+Ginger:
+  NPK_required: 25
+  fertilizer_interval_days: 21
+  humidity_range:
+  - 60
+  - 85
+  irrigation_ml: 500
+  pH_range:
+  - 5.5
+  - 6.5
+  pest_risk:
+    nematode: medium
+  soil_moisture_min: 35
+  temp_range:
+  - 20
+  - 30
+Green gram:
+  NPK_required: 15
+  fertilizer_interval_days: 14
+  humidity_range:
+  - 55
+  - 80
+  irrigation_ml: 350
+  pH_range:
+  - 6.0
+  - 7.0
+  pest_risk:
+    low: low
+  soil_moisture_min: 30
+  temp_range:
+  - 20
+  - 32
+Groundnut:
+  NPK_required: 20
+  fertilizer_interval_days: 21
+  humidity_range:
+  - 60
+  - 85
+  irrigation_ml: 450
+  pH_range:
+  - 5.5
+  - 6.5
+  pest_risk:
+    nematode: medium
+  soil_moisture_min: 30
+  temp_range:
+  - 22
+  - 32
+Guava:
+  NPK_required: 25
+  fertilizer_interval_days: 21
+  humidity_range:
+  - 55
+  - 80
+  irrigation_ml: 500
+  pH_range:
+  - 6.0
+  - 7.0
+  pest_risk:
+    fruit_borer: medium
+  soil_moisture_min: 30
+  temp_range:
+  - 20
+  - 30
+Jackfruit:
+  NPK_required: 35
+  fertilizer_interval_days: 21
+  humidity_range:
+  - 60
+  - 85
+  irrigation_ml: 700
+  pH_range:
+  - 6.0
+  - 7.5
+  pest_risk:
+    fruit_borer: medium
+  soil_moisture_min: 40
+  temp_range:
+  - 20
+  - 32
+King Chilli:
+  NPK_required: 20
+  fertilizer_interval_days: 7
+  humidity_range:
+  - 70
+  - 85
+  irrigation_ml: 500
+  pH_range:
+  - 6.0
+  - 7.0
+  pest_risk:
+    aphids: low
+    mites: medium
+  soil_moisture_min: 35
+  temp_range:
+  - 24
+  - 30
+Lemon:
+  NPK_required: 25
+  fertilizer_interval_days: 21
+  humidity_range:
+  - 50
+  - 80
+  irrigation_ml: 400
+  pH_range:
+  - 5.5
+  - 6.5
+  pest_risk:
+    canker: medium
+  soil_moisture_min: 30
+  temp_range:
+  - 18
+  - 30
+Lentil:
+  NPK_required: 12
+  fertilizer_interval_days: 21
+  humidity_range:
+  - 40
+  - 70
+  irrigation_ml: 300
+  pH_range:
+  - 6.0
+  - 7.5
+  pest_risk:
+    low: low
+  soil_moisture_min: 25
+  temp_range:
+  - 15
+  - 25
+Lettuce:
+  NPK_required: 10
+  fertilizer_interval_days: 10
+  humidity_range:
+  - 60
+  - 80
+  irrigation_ml: 300
+  pH_range:
+  - 6.0
+  - 7.0
+  pest_risk:
+    aphids: medium
+  soil_moisture_min: 35
+  temp_range:
+  - 8
+  - 20
+Maize:
+  NPK_required: 25
+  fertilizer_interval_days: 10
+  humidity_range:
+  - 55
+  - 80
+  irrigation_ml: 600
+  pH_range:
+  - 5.8
+  - 6.8
+  pest_risk:
+    stem_borer: medium
+  soil_moisture_min: 35
+  temp_range:
+  - 18
+  - 30
+Mango:
+  NPK_required: 40
+  fertilizer_interval_days: 21
+  humidity_range:
+  - 60
+  - 85
+  irrigation_ml: 700
+  pH_range:
+  - 5.5
+  - 7.5
+  pest_risk:
+    fruit_borer: medium
+  soil_moisture_min: 40
+  temp_range:
+  - 24
+  - 34
+Mint:
+  NPK_required: 8
+  fertilizer_interval_days: 14
+  humidity_range:
+  - 60
+  - 85
+  irrigation_ml: 200
+  pH_range:
+  - 6.0
+  - 7.0
+  pest_risk:
+    leaf_hopper: low
+  soil_moisture_min: 30
+  temp_range:
+  - 12
+  - 28
+Mustard greens:
+  NPK_required: 10
+  fertilizer_interval_days: 14
+  humidity_range:
+  - 60
+  - 80
+  irrigation_ml: 300
+  pH_range:
+  - 6.0
+  - 7.0
+  pest_risk:
+    low: low
+  soil_moisture_min: 30
+  temp_range:
+  - 10
+  - 22
+Okra:
+  NPK_required: 15
+  fertilizer_interval_days: 7
+  humidity_range:
+  - 60
+  - 85
+  irrigation_ml: 400
+  pH_range:
+  - 6.0
+  - 7.0
+  pest_risk:
+    jassids: medium
+  soil_moisture_min: 30
+  temp_range:
+  - 20
+  - 32
+Orange:
+  NPK_required: 30
+  fertilizer_interval_days: 14
+  humidity_range:
+  - 55
+  - 80
+  irrigation_ml: 600
+  pH_range:
+  - 5.5
+  - 6.8
+  pest_risk:
+    citrus_borer: medium
+  soil_moisture_min: 30
+  temp_range:
+  - 18
+  - 30
+Papaya:
+  NPK_required: 30
+  fertilizer_interval_days: 14
+  humidity_range:
+  - 60
+  - 85
+  irrigation_ml: 600
+  pH_range:
+  - 5.5
+  - 7.0
+  pest_risk:
+    fruit_flies: medium
+  soil_moisture_min: 35
+  temp_range:
+  - 22
+  - 32
+Passion fruit:
+  NPK_required: 25
+  fertilizer_interval_days: 14
+  humidity_range:
+  - 60
+  - 85
+  irrigation_ml: 500
+  pH_range:
+  - 5.5
+  - 6.8
+  pest_risk:
+    fungal: medium
+  soil_moisture_min: 35
+  temp_range:
+  - 18
+  - 28
+Pea:
+  NPK_required: 12
+  fertilizer_interval_days: 10
+  humidity_range:
+  - 60
+  - 80
+  irrigation_ml: 300
+  pH_range:
+  - 6.0
+  - 7.0
+  pest_risk:
+    powdery_mildew: low
+  soil_moisture_min: 30
+  temp_range:
+  - 10
+  - 22
+Pearl millet:
+  NPK_required: 18
+  fertilizer_interval_days: 14
+  humidity_range:
+  - 30
+  - 60
+  irrigation_ml: 350
+  pH_range:
+  - 5.5
+  - 7.5
+  pest_risk:
+    stem_borer: low
+  soil_moisture_min: 25
+  temp_range:
+  - 22
+  - 33
+Pineapple:
+  NPK_required: 25
+  fertilizer_interval_days: 21
+  humidity_range:
+  - 60
+  - 85
+  irrigation_ml: 400
+  pH_range:
+  - 4.5
+  - 6.5
+  pest_risk:
+    mealy_bug: medium
+  soil_moisture_min: 30
+  temp_range:
+  - 20
+  - 30
+Potato:
+  NPK_required: 20
+  fertilizer_interval_days: 14
+  humidity_range:
+  - 60
+  - 80
+  irrigation_ml: 450
+  pH_range:
+  - 5.5
+  - 6.5
+  pest_risk:
+    late_blight: medium
+  soil_moisture_min: 30
+  temp_range:
+  - 12
+  - 22
+Pumpkin:
+  NPK_required: 20
+  fertilizer_interval_days: 10
+  humidity_range:
+  - 60
+  - 80
+  irrigation_ml: 600
+  pH_range:
+  - 6.0
+  - 7.5
+  pest_risk:
+    powdery_mildew: medium
+  soil_moisture_min: 35
+  temp_range:
+  - 20
+  - 30
+Radish:
+  NPK_required: 10
+  fertilizer_interval_days: 14
+  humidity_range:
+  - 60
+  - 80
+  irrigation_ml: 300
+  pH_range:
+  - 6.0
+  - 7.0
+  pest_risk:
+    root_rot: low
+  soil_moisture_min: 30
+  temp_range:
+  - 10
+  - 24
+Rice:
+  NPK_required: 30
+  fertilizer_interval_days: 14
+  humidity_range:
+  - 70
+  - 90
+  irrigation_ml: 800
+  pH_range:
+  - 5.5
+  - 6.5
+  pest_risk:
+    leaf_blight: medium
+    stem_borer: medium
+  soil_moisture_min: 45
+  temp_range:
+  - 22
+  - 32
+Ridge gourd:
+  NPK_required: 15
+  fertilizer_interval_days: 10
+  humidity_range:
+  - 60
+  - 85
+  irrigation_ml: 500
+  pH_range:
+  - 6.0
+  - 7.5
+  pest_risk:
+    fruit_borer: medium
+  soil_moisture_min: 35
+  temp_range:
+  - 20
+  - 32
+Sesame:
+  NPK_required: 12
+  fertilizer_interval_days: 21
+  humidity_range:
+  - 40
+  - 70
+  irrigation_ml: 300
+  pH_range:
+  - 6.0
+  - 7.5
+  pest_risk:
+    low: low
+  soil_moisture_min: 25
+  temp_range:
+  - 22
+  - 32
+Soybean:
+  NPK_required: 20
+  fertilizer_interval_days: 14
+  humidity_range:
+  - 55
+  - 80
+  irrigation_ml: 400
+  pH_range:
+  - 6.0
+  - 7.0
+  pest_risk:
+    pod_borer: medium
+  soil_moisture_min: 30
+  temp_range:
+  - 18
+  - 30
+Spinach:
+  NPK_required: 10
+  fertilizer_interval_days: 7
+  humidity_range:
+  - 60
+  - 85
+  irrigation_ml: 300
+  pH_range:
+  - 6.0
+  - 7.0
+  pest_risk:
+    leaf_miner: low
+  soil_moisture_min: 30
+  temp_range:
+  - 12
+  - 26
+Strawberry:
+  NPK_required: 20
+  fertilizer_interval_days: 14
+  humidity_range:
+  - 60
+  - 80
+  irrigation_ml: 300
+  pH_range:
+  - 5.5
+  - 6.5
+  pest_risk:
+    botrytis: medium
+  soil_moisture_min: 35
+  temp_range:
+  - 12
+  - 22
+Sweet potato:
+  NPK_required: 15
+  fertilizer_interval_days: 21
+  humidity_range:
+  - 60
+  - 85
+  irrigation_ml: 400
+  pH_range:
+  - 5.5
+  - 6.5
+  pest_risk:
+    low: low
+  soil_moisture_min: 30
+  temp_range:
+  - 20
+  - 30
+Taro:
+  NPK_required: 20
+  fertilizer_interval_days: 21
+  humidity_range:
+  - 70
+  - 90
+  irrigation_ml: 600
+  pH_range:
+  - 5.5
+  - 6.8
+  pest_risk:
+    root_rot: medium
+  soil_moisture_min: 40
+  temp_range:
+  - 22
+  - 30
+Tomato:
+  NPK_required: 20
+  fertilizer_interval_days: 7
+  humidity_range:
+  - 60
+  - 80
+  irrigation_ml: 450
+  pH_range:
+  - 6.0
+  - 6.8
+  pest_risk:
+    aphids: medium
+    blight: medium
+  soil_moisture_min: 30
+  temp_range:
+  - 20
+  - 28
+Turmeric:
+  NPK_required: 25
+  fertilizer_interval_days: 21
+  humidity_range:
+  - 60
+  - 85
+  irrigation_ml: 500
+  pH_range:
+  - 5.5
+  - 6.5
+  pest_risk:
+    root_rot: medium
+  soil_moisture_min: 35
+  temp_range:
+  - 20
+  - 30
+Yam:
+  NPK_required: 20
+  fertilizer_interval_days: 21
+  humidity_range:
+  - 60
+  - 85
+  irrigation_ml: 500
+  pH_range:
+  - 5.5
+  - 6.5
+  pest_risk:
+    low: low
+  soil_moisture_min: 30
+  temp_range:
+  - 22
+  - 30

@@ -1,0 +1,21 @@
+test_1_output_shape_and_finiteness (test_adaptive_fusion_gate.TestAdaptiveFusionGate.test_1_output_shape_and_finiteness)
+Test 1: Output shape is (B, 192) and all values are finite. ... ok
+test_2_distinct_inputs_produce_distinct_gates (test_adaptive_fusion_gate.TestAdaptiveFusionGate.test_2_distinct_inputs_produce_distinct_gates)
+Test 2: Distinct inputs produce distinct sample-dependent gate vectors. ... ok
+test_3_gate_modulates_fused_representation (test_adaptive_fusion_gate.TestAdaptiveFusionGate.test_3_gate_modulates_fused_representation)
+Test 3: Changing the gate directly modulates the pre-normalization representation. ... ok
+test_4_gradient_flow_to_gate_parameters (test_adaptive_fusion_gate.TestAdaptiveFusionGate.test_4_gradient_flow_to_gate_parameters)
+Test 4: Task classification loss produces finite, nonzero gradients for gate parameters. ... ok
+test_5_gate_parameter_update_step (test_adaptive_fusion_gate.TestAdaptiveFusionGate.test_5_gate_parameter_update_step)
+Test 5: Optimizer step actually modifies gate-generation weights. ... ok
+test_6_absence_of_cancelling_expression (test_adaptive_fusion_gate.TestAdaptiveFusionGate.test_6_absence_of_cancelling_expression)
+Test 6: Verify forward pass does not compute (1-gate)*concat.detach(). ... ok
+test_7_ablation_fusion_variants (test_adaptive_fusion_gate.TestAdaptiveFusionGate.test_7_ablation_fusion_variants)
+Test 7: Verify FusionWithoutKnowledge and FusionWithoutGate. ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 7.367s
+
+OK
+
+SUCCESS=True

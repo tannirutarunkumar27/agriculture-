@@ -1,0 +1,19 @@
+{
+  "seed": 42,
+  "model": "Hybrid_AnchoredK_Gate",
+  "n_test": 330,
+  "accuracy": 0.996969696969697,
+  "macro_f1": 0.9969663262210537,
+  "ece": 0.005407,
+  "brier": 0.008222,
+  "nll": 0.018358,
+  "trainable_parameters": 1740358,
+  "training_seconds": 85.25220509999781,
+  "best_epoch": 8,
+  "leaf_vocabulary_size": 11134,
+  "knowledge_policy": "anchored_trainable",
+  "mean_abs_change": 0.0006183080258779228,
+  "max_abs_change": 0.002572357654571533,
+  "current_min": 0.29998061060905457,
+  "current_max": 0.900749921798706
+}

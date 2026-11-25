@@ -1,0 +1,11 @@
+{
+  "seed": 42,
+  "rounds": 3,
+  "local_epochs": 1,
+  "batch_size": 32,
+  "learning_rate": 0.05,
+  "mu": 0.01,
+  "hidden": 32,
+  "participation": 1.0,
+  "threads": 1
+}

@@ -1,0 +1,29 @@
+-BEGIN HEADER-
+NASA/POWER Source Native Resolution Daily Data 
+Dates (month/day/year): 10/12/2026 through 10/12/2026 in LST
+Location: latitude  -15.3761   longitude 121.0294 
+elevation from MERRA-2: Average for 0.5 x 0.625 degree lat/lon region = 0.0 meters
+The value for missing source data that cannot be computed or is outside of the sources availability range: -999 
+parameter(s): 
+T2M                     MERRA-2 Temperature at 2 Meters (C) 
+T2MDEW                  MERRA-2 Dew/Frost Point at 2 Meters (C) 
+ALLSKY_SFC_SW_DNI       CERES SYN1deg All Sky Surface Shortwave Downward Direct Normal Irradiance (MJ/m^2/day) 
+ALLSKY_SFC_UVA          CERES SYN1deg All Sky Surface UVA Irradiance (MJ/m^2/day) 
+ALLSKY_SFC_UVB          CERES SYN1deg All Sky Surface UVB Irradiance (MJ/m^2/day) 
+ALLSKY_SFC_UV_INDEX     CERES SYN1deg All Sky Surface UV Index (W m-2 x 40) 
+TS                      MERRA-2 Earth Skin Temperature (C) 
+T2MWET                  MERRA-2 Wet Bulb Temperature at 2 Meters (C) 
+QV2M                    MERRA-2 Specific Humidity at 2 Meters (g/kg) 
+RH2M                    MERRA-2 Relative Humidity at 2 Meters (%) 
+WS2M                    MERRA-2 Wind Speed at 2 Meters (m/s) 
+WS10M_MAX               MERRA-2 Wind Speed at 10 Meters Maximum (m/s) 
+WS2M_RANGE              MERRA-2 Wind Speed at 2 Meters Range (m/s) 
+WS2M_MIN                MERRA-2 Wind Speed at 2 Meters Minimum (m/s) 
+WS2M_MAX                MERRA-2 Wind Speed at 2 Meters Maximum (m/s) 
+PS                      MERRA-2 Surface Pressure (kPa) 
+GWETTOP                 MERRA-2 Surface Soil Wetness (1) 
+GWETROOT                MERRA-2 Root Zone Soil Wetness (1) 
+GWETPROF                MERRA-2 Profile Soil Wetness (1) 
+-END HEADER-
+YEAR,DOY,T2M,T2MDEW,ALLSKY_SFC_SW_DNI,ALLSKY_SFC_UVA,ALLSKY_SFC_UVB,ALLSKY_SFC_UV_INDEX,TS,T2MWET,QV2M,RH2M,WS2M,WS10M_MAX,WS2M_RANGE,WS2M_MIN,WS2M_MAX,PS,GWETTOP,GWETROOT,GWETPROF
+2026,285,-999.0,-999.0,-999.0,-999.0,-999.0,-999.0,-999.0,-999.0,-999.0,-999.0,-999.0,-999.0,-999.0,-999.0,-999.0,-999.0,-999.0,-999.0,-999.0

@@ -1,0 +1,13 @@
+Regime,Model,External_Accuracy,External_F1_Macro,External_Top3_Accuracy,External_ECE,Internal_F1_Macro,Generalization_Gap_F1,Generalization_Gap_Accuracy
+Regime A (Raw Zero-Shot),LogisticRegression,0.0254,0.0133,0.1064,0.4551,0.9787,0.9654,0.9534
+Regime A (Raw Zero-Shot),DecisionTree,0.0062,0.0072,0.0134,0.982,0.4373,0.4301,0.5272
+Regime A (Raw Zero-Shot),RandomForest,0.0022,0.0024,0.0969,0.4411,0.9939,0.9915,0.9918
+Regime A (Raw Zero-Shot),XGBoostBaseline,0.0007,0.0009,0.0792,0.7519,0.9909,0.99,0.9902
+Regime A (Raw Zero-Shot),FTTransformerBaseline,0.0999,0.0214,0.1347,0.7357,0.9878,0.9664,0.888
+Regime A (Raw Zero-Shot),KG-HybridProposed,0.0054,0.0056,0.081,0.2692,0.997,0.9914,0.9915
+Regime B (Exploratory Rainfall-Scaled Sensitivity),LogisticRegression,0.0664,0.0246,0.1442,0.4571,0.9787,0.9541,0.9123
+Regime B (Exploratory Rainfall-Scaled Sensitivity),DecisionTree,0.0476,0.0176,0.1667,0.7082,0.4373,0.4197,0.4858
+Regime B (Exploratory Rainfall-Scaled Sensitivity),RandomForest,0.041,0.028,0.2081,0.3021,0.9939,0.9659,0.9529
+Regime B (Exploratory Rainfall-Scaled Sensitivity),XGBoostBaseline,0.0694,0.045,0.2073,0.4677,0.9909,0.9459,0.9216
+Regime B (Exploratory Rainfall-Scaled Sensitivity),FTTransformerBaseline,0.0672,0.0255,0.1652,0.7678,0.9878,0.9624,0.9207
+Regime B (Exploratory Rainfall-Scaled Sensitivity),KG-HybridProposed,0.0378,0.0257,0.0799,0.3617,0.997,0.9713,0.9592

@@ -1,0 +1,39 @@
+{
+  "title": "AgriField-Manipur: Hybrid Smart Farming Dataset for Valley Agriculture (v2025.1)",
+  "upload_type": "dataset",
+  "description": "The AgriField-Manipur Dataset (v2025.1) provides a realistic hybrid data resource designed to support smart farming, IoT applications, and machine learning research for the valley agricultural ecosystem of Manipur, India. The dataset contains daily time-series measurements of temperature, humidity, soil moisture, soil pH, rainfall, and district-level crop suitability parameters. While field-level values are synthetically generated due to limited real-time sensor deployment, all parameter behaviour, seasonal variability, and advisory rules are based on verified agricultural references, including IMD, NASA POWER climate data, ICAR-NEH soil reports, FAO agronomy standards, and regional agricultural advisories. The dataset also includes multiple crops commonly grown in the Manipur valley, represented in the `crop` column. The dataset includes sensor-style outputs, processed ML-ready tables, rule-based advisory sets, and reproducible generator code for custom extensions. This resource enables benchmarking, AI modelling, recommendation systems, irrigation analysis, simulation studies, and instructional use in precision agriculture and IoT research.",
+  "creators": [
+    {
+      "name": "Elangbam Bony Kumar Singh",
+      "affiliation": "Manipur Institute of Technology (CSE Dept.)",
+      "orcid": "https://orcid.org/0009-0003-2540-1804"
+    }
+  ],
+  "keywords": [
+    "Smart Farming",
+    "Internet of Things (IoT)",
+    "ESP32",
+    "Agriculture Dataset",
+    "Soil Moisture",
+    "Soil pH",
+    "Temperature and Humidity",
+    "Precision Agriculture",
+    "Crop Recommendation",
+    "Sensor Data"
+  ],
+  "license": "CC-BY-4.0",
+  "version": "v2025.1",
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "AgriField-Manipur Smart Farming System",
+      "scheme": "other"
+    }
+  ],
+  "communities": [
+    "Agriculture",
+    "Machine Learning",
+    "IoT"
+  ],
+  "publication_date": "2025-11-28"
+}

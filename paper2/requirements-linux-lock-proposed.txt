@@ -1,0 +1,22 @@
+# Paper 2 local Linux/WSL CPU environment candidate lock
+# STATUS=PROPOSED_UNVERIFIED
+# Deployment candidate only. Generate a hash-locked Linux receipt after a clean
+# install; the release gate does not accept this proposed file as verified.
+--only-binary=:all:
+# Keep PyPI as the sole dependency index.  The CPU-specific Torch wheel is a
+# wheel source, not a second package index: otherwise a multi-index resolver
+# can select the PyPI Torch metadata and pull NVIDIA runtime packages.
+--find-links https://download.pytorch.org/whl/cpu
+numpy==2.5.1
+pandas==3.0.3
+scikit-learn==1.9.0
+joblib==1.5.3
+matplotlib==3.11.1
+xgboost==3.3.0
+pypdf==6.10.0
+ray==2.55.1
+flwr==1.42.0
+torch==2.13.0+cpu
+cryptography==50.0.2
+openpyxl==3.1.5
+et-xmlfile==2.0.0

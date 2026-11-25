@@ -1,0 +1,11 @@
+{
+  "architecture_version": "v2_corrected_knowledge_attention",
+  "checkpoint_path": "D:\\Final Project\\implementation_for _crop recommendation\\KG-Hybrid\\outputs\\models\\kg_hybrid_corrected.pth",
+  "test_accuracy": 0.996969696969697,
+  "best_val_accuracy": 0.996969696969697,
+  "best_epoch": 9,
+  "final_epoch": 24,
+  "knowledge_matrix_policy": "trainable_adapted_prior",
+  "knowledge_mean_abs_change": 0.04626414552330971,
+  "knowledge_max_abs_change": 0.08314764499664307
+}

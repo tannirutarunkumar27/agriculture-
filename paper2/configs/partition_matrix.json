@@ -1,0 +1,12 @@
+{
+  "seeds": [42, 123, 2024],
+  "datasets": ["canonical", "maharashtra", "manipur"],
+  "simulated": [
+    {"strategy": "iid", "clients": 5},
+    {"strategy": "dirichlet", "clients": 5, "alpha": 0.5},
+    {"strategy": "dirichlet", "clients": 5, "alpha": 0.1},
+    {"strategy": "unequal", "clients": 5, "alpha": 0.5}
+  ],
+  "district": ["maharashtra", "manipur"],
+  "scope": "separate datasets, no merging; district labels do not establish measured farms"
+}

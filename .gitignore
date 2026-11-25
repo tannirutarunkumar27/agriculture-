@@ -1,0 +1,52 @@
+# Virtual environments
+.venv/
+.venv-1/
+venv/
+env/
+ENV/
+
+# Python cache & build outputs
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE & Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-workspace
+.DS_Store
+
+# Exclude raw unzipped heavy model weight files (zipped .zip versions are tracked)
+*.pth
+!*.pth.zip
+
+# Large external raw FAOSTAT data downloads (> 100MB / gigabytes)
+KG-Hybrid/data/raw/FAOSTAT_A-S_E/
+
+# Logs & temp files
+*.log
+tmp/
+scratch/
+
+# Large audit file (>100MB GitHub limit)
+KG-Hybrid/outputs/tables/stale_terms_audit.json
+

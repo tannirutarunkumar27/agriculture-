@@ -1,0 +1,77 @@
+{
+  "status": "completed",
+  "seeds": [
+    42,
+    123,
+    2024,
+    3407,
+    9999
+  ],
+  "max_epochs": 25,
+  "variants": {
+    "Hybrid_NoK": [
+      null,
+      false
+    ],
+    "Hybrid_FixedK": [
+      "fixed",
+      false
+    ],
+    "Hybrid_AnchoredK": [
+      "anchored_trainable",
+      false
+    ],
+    "Hybrid_AnchoredK_Gate": [
+      "anchored_trainable",
+      true
+    ],
+    "Hybrid_ShuffledK_Gate": [
+      "fixed",
+      true
+    ]
+  },
+  "knowledge_anchor_weight": 1.0,
+  "early_stopping": "validation NLL, patience=10",
+  "hybrid_objective": "cross entropy + mean-squared knowledge anchor (lambda=1)",
+  "embedding_optimizer": "SparseAdam, lr=0.001 (no embedding weight decay)",
+  "dense_optimizer": "AdamW, lr=0.001, weight_decay=0.00001",
+  "representation": "compact terminal-node vocabulary; every trained booster leaf included",
+  "dataset_sha256": "54a5a6e5408668e668667efc50de2fc867c1b875e0431b4f54dd331b0a109a4e",
+  "knowledge_sha256": "d6491e6b1f69a6d59860ba8dce73b567ebef78b99af629b5b47fe58fe0ae0745",
+  "knowledge_source_status": "Manually specified weights; exact institutional derivation unverified",
+  "classes": [
+    "apple",
+    "banana",
+    "blackgram",
+    "chickpea",
+    "coconut",
+    "coffee",
+    "cotton",
+    "grapes",
+    "jute",
+    "kidneybeans",
+    "lentil",
+    "maize",
+    "mango",
+    "mothbeans",
+    "mungbean",
+    "muskmelon",
+    "orange",
+    "papaya",
+    "pigeonpeas",
+    "pomegranate",
+    "rice",
+    "watermelon"
+  ],
+  "features": [
+    "N",
+    "P",
+    "K",
+    "temperature",
+    "humidity",
+    "ph",
+    "rainfall"
+  ],
+  "interpretation": "Repeated held-out splits, comparative evidence; no field validation or superiority assumed",
+  "completed_results": 35
+}

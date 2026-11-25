@@ -1,0 +1,7 @@
+{
+    "Model": "decision_tree",
+    "Accuracy": 0.9818,
+    "Precision": 0.9829,
+    "Recall": 0.9818,
+    "F1-Score": 0.9818
+}

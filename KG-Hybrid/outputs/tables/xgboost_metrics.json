@@ -1,0 +1,7 @@
+{
+    "Model": "xgboost",
+    "Accuracy": 0.9909,
+    "Precision": 0.9913,
+    "Recall": 0.9909,
+    "F1-Score": 0.9909
+}

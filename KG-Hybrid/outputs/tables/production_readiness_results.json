@@ -1,0 +1,161 @@
+{
+  "imputation_experiments": {
+    "Raw (Zero Fill)": [
+      0.9788,
+      0.7188,
+      0.4824,
+      0.2752
+    ],
+    "Median Imputation": [
+      0.9788,
+      0.7261,
+      0.4927,
+      0.2994
+    ],
+    "KNN Imputation (k=5)": [
+      0.9788,
+      0.9394,
+      0.8133,
+      0.6194
+    ],
+    "MICE Imputation": [
+      0.9788,
+      0.7242,
+      0.4855,
+      0.2667
+    ],
+    "XGBoost Baseline": [
+      0.9939,
+      0.84,
+      0.6115,
+      0.4139
+    ]
+  },
+  "early_exit_experiments": [
+    {
+      "threshold": 0.0,
+      "early_exit_pct": 0.0,
+      "avg_latency_ms": 115.54,
+      "accuracy_pct": 97.88
+    },
+    {
+      "threshold": 0.7,
+      "early_exit_pct": 97.9,
+      "avg_latency_ms": 7.56,
+      "accuracy_pct": 99.09
+    },
+    {
+      "threshold": 0.8,
+      "early_exit_pct": 97.3,
+      "avg_latency_ms": 7.49,
+      "accuracy_pct": 99.39
+    },
+    {
+      "threshold": 0.85,
+      "early_exit_pct": 97.3,
+      "avg_latency_ms": 7.08,
+      "accuracy_pct": 99.09
+    },
+    {
+      "threshold": 0.9,
+      "early_exit_pct": 96.4,
+      "avg_latency_ms": 8.18,
+      "accuracy_pct": 99.09
+    },
+    {
+      "threshold": 0.95,
+      "early_exit_pct": 93.6,
+      "avg_latency_ms": 11.34,
+      "accuracy_pct": 99.09
+    },
+    {
+      "threshold": 0.99,
+      "early_exit_pct": 73.3,
+      "avg_latency_ms": 33.64,
+      "accuracy_pct": 98.79
+    }
+  ],
+  "uncertainty_samples": {
+    "clean": {
+      "recommended_crop": "coffee",
+      "confidence": 0.9956,
+      "uncertainty_std": 0.002,
+      "top_3_crops": [
+        {
+          "crop": "coffee",
+          "probability": 0.9956,
+          "uncertainty_std": 0.002
+        },
+        {
+          "crop": "jute",
+          "probability": 0.0012,
+          "uncertainty_std": 0.0004
+        },
+        {
+          "crop": "rice",
+          "probability": 0.0009,
+          "uncertainty_std": 0.0004
+        }
+      ],
+      "inference_route": "STAGE_2_KG_HYBRID (Low Confidence Early Pass)",
+      "data_quality": "HEALTHY (All 7 features provided)",
+      "sensor_health": "OK",
+      "latency_ms": 101.34,
+      "safety_alert": null
+    },
+    "noisy": {
+      "recommended_crop": "coffee",
+      "confidence": 0.9836,
+      "uncertainty_std": 0.0113,
+      "top_3_crops": [
+        {
+          "crop": "coffee",
+          "probability": 0.9836,
+          "uncertainty_std": 0.0113
+        },
+        {
+          "crop": "jute",
+          "probability": 0.0089,
+          "uncertainty_std": 0.006
+        },
+        {
+          "crop": "rice",
+          "probability": 0.0021,
+          "uncertainty_std": 0.0016
+        }
+      ],
+      "inference_route": "STAGE_2_KG_HYBRID (Low Confidence Early Pass)",
+      "data_quality": "HEALTHY (All 7 features provided)",
+      "sensor_health": "OK",
+      "latency_ms": 90.38,
+      "safety_alert": null
+    },
+    "corrupted": {
+      "recommended_crop": "coffee",
+      "confidence": 0.9595,
+      "uncertainty_std": 0.0163,
+      "top_3_crops": [
+        {
+          "crop": "coffee",
+          "probability": 0.9595,
+          "uncertainty_std": 0.0163
+        },
+        {
+          "crop": "pigeonpeas",
+          "probability": 0.0131,
+          "uncertainty_std": 0.0069
+        },
+        {
+          "crop": "rice",
+          "probability": 0.0095,
+          "uncertainty_std": 0.0063
+        }
+      ],
+      "inference_route": "STAGE_2_KG_HYBRID (Imputed Input)",
+      "data_quality": "IMPUTED (2 missing features: N, ph)",
+      "sensor_health": "WARNING: Sensor fault detected for N, ph",
+      "latency_ms": 113.01,
+      "safety_alert": null
+    }
+  }
+}

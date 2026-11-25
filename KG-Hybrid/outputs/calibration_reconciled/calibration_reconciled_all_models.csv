@@ -1,0 +1,10 @@
+Model,Configuration,N Samples,Correct,Top-1 Accuracy,Macro-F1,ECE,Brier Score,NLL
+Logistic Regression,"LogisticRegression(C=1.0, max_iter=1000, random_state=42)",330,323/330,0.978788,0.978656,0.143912,0.074149,0.203592
+Decision Tree (Unconstrained),"DecisionTreeClassifier(random_state=42, max_depth=None)",330,324/330,0.981818,0.981778,0.018182,0.036364,0.502382
+"Decision Tree (depth=6, CV config)","DecisionTreeClassifier(max_depth=6, random_state=42)",330,176/330,0.533333,0.437325,0.00718,0.481986,1.060708
+Random Forest (Unconstrained),"RandomForestClassifier(n_estimators=100, max_depth=None, random_state=42)",330,329/330,0.99697,0.996966,0.045303,0.014935,0.054992
+"Random Forest (depth=6, CV config)","RandomForestClassifier(n_estimators=200, max_depth=6, random_state=42)",330,328/330,0.993939,0.993933,0.335001,0.175408,0.456007
+XGBoost Baseline (Seed 42),"XGBClassifier(n_estimators=200, max_depth=6, lr=0.1, random_state=42)",330,328/330,0.993939,0.993933,0.019835,0.010505,0.031624
+XGBoost Baseline (Saved Checkpoint),xgboost_model.pkl (saved booster checkpoint),330,327/330,0.990909,0.990902,0.016223,0.011897,0.033439
+FT-Transformer Baseline,best_model.pth (converged 100-epoch checkpoint),330,326/330,0.987879,0.987845,0.00681,0.020304,0.044111
+KG-Hybrid Proposed (Corrected v2),kg_hybrid_corrected.pth (v2 dynamic knowledge attention + effective gate),330,329/330,0.99697,0.996966,0.121839,0.028857,0.13979

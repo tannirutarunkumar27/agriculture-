@@ -1,0 +1,297 @@
+{
+    "dataset_name": "AgriField-Manipur v2025.1",
+    "regime_a_raw": {
+        "regime": "Regime A (Raw Zero-Shot)",
+        "sample_count": 2754,
+        "mahalanobis_distance": 2.2077,
+        "feature_shift": [
+            {
+                "feature": "N",
+                "wasserstein_distance": 37.8081,
+                "psi": 11.9975,
+                "jsd": 0.4639,
+                "shift_status": "Severe (OOD)"
+            },
+            {
+                "feature": "P",
+                "wasserstein_distance": 24.8096,
+                "psi": 11.5932,
+                "jsd": 0.4217,
+                "shift_status": "Severe (OOD)"
+            },
+            {
+                "feature": "K",
+                "wasserstein_distance": 25.4724,
+                "psi": 8.9542,
+                "jsd": 0.3185,
+                "shift_status": "Severe (OOD)"
+            },
+            {
+                "feature": "temperature",
+                "wasserstein_distance": 2.1847,
+                "psi": 0.5905,
+                "jsd": 0.0675,
+                "shift_status": "Severe (OOD)"
+            },
+            {
+                "feature": "humidity",
+                "wasserstein_distance": 11.7203,
+                "psi": 4.3569,
+                "jsd": 0.2186,
+                "shift_status": "Severe (OOD)"
+            },
+            {
+                "feature": "ph",
+                "wasserstein_distance": 0.4486,
+                "psi": 5.9321,
+                "jsd": 0.2285,
+                "shift_status": "Severe (OOD)"
+            },
+            {
+                "feature": "rainfall",
+                "wasserstein_distance": 92.0148,
+                "psi": 10.2389,
+                "jsd": 0.5836,
+                "shift_status": "Severe (OOD)"
+            }
+        ],
+        "metrics": [
+            {
+                "Regime": "Regime A (Raw Zero-Shot)",
+                "Model": "LogisticRegression",
+                "External_Accuracy": 0.0254,
+                "External_F1_Macro": 0.0133,
+                "External_Top3_Accuracy": 0.1064,
+                "External_ECE": 0.4551,
+                "Internal_F1_Macro": 0.9787,
+                "Generalization_Gap_F1": 0.9654,
+                "Generalization_Gap_Accuracy": 0.9534
+            },
+            {
+                "Regime": "Regime A (Raw Zero-Shot)",
+                "Model": "DecisionTree",
+                "External_Accuracy": 0.0062,
+                "External_F1_Macro": 0.0072,
+                "External_Top3_Accuracy": 0.0134,
+                "External_ECE": 0.982,
+                "Internal_F1_Macro": 0.4373,
+                "Generalization_Gap_F1": 0.4301,
+                "Generalization_Gap_Accuracy": 0.5272
+            },
+            {
+                "Regime": "Regime A (Raw Zero-Shot)",
+                "Model": "RandomForest",
+                "External_Accuracy": 0.0022,
+                "External_F1_Macro": 0.0024,
+                "External_Top3_Accuracy": 0.0969,
+                "External_ECE": 0.4411,
+                "Internal_F1_Macro": 0.9939,
+                "Generalization_Gap_F1": 0.9915,
+                "Generalization_Gap_Accuracy": 0.9918
+            },
+            {
+                "Regime": "Regime A (Raw Zero-Shot)",
+                "Model": "XGBoostBaseline",
+                "External_Accuracy": 0.0007,
+                "External_F1_Macro": 0.0009,
+                "External_Top3_Accuracy": 0.0792,
+                "External_ECE": 0.7519,
+                "Internal_F1_Macro": 0.9909,
+                "Generalization_Gap_F1": 0.99,
+                "Generalization_Gap_Accuracy": 0.9902
+            },
+            {
+                "Regime": "Regime A (Raw Zero-Shot)",
+                "Model": "FTTransformerBaseline",
+                "External_Accuracy": 0.0999,
+                "External_F1_Macro": 0.0214,
+                "External_Top3_Accuracy": 0.1347,
+                "External_ECE": 0.7357,
+                "Internal_F1_Macro": 0.9878,
+                "Generalization_Gap_F1": 0.9664,
+                "Generalization_Gap_Accuracy": 0.888
+            },
+            {
+                "Regime": "Regime A (Raw Zero-Shot)",
+                "Model": "KG-HybridProposed",
+                "External_Accuracy": 0.0054,
+                "External_F1_Macro": 0.0056,
+                "External_Top3_Accuracy": 0.081,
+                "External_ECE": 0.2692,
+                "Internal_F1_Macro": 0.997,
+                "Generalization_Gap_F1": 0.9914,
+                "Generalization_Gap_Accuracy": 0.9915
+            }
+        ],
+        "mcnemar_test": {
+            "model_a": "KG-Hybrid",
+            "model_b": "XGBoostBaseline",
+            "n_samples": 2754,
+            "contingency_table": {
+                "n11_both_correct": 0,
+                "n00_both_incorrect": 2737,
+                "b_a_correct_b_incorrect": 15,
+                "c_a_incorrect_b_correct": 2
+            },
+            "statistic": 15.0,
+            "p_value": 0.002349853515625,
+            "test_type": "Exact Binomial",
+            "is_statistically_significant": true
+        },
+        "permutation_test": {
+            "f1_model_a": 0.0056,
+            "f1_model_b": 0.0009,
+            "observed_f1_diff": 0.0047,
+            "p_value": 0.0,
+            "n_permutations": 5000,
+            "is_statistically_significant": true
+        }
+    },
+    "regime_b_aligned": {
+        "regime": "Regime B (Exploratory Rainfall-Scaled Sensitivity)",
+        "sample_count": 2754,
+        "mahalanobis_distance": 1.877,
+        "feature_shift": [
+            {
+                "feature": "N",
+                "wasserstein_distance": 37.8081,
+                "psi": 11.9975,
+                "jsd": 0.4639,
+                "shift_status": "Severe (OOD)"
+            },
+            {
+                "feature": "P",
+                "wasserstein_distance": 24.8096,
+                "psi": 11.5932,
+                "jsd": 0.4217,
+                "shift_status": "Severe (OOD)"
+            },
+            {
+                "feature": "K",
+                "wasserstein_distance": 25.4724,
+                "psi": 8.9542,
+                "jsd": 0.3185,
+                "shift_status": "Severe (OOD)"
+            },
+            {
+                "feature": "temperature",
+                "wasserstein_distance": 2.1847,
+                "psi": 0.5905,
+                "jsd": 0.0675,
+                "shift_status": "Severe (OOD)"
+            },
+            {
+                "feature": "humidity",
+                "wasserstein_distance": 11.7203,
+                "psi": 4.3569,
+                "jsd": 0.2186,
+                "shift_status": "Severe (OOD)"
+            },
+            {
+                "feature": "ph",
+                "wasserstein_distance": 0.4486,
+                "psi": 5.9321,
+                "jsd": 0.2285,
+                "shift_status": "Severe (OOD)"
+            },
+            {
+                "feature": "rainfall",
+                "wasserstein_distance": 20.6266,
+                "psi": 0.148,
+                "jsd": 0.0514,
+                "shift_status": "Moderate"
+            }
+        ],
+        "metrics": [
+            {
+                "Regime": "Regime B (Exploratory Rainfall-Scaled Sensitivity)",
+                "Model": "LogisticRegression",
+                "External_Accuracy": 0.0664,
+                "External_F1_Macro": 0.0246,
+                "External_Top3_Accuracy": 0.1442,
+                "External_ECE": 0.4571,
+                "Internal_F1_Macro": 0.9787,
+                "Generalization_Gap_F1": 0.9541,
+                "Generalization_Gap_Accuracy": 0.9123
+            },
+            {
+                "Regime": "Regime B (Exploratory Rainfall-Scaled Sensitivity)",
+                "Model": "DecisionTree",
+                "External_Accuracy": 0.0476,
+                "External_F1_Macro": 0.0176,
+                "External_Top3_Accuracy": 0.1667,
+                "External_ECE": 0.7082,
+                "Internal_F1_Macro": 0.4373,
+                "Generalization_Gap_F1": 0.4197,
+                "Generalization_Gap_Accuracy": 0.4858
+            },
+            {
+                "Regime": "Regime B (Exploratory Rainfall-Scaled Sensitivity)",
+                "Model": "RandomForest",
+                "External_Accuracy": 0.041,
+                "External_F1_Macro": 0.028,
+                "External_Top3_Accuracy": 0.2081,
+                "External_ECE": 0.3021,
+                "Internal_F1_Macro": 0.9939,
+                "Generalization_Gap_F1": 0.9659,
+                "Generalization_Gap_Accuracy": 0.9529
+            },
+            {
+                "Regime": "Regime B (Exploratory Rainfall-Scaled Sensitivity)",
+                "Model": "XGBoostBaseline",
+                "External_Accuracy": 0.0694,
+                "External_F1_Macro": 0.045,
+                "External_Top3_Accuracy": 0.2073,
+                "External_ECE": 0.4677,
+                "Internal_F1_Macro": 0.9909,
+                "Generalization_Gap_F1": 0.9459,
+                "Generalization_Gap_Accuracy": 0.9216
+            },
+            {
+                "Regime": "Regime B (Exploratory Rainfall-Scaled Sensitivity)",
+                "Model": "FTTransformerBaseline",
+                "External_Accuracy": 0.0672,
+                "External_F1_Macro": 0.0255,
+                "External_Top3_Accuracy": 0.1652,
+                "External_ECE": 0.7678,
+                "Internal_F1_Macro": 0.9878,
+                "Generalization_Gap_F1": 0.9624,
+                "Generalization_Gap_Accuracy": 0.9207
+            },
+            {
+                "Regime": "Regime B (Exploratory Rainfall-Scaled Sensitivity)",
+                "Model": "KG-HybridProposed",
+                "External_Accuracy": 0.0378,
+                "External_F1_Macro": 0.0257,
+                "External_Top3_Accuracy": 0.0799,
+                "External_ECE": 0.3617,
+                "Internal_F1_Macro": 0.997,
+                "Generalization_Gap_F1": 0.9713,
+                "Generalization_Gap_Accuracy": 0.9592
+            }
+        ],
+        "mcnemar_test": {
+            "model_a": "KG-Hybrid",
+            "model_b": "XGBoostBaseline",
+            "n_samples": 2754,
+            "contingency_table": {
+                "n11_both_correct": 88,
+                "n00_both_incorrect": 2547,
+                "b_a_correct_b_incorrect": 16,
+                "c_a_incorrect_b_correct": 103
+            },
+            "statistic": 62.1513,
+            "p_value": 3.180633715681099e-15,
+            "test_type": "Chi-Square (df=1)",
+            "is_statistically_significant": true
+        },
+        "permutation_test": {
+            "f1_model_a": 0.0257,
+            "f1_model_b": 0.045,
+            "observed_f1_diff": -0.0194,
+            "p_value": 0.0,
+            "n_permutations": 5000,
+            "is_statistically_significant": true
+        }
+    }
+}

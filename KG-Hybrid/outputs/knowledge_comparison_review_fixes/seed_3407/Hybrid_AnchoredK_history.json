@@ -1,0 +1,117 @@
+[
+  {
+    "epoch": 1,
+    "val_nll": 0.078502,
+    "val_accuracy": 0.996969696969697
+  },
+  {
+    "epoch": 2,
+    "val_nll": 0.044403,
+    "val_accuracy": 0.9818181818181818
+  },
+  {
+    "epoch": 3,
+    "val_nll": 0.048551,
+    "val_accuracy": 0.9939393939393939
+  },
+  {
+    "epoch": 4,
+    "val_nll": 0.039832,
+    "val_accuracy": 0.9878787878787879
+  },
+  {
+    "epoch": 5,
+    "val_nll": 0.036947,
+    "val_accuracy": 0.990909090909091
+  },
+  {
+    "epoch": 6,
+    "val_nll": 0.025491,
+    "val_accuracy": 0.9939393939393939
+  },
+  {
+    "epoch": 7,
+    "val_nll": 0.056495,
+    "val_accuracy": 0.9878787878787879
+  },
+  {
+    "epoch": 8,
+    "val_nll": 0.02077,
+    "val_accuracy": 0.9939393939393939
+  },
+  {
+    "epoch": 9,
+    "val_nll": 0.028483,
+    "val_accuracy": 0.996969696969697
+  },
+  {
+    "epoch": 10,
+    "val_nll": 0.025918,
+    "val_accuracy": 0.9939393939393939
+  },
+  {
+    "epoch": 11,
+    "val_nll": 0.02545,
+    "val_accuracy": 0.9939393939393939
+  },
+  {
+    "epoch": 12,
+    "val_nll": 0.072667,
+    "val_accuracy": 0.9818181818181818
+  },
+  {
+    "epoch": 13,
+    "val_nll": 0.005049,
+    "val_accuracy": 1.0
+  },
+  {
+    "epoch": 14,
+    "val_nll": 0.025465,
+    "val_accuracy": 0.9939393939393939
+  },
+  {
+    "epoch": 15,
+    "val_nll": 0.03319,
+    "val_accuracy": 0.990909090909091
+  },
+  {
+    "epoch": 16,
+    "val_nll": 0.019732,
+    "val_accuracy": 0.996969696969697
+  },
+  {
+    "epoch": 17,
+    "val_nll": 0.022501,
+    "val_accuracy": 0.996969696969697
+  },
+  {
+    "epoch": 18,
+    "val_nll": 0.025893,
+    "val_accuracy": 0.996969696969697
+  },
+  {
+    "epoch": 19,
+    "val_nll": 0.022612,
+    "val_accuracy": 0.996969696969697
+  },
+  {
+    "epoch": 20,
+    "val_nll": 0.020807,
+    "val_accuracy": 0.996969696969697
+  },
+  {
+    "epoch": 21,
+    "val_nll": 0.020994,
+    "val_accuracy": 0.996969696969697
+  },
+  {
+    "epoch": 22,
+    "val_nll": 0.014096,
+    "val_accuracy": 0.996969696969697
+  },
+  {
+    "epoch": 23,
+    "val_nll": 0.0185,
+    "val_accuracy": 0.996969696969697
+  }
+]

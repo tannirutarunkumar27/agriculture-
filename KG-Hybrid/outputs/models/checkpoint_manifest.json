@@ -1,0 +1,26 @@
+{
+  "legacy_architecture": {
+    "version": "v1_static_knowledge_bias",
+    "checkpoint": "outputs/models/kg_hybrid_best.pth",
+    "backup_checkpoint": "outputs/models/legacy/kg_hybrid_best_legacy_static_bias.pth",
+    "description": "Problem 1 and Problem 2 affected; static k_bias broadcast [1, 192]; incompatible with v2"
+  },
+  "corrected_architecture": {
+    "version": "v2_corrected_knowledge_attention",
+    "checkpoint": "outputs/models/kg_hybrid_corrected.pth",
+    "directory_checkpoint": "outputs/models/corrected/kg_hybrid_best.pth",
+    "description": "Problem 1 cancelled gate removed; Problem 2 dynamic sample-conditioned crop attention active",
+    "training_metadata": "D:\\Final Project\\implementation_for _crop recommendation\\KG-Hybrid\\outputs\\models\\corrected\\training_metadata.json",
+    "metrics": {
+      "architecture_version": "v2_corrected_knowledge_attention",
+      "checkpoint_path": "D:\\Final Project\\implementation_for _crop recommendation\\KG-Hybrid\\outputs\\models\\kg_hybrid_corrected.pth",
+      "test_accuracy": 0.996969696969697,
+      "best_val_accuracy": 0.996969696969697,
+      "best_epoch": 9,
+      "final_epoch": 24,
+      "knowledge_matrix_policy": "trainable_adapted_prior",
+      "knowledge_mean_abs_change": 0.04626414552330971,
+      "knowledge_max_abs_change": 0.08314764499664307
+    }
+  }
+}

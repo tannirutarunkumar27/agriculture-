@@ -1,0 +1,7 @@
+{
+    "Model": "ablation_a7",
+    "Accuracy": 0.9879,
+    "Precision": 0.989,
+    "Recall": 0.9879,
+    "F1-Score": 0.9878
+}

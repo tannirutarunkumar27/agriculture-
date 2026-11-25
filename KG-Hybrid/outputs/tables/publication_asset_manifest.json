@@ -1,0 +1,149 @@
+{
+  "assets": [
+    {
+      "asset": "reliability_diagram.png",
+      "sha256": "903645bb635cad185b342b3e0196d29da3dd0629c5c509b1fced23c94f47c27d"
+    },
+    {
+      "asset": "reliability_diagram.pdf",
+      "sha256": "a1b3eb9b0b763d3dd1d87073fec13f6ffb7dd6261cc23543955f909b6ad3ae8d"
+    },
+    {
+      "asset": "fig_f1_reliability_diagram.png",
+      "sha256": "903645bb635cad185b342b3e0196d29da3dd0629c5c509b1fced23c94f47c27d"
+    },
+    {
+      "asset": "fig_f2_confusion_matrix_annotated.png",
+      "sha256": "5240b4a7735dd5c4343edf23767d74f3ec4822f3931f4a29db50a2abc9e10ffa"
+    },
+    {
+      "asset": "fig_f3_learning_curves.png",
+      "sha256": "6417ae2e27cd078eead79d5c6e80cedd8e214a9718d7c55fc25360188a436575"
+    },
+    {
+      "asset": "fig_f4_risk_coverage.png",
+      "sha256": "08719fbefa7ecf339d340325c8712063d3a4326cc5ecf371b84e2998658017e5"
+    },
+    {
+      "asset": "fig_f5_feature_importance_3way.png",
+      "sha256": "66762b67b7d289bd10b6f377079e5780510c1ffd733d5bfdbb55c1a00782f541"
+    },
+    {
+      "asset": "fig2_ablation.png",
+      "sha256": "96049cbe43fc609d2fb80bfb31f07d463036a580ecf5189368b3b05f322524a5"
+    },
+    {
+      "asset": "fig3_missing_features.png",
+      "sha256": "2e7de689edcb9e74f1ee691e14905f88bdec3d5015d5d2ab4b87a8aad22689f6"
+    },
+    {
+      "asset": "fig4_early_exit.png",
+      "sha256": "c7ca32d714a62a7b4570da5c1f255695b3b0625ae25a05da2bc2a2e8a733add8"
+    },
+    {
+      "asset": "fig5_robustness.png",
+      "sha256": "07925f601c0bff13fc97dce0b02b3cefee25ddf1815619d941a319b69fd1c5f9"
+    },
+    {
+      "asset": "fig6_shap_importance.png",
+      "sha256": "54c124ca0ea6abdc6065e00d63a6308f492b1bab2ea6b038eaba5eeaccfdfcff"
+    },
+    {
+      "asset": "fig8_param_latency_tradeoff.png",
+      "sha256": "e05e1da91aea6e65bdf3190bd9f9c8c5bf4eb931e7f4d44e4e120337ecaea35c"
+    },
+    {
+      "asset": "realworld_enhancements.png",
+      "sha256": "c7ca32d714a62a7b4570da5c1f255695b3b0625ae25a05da2bc2a2e8a733add8"
+    },
+    {
+      "asset": "knowledge_feature_gate.png",
+      "sha256": "b55bc14896684cfa2b3a61ca84ec8c1f61ff405c7a64c6cdc37730a46af50522"
+    },
+    {
+      "asset": "knowledge_guided_fusion_architecture.png",
+      "sha256": "d2c3d986aaf23bf69c7727d52a26be85c5c7d581921c8ccbe8693afa3b73b68e"
+    },
+    {
+      "asset": "fig1_kg_hybrid_detailed_architecture.png",
+      "sha256": "94c0dee87d8bfeb96843cce31fb72e84ce3db5e3f69c126494b5aa76befadf37"
+    },
+    {
+      "asset": "fig4_training_inference_pipeline.png",
+      "sha256": "5ee131c38eb683147a9674ecef55d4864d5aa6dd151dbbb5d549894fcfc7a2a0"
+    },
+    {
+      "asset": "fig5_early_exit_flow_diagram.png",
+      "sha256": "02e32143b7c9d38df2b5c55429873252a520465669638ec71898547c4c724a15"
+    },
+    {
+      "asset": "fig6_feature_complementarity.png",
+      "sha256": "66762b67b7d289bd10b6f377079e5780510c1ffd733d5bfdbb55c1a00782f541"
+    },
+    {
+      "asset": "comprehensive_comparison.png",
+      "sha256": "78c0115de8358b2a000ebd293702308bf216bd99aa63e034ecb12da750fae90b"
+    },
+    {
+      "asset": "kg_hybrid_training_history.png",
+      "sha256": "c9a47bfee416ed22fbc0ccee654cc879c63025efc5c9479a2b8df4a8fd6e3d88"
+    },
+    {
+      "asset": "fig_training_history_all_models.png",
+      "sha256": "19816736e605f38c97691c8b85b6345d9d5e691aa7d8b3699b7d42789321181b"
+    },
+    {
+      "asset": "external_distribution_shift.png",
+      "sha256": "78de55f96f9d3f418ca489dc3ebec1bb444fd2c1b822d6beb4a248ace8a6a69c"
+    },
+    {
+      "asset": "logistic_regression_confusion_matrix.png",
+      "sha256": "ca86d53b2745bc48ac1c2360cad4fee88b9dc7652fb7d9aa2846ca6b96dd991d"
+    },
+    {
+      "asset": "decision_tree_confusion_matrix.png",
+      "sha256": "e02d084d939e7453f26a523208ce0e5e8fde9051fecc42b3bc02cec2c1e3cc53"
+    },
+    {
+      "asset": "random_forest_confusion_matrix.png",
+      "sha256": "7c2c70eb8280c3d2e6827015562609b670c2e4ebe4194f556b774dca1079dde5"
+    },
+    {
+      "asset": "xgboost_confusion_matrix.png",
+      "sha256": "e1a78131c87dbd7648ecb287d46c9eb8a1540086aac1f7e8299aeae0dbaae700"
+    },
+    {
+      "asset": "ft_transformer_confusion_matrix.png",
+      "sha256": "fd23233d078a955e045e8a91ee74bdcf1c914a1d3cbd1e36164a74424a38fff5"
+    },
+    {
+      "asset": "kg_hybrid_confusion_matrix.png",
+      "sha256": "b9af335f870065b998d7d0817e6acdfdbc0a59d2439a956ec9df4dd5568e0b76"
+    },
+    {
+      "asset": "xai/shap_summary_xgboost.png",
+      "sha256": "54c124ca0ea6abdc6065e00d63a6308f492b1bab2ea6b038eaba5eeaccfdfcff"
+    },
+    {
+      "asset": "xai/shap_beeswarm_xgboost.png",
+      "sha256": "d68d5e2fc9467b7d90784d54543d0726526a69270f3e278315d34e28b393d6cf"
+    },
+    {
+      "asset": "xai/shap_waterfall_xgboost.png",
+      "sha256": "a6e4aabac79b5cc95a9c58a6ec4d024101de5943d9657efd5fc288935e0a7d2d"
+    },
+    {
+      "asset": "xai/xgboost_feature_importance_3panel.png",
+      "sha256": "91af35a84fcd574c61afb615817253245effac1cbfc05a58cb1bb4a48189c377"
+    },
+    {
+      "asset": "xai/feature_importance_comparison_all_models.png",
+      "sha256": "dca2a77b6cd4401425b4c6a5cb6cbc15641fbc123ee227aee3c2e2164cbd3b6b"
+    },
+    {
+      "asset": "xai/feature_importance_heatmap.png",
+      "sha256": "dd1ef2356ada096be32354c23851e28b6432a52ddec0a71ed9c09d6a56ad11a2"
+    }
+  ],
+  "manuscript_text_and_pdf_modified": false
+}

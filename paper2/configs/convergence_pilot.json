@@ -1,0 +1,20 @@
+{
+  "protocol_version": "validation-pilot-v1",
+  "datasets": {"canonical": "iid", "maharashtra": "district"},
+  "tuning_seed": 42,
+  "neural_algorithms": ["centralized", "fedavg", "fedprox", "fednova"],
+  "learning_rates": [0.05, 0.1, 0.2],
+  "neural_base": {
+    "seed": 42, "rounds": 80, "local_epochs": 1, "batch_size": 32,
+    "hidden": 64, "mu": 0.01, "participation": 1.0, "threads": 1
+  },
+  "centralized_candidates": {
+    "logistic_regression": [{"C": 0.1, "max_iter": 2000}, {"C": 1.0, "max_iter": 2000}, {"C": 10.0, "max_iter": 2000}],
+    "random_forest": [{"n_estimators": 200, "min_samples_leaf": 1}, {"n_estimators": 200, "min_samples_leaf": 2}],
+    "xgboost": [{"n_estimators": 200, "max_depth": 3, "learning_rate": 0.1}, {"n_estimators": 200, "max_depth": 6, "learning_rate": 0.1}]
+  },
+  "selection": "common neural learning rate minimizes mean best validation NLL across the four algorithms; individual conventional baselines minimize validation NLL",
+  "tie_break": "lowest candidate index in the listed order",
+  "test_policy": "never evaluate test during this pilot",
+  "scope": "canonical and Maharashtra bounded convergence pilot; Manipur remains synthetic supplementary and is not tuned in this phase"
+}

@@ -1,0 +1,20 @@
+{
+  "version": "fixed-public-control-search-v1",
+  "scope": "INNER_VALIDATION_DEVELOPMENT_SEARCH",
+  "target_scales": [1.0, 10.0],
+  "learning_rates": [0.003, 0.01],
+  "rounds": 240,
+  "report_rounds": [80, 240],
+  "seed": 42,
+  "hidden": 32,
+  "batch_size": 32,
+  "local_steps": 4,
+  "gradient_clip_norm": 1.0,
+  "aggregation": "equal_client_parameter_average",
+  "selection": "equal_inner_group_mean_best_validation_RMSE_per_outer_group",
+  "tie_rule": "first_configuration_in_frozen_order",
+  "refit_rounds": "median_best_round_across_seven_inner_folds_at_selected_configuration",
+  "outer_inference": false,
+  "privacy_enabled": false,
+  "previous_exposure": "All baseline and simulation outcomes previously exposed; no independent confirmation"
+}

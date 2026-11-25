@@ -1,0 +1,37 @@
+# Third-Party Dependency Licence Inventory
+# Paper 2 — cereal-legume federated regression
+# Generated: 2026-11-16
+# STATUS: PROPOSED — requires verification in a clean Linux environment
+# before the release-reproducibility gate can be cleared.
+#
+# Format: package==version | SPDX-ID | URL
+# Source: PyPI METADATA / project pages for each pinned version.
+
+numpy==2.5.1          | BSD-3-Clause      | https://numpy.org/doc/stable/license.html
+pandas==3.0.3         | BSD-3-Clause      | https://github.com/pandas-dev/pandas/blob/main/LICENSE
+scikit-learn==1.9.0   | BSD-3-Clause      | https://github.com/scikit-learn/scikit-learn/blob/main/COPYING
+joblib==1.5.3         | BSD-3-Clause      | https://github.com/joblib/joblib/blob/main/LICENSE.txt
+matplotlib==3.11.1    | PSF/BSD-compatible| https://matplotlib.org/stable/users/license.html
+xgboost==3.3.0        | Apache-2.0        | https://github.com/dmlc/xgboost/blob/master/LICENSE
+pypdf==6.10.0         | BSD-3-Clause      | https://github.com/py-pdf/pypdf/blob/main/LICENSE
+ray==2.55.1           | Apache-2.0        | https://github.com/ray-project/ray/blob/master/LICENSE
+flwr==1.42.0          | Apache-2.0        | https://github.com/adap/flower/blob/main/LICENSE
+torch==2.13.0+cpu     | BSD-3-Clause      | https://github.com/pytorch/pytorch/blob/main/LICENSE
+cryptography==50.0.2  | Apache-2.0/BSD    | https://github.com/pyca/cryptography/blob/main/LICENSE
+openpyxl==3.1.5       | MIT               | https://foss.heptapod.net/openpyxl/openpyxl/-/blob/branch/3.1/LICENCE.rst
+et-xmlfile==2.0.0     | MIT               | https://foss.heptapod.net/openpyxl/et_xmlfile/-/blob/branch/default/LICENCE.rst
+
+# Compatibility notes:
+# - All above licences are compatible with Apache-2.0 (project code licence).
+# - BSD-3-Clause, MIT, and Apache-2.0 are all permissive and compatible.
+# - No GPL or LGPL packages are included; no copyleft concerns.
+# - PyTorch CPU wheel: same BSD-3-Clause as torch proper; no CUDA/NVIDIA libs.
+# - flwr, ray, xgboost: Apache-2.0 — requires NOTICE file preservation if
+#   distributing binaries. We distribute source code only; this is satisfied.
+#
+# Action required before release gate clears:
+# 1. Run `pip install -r requirements-linux-lock-proposed.txt` in a clean Linux env.
+# 2. Run `pip-licenses --format=markdown --order=license` and compare output
+#    to this inventory.
+# 3. Record the hash of the verified inventory in the release-reproducibility
+#    gate audit JSON.

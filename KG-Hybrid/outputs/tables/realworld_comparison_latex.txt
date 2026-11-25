@@ -1,0 +1,17 @@
+\begin{table}[ht]
+\centering
+\caption{Real-World Production Improvements for KG-Hybrid}
+\label{tab:realworld_enhancements}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccc}
+\hline
+\textbf{Missing Feature Ratio} & \textbf{Raw (Zero-Fill)} & \textbf{Median Imp.} & \textbf{KNN Imp. (k=5)} & \textbf{XGBoost Baseline} \\
+\hline
+0\% & 97.88\% & 97.88\% & \textbf{97.88\%} & 99.39\% \\
+20\% & 71.88\% & 72.61\% & \textbf{93.94\%} & 84.00\% \\
+40\% & 48.24\% & 49.27\% & \textbf{81.33\%} & 61.15\% \\
+60\% & 27.52\% & 29.94\% & \textbf{61.94\%} & 41.39\% \\
+\hline
+\end{tabular}
+}
+\end{table}

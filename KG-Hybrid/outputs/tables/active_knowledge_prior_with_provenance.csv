@@ -1,0 +1,23 @@
+crop,N,P,K,temperature,humidity,ph,rainfall,Source,Source_Verification
+apple,0.5,0.5,0.5,0.6,0.6,0.6,0.5,src/knowledge/build_knowledge_matrix.py: crop_knowledge explicit weights,Institutional references are claimed guidance; cell-level source derivation unverified
+banana,0.7,0.6,0.7,0.9,0.8,0.6,0.8,src/knowledge/build_knowledge_matrix.py: crop_knowledge explicit weights,Institutional references are claimed guidance; cell-level source derivation unverified
+blackgram,0.5,0.6,0.5,0.7,0.5,0.7,0.5,src/knowledge/build_knowledge_matrix.py: crop_knowledge explicit weights,Institutional references are claimed guidance; cell-level source derivation unverified
+chickpea,0.5,0.6,0.6,0.6,0.4,0.8,0.4,src/knowledge/build_knowledge_matrix.py: crop_knowledge explicit weights,Institutional references are claimed guidance; cell-level source derivation unverified
+coconut,0.5,0.6,0.7,0.9,0.8,0.6,0.8,src/knowledge/build_knowledge_matrix.py: crop_knowledge explicit weights,Institutional references are claimed guidance; cell-level source derivation unverified
+coffee,0.6,0.5,0.6,0.6,0.8,0.6,0.8,src/knowledge/build_knowledge_matrix.py: crop_knowledge explicit weights,Institutional references are claimed guidance; cell-level source derivation unverified
+cotton,0.6,0.7,0.7,0.9,0.4,0.6,0.3,src/knowledge/build_knowledge_matrix.py: crop_knowledge explicit weights,Institutional references are claimed guidance; cell-level source derivation unverified
+grapes,0.5,0.5,0.6,0.7,0.5,0.6,0.4,src/knowledge/build_knowledge_matrix.py: crop_knowledge explicit weights,Institutional references are claimed guidance; cell-level source derivation unverified
+jute,0.8,0.5,0.6,0.9,0.9,0.5,0.9,src/knowledge/build_knowledge_matrix.py: crop_knowledge explicit weights,Institutional references are claimed guidance; cell-level source derivation unverified
+kidneybeans,0.5,0.6,0.5,0.6,0.5,0.7,0.5,src/knowledge/build_knowledge_matrix.py: crop_knowledge explicit weights,Institutional references are claimed guidance; cell-level source derivation unverified
+lentil,0.5,0.6,0.5,0.6,0.5,0.7,0.4,src/knowledge/build_knowledge_matrix.py: crop_knowledge explicit weights,Institutional references are claimed guidance; cell-level source derivation unverified
+maize,0.8,0.8,0.5,0.8,0.6,0.7,0.6,src/knowledge/build_knowledge_matrix.py: crop_knowledge explicit weights,Institutional references are claimed guidance; cell-level source derivation unverified
+mango,0.4,0.5,0.5,0.9,0.7,0.6,0.7,src/knowledge/build_knowledge_matrix.py: crop_knowledge explicit weights,Institutional references are claimed guidance; cell-level source derivation unverified
+mothbeans,0.5,0.6,0.5,0.7,0.5,0.7,0.4,src/knowledge/build_knowledge_matrix.py: crop_knowledge explicit weights,Institutional references are claimed guidance; cell-level source derivation unverified
+mungbean,0.5,0.6,0.5,0.7,0.5,0.7,0.5,src/knowledge/build_knowledge_matrix.py: crop_knowledge explicit weights,Institutional references are claimed guidance; cell-level source derivation unverified
+muskmelon,0.6,0.6,0.6,0.9,0.7,0.7,0.5,src/knowledge/build_knowledge_matrix.py: crop_knowledge explicit weights,Institutional references are claimed guidance; cell-level source derivation unverified
+orange,0.5,0.5,0.6,0.7,0.7,0.6,0.7,src/knowledge/build_knowledge_matrix.py: crop_knowledge explicit weights,Institutional references are claimed guidance; cell-level source derivation unverified
+papaya,0.6,0.5,0.6,0.9,0.8,0.6,0.8,src/knowledge/build_knowledge_matrix.py: crop_knowledge explicit weights,Institutional references are claimed guidance; cell-level source derivation unverified
+pigeonpeas,0.5,0.6,0.5,0.7,0.5,0.7,0.5,src/knowledge/build_knowledge_matrix.py: crop_knowledge explicit weights,Institutional references are claimed guidance; cell-level source derivation unverified
+pomegranate,0.5,0.5,0.6,0.8,0.5,0.6,0.4,src/knowledge/build_knowledge_matrix.py: crop_knowledge explicit weights,Institutional references are claimed guidance; cell-level source derivation unverified
+rice,0.9,0.7,0.8,0.8,0.9,0.9,0.9,src/knowledge/build_knowledge_matrix.py: crop_knowledge explicit weights,Institutional references are claimed guidance; cell-level source derivation unverified
+watermelon,0.6,0.6,0.6,0.9,0.7,0.7,0.5,src/knowledge/build_knowledge_matrix.py: crop_knowledge explicit weights,Institutional references are claimed guidance; cell-level source derivation unverified

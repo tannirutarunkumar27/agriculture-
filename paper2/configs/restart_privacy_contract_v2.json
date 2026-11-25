@@ -1,0 +1,19 @@
+{
+  "version": "restart-privacy-contract-v2",
+  "status": "SIMULATION_PRIMITIVES_TESTED",
+  "protected_unit": "entire regional client dataset at one fixed public slot",
+  "adjacency": "replace_one_whole_client",
+  "trusted_party": "central curator/server",
+  "adversary": "external observer of approved noisy model transcript",
+  "participation": 1.0,
+  "aggregation": "equal fixed public slots; all slots required",
+  "clipping": "single global L2 norm of flattened client delta",
+  "sensitivity": "2*C/public_slots",
+  "transform": "fixed-public-transform-v1; no fitted statistics or support masks",
+  "accounting": "Gaussian zCDP composition; no subsampling amplification",
+  "noise_sampler_mode": "NumPy reproducible simulation; production mode rejected",
+  "private_training_enabled": false,
+  "synthetic_training_verified": true,
+  "secure_aggregation_implemented": false,
+  "application_privacy_certified": false
+}

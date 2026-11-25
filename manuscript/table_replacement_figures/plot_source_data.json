@@ -1,0 +1,314 @@
+{
+  "mask_x_percent": [
+    0,
+    20,
+    40,
+    60
+  ],
+  "noise_sd_standardized": [
+    0.0,
+    0.1,
+    0.2,
+    0.3
+  ],
+  "masking_accuracy_percent": {
+    "Random Forest": [
+      99.7,
+      80.47999999999999,
+      60.3,
+      38.24
+    ],
+    "XGBoost": [
+      99.09,
+      83.76,
+      65.64,
+      42.67
+    ],
+    "FT-Transformer": [
+      98.79,
+      71.21,
+      48.120000000000005,
+      25.39
+    ],
+    "KG-Hybrid": [
+      99.7,
+      74.42,
+      53.269999999999996,
+      31.39
+    ]
+  },
+  "noise_accuracy_percent": {
+    "Random Forest": [
+      99.7,
+      96.41999999999999,
+      86.61,
+      75.64
+    ],
+    "XGBoost": [
+      99.09,
+      91.64,
+      79.7,
+      68.36
+    ],
+    "FT-Transformer": [
+      98.79,
+      96.78999999999999,
+      88.48,
+      78.85
+    ],
+    "KG-Hybrid": [
+      99.7,
+      94.48,
+      80.97,
+      67.15
+    ]
+  },
+  "clean_accuracy_percent": {
+    "Random Forest": 99.7,
+    "XGBoost": 99.09,
+    "FT-Transformer": 98.79,
+    "KG-Hybrid": 99.7
+  },
+  "scaled_accuracy_percent": {
+    "Random Forest": 80.0,
+    "XGBoost": 83.33,
+    "FT-Transformer": 92.12,
+    "KG-Hybrid": 82.42
+  },
+  "imputation_accuracy_percent": {
+    "Zero replacement": [
+      97.88,
+      71.88,
+      48.24,
+      27.52
+    ],
+    "Median imputation": [
+      97.88,
+      72.61,
+      49.27,
+      29.94
+    ],
+    "KNN imputation (k=5)": [
+      97.88,
+      93.94,
+      81.33,
+      61.94
+    ],
+    "Iterative imputation": [
+      97.88,
+      72.42,
+      48.55,
+      26.67
+    ]
+  },
+  "parameter_counts": [
+    {
+      "configuration": "FT-Transformer",
+      "variant": "FTTransformer",
+      "per_seed_counts": [
+        212054,
+        212054,
+        212054,
+        212054,
+        212054
+      ],
+      "mean": 212054.0,
+      "sample_sd": 0.0
+    },
+    {
+      "configuration": "Hybrid: no knowledge, no gate",
+      "variant": "Hybrid_NoK",
+      "per_seed_counts": [
+        1665388,
+        1670636,
+        1678316,
+        1655276,
+        1663724
+      ],
+      "mean": 1666668.0,
+      "sample_sd": 8536.74598427293
+    },
+    {
+      "configuration": "Hybrid: fixed knowledge, no gate",
+      "variant": "Hybrid_FixedK",
+      "per_seed_counts": [
+        1690732,
+        1695980,
+        1703660,
+        1680620,
+        1689068
+      ],
+      "mean": 1692012.0,
+      "sample_sd": 8536.74598427293
+    },
+    {
+      "configuration": "Hybrid: anchored knowledge, no gate",
+      "variant": "Hybrid_AnchoredK",
+      "per_seed_counts": [
+        1690886,
+        1696134,
+        1703814,
+        1680774,
+        1689222
+      ],
+      "mean": 1692166.0,
+      "sample_sd": 8536.74598427293
+    },
+    {
+      "configuration": "Full anchored and gated hybrid",
+      "variant": "Hybrid_AnchoredK_Gate",
+      "per_seed_counts": [
+        1740358,
+        1745606,
+        1753286,
+        1730246,
+        1738694
+      ],
+      "mean": 1741638.0,
+      "sample_sd": 8536.74598427293
+    },
+    {
+      "configuration": "Hybrid: shuffled fixed knowledge and gate",
+      "variant": "Hybrid_ShuffledK_Gate",
+      "per_seed_counts": [
+        1740204,
+        1745452,
+        1753132,
+        1730092,
+        1738540
+      ],
+      "mean": 1741484.0,
+      "sample_sd": 8536.74598427293
+    }
+  ],
+  "sources": [
+    {
+      "path": "KG-Hybrid\\outputs\\robustness\\full_robustness_report.json",
+      "sha256": "81d3fe7e919df08468d6e6c0f11b726bd766e8f12f690d236a17a2042b93d8f0"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\tables\\realworld_imputation_comparison.csv",
+      "sha256": "b80c0315cb32c2a9174a190517ce905c2f87e1e2e16bfc1fbd1e853e3546bc3a"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_42\\FTTransformer_metrics.json",
+      "sha256": "7b78fe5d73f62ae6dc7b6fa722d5e73e5d245e0f7a1d77cdd78d1cb8a67b5a71"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_123\\FTTransformer_metrics.json",
+      "sha256": "86e941368e9a268da1684d17bbb256290da164ea3489287b6deaf5523dae5496"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_2024\\FTTransformer_metrics.json",
+      "sha256": "56c0af8a6debd024c2429138c2ea21e7073e35abdd1b8e2b19bca9c6215b4d5c"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_3407\\FTTransformer_metrics.json",
+      "sha256": "8fadfd6d57a9e112d895f22cd6d19566ef1ec095a85b07dc8d03ac1cfeae5ec3"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_9999\\FTTransformer_metrics.json",
+      "sha256": "03156a71b4183835668f32e7631123a2053de18892ae2adac0772b8c8ca369bf"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_42\\Hybrid_NoK_metrics.json",
+      "sha256": "f6ebe815680b4552135bc453d7b6328aa46758f7379a3bc793336738301e0023"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_123\\Hybrid_NoK_metrics.json",
+      "sha256": "3d65bf16ac20deed0fb85eaba82b3e5f52caa2a3bff244eba2628ddae532800c"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_2024\\Hybrid_NoK_metrics.json",
+      "sha256": "9d38bc4118f24af2c64fb652f2fef81e4eeeaa2b1e308dd02420f88b0a0b9f75"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_3407\\Hybrid_NoK_metrics.json",
+      "sha256": "099f23377912633504b4aa25f459be9d9277fd98fb14411af33f56035b04a2ca"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_9999\\Hybrid_NoK_metrics.json",
+      "sha256": "3ad7a76945c91e5f41c6c253b6aba4075c299b08ac200f20c4be464f5290673f"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_42\\Hybrid_FixedK_metrics.json",
+      "sha256": "1639d2fe2ae2d76e7bdc8a1477d87c5784a5fe1eecf4b63fdac77ad523e9e885"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_123\\Hybrid_FixedK_metrics.json",
+      "sha256": "bfc29c6a41c9f364bccf58c5a67a3239d7bd0ce56092bae8eabbd81c65e59abb"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_2024\\Hybrid_FixedK_metrics.json",
+      "sha256": "e4e79ead26e2f73baa545042485a6d1cb0b6a5f924d23f1574bf801b003d4ab1"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_3407\\Hybrid_FixedK_metrics.json",
+      "sha256": "f117ec94a7b45e6633017ef5ea24511edad559471cc99b6f19cba488b58ba9d8"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_9999\\Hybrid_FixedK_metrics.json",
+      "sha256": "ffd110a2f8580d335ffb873a65ab030a30a5273d2559583edd729dd63bc99499"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_42\\Hybrid_AnchoredK_metrics.json",
+      "sha256": "bdefc8d1575e05d6e7c0febeee03cbf2bbe881cf80a7504247f2ade8327a87de"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_123\\Hybrid_AnchoredK_metrics.json",
+      "sha256": "d50200bba9425754941819f1e9b05dfcf8e8c972d6c7e37afa184bd9d267d80c"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_2024\\Hybrid_AnchoredK_metrics.json",
+      "sha256": "6328535684449bad60b8130485bfe05b11cfb31a570e08e31ad5adfbf1d329c4"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_3407\\Hybrid_AnchoredK_metrics.json",
+      "sha256": "6783d9b3d9c5b81f220785cb64362d0a2965e51aaa99efbe6086ddddca8e2dc0"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_9999\\Hybrid_AnchoredK_metrics.json",
+      "sha256": "efa8aa67b167dba9b2d5700906c4cea26d5f9fa94671447bf4443120c7b76cc2"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_42\\Hybrid_AnchoredK_Gate_metrics.json",
+      "sha256": "ba3353fd72ed0a15bf1369aec4ca400c71548dc8c059940e212b1b0ba1936523"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_123\\Hybrid_AnchoredK_Gate_metrics.json",
+      "sha256": "6c98d655cfbf472852105bdb02f8ae7b348ea2027950979af404f1fa9f3a3463"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_2024\\Hybrid_AnchoredK_Gate_metrics.json",
+      "sha256": "b61224f504afbfb8a11825fa213ede971c354ed0dcfa05eae6e753e5db73f1b8"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_3407\\Hybrid_AnchoredK_Gate_metrics.json",
+      "sha256": "0b673073c66d8e936d42fd27d2d2f2323699bd0bc552125b27cfbcec489252cb"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_9999\\Hybrid_AnchoredK_Gate_metrics.json",
+      "sha256": "a42c3f3f10825bc7a35a967d728193a375fb57e2dc35925bb20bbc0fdadd51f3"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_42\\Hybrid_ShuffledK_Gate_metrics.json",
+      "sha256": "a8b8a2763236e2a08ce268bdb75e274d9b2debca5c9f6367ac2ff48ed63d9b1b"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_123\\Hybrid_ShuffledK_Gate_metrics.json",
+      "sha256": "5ed39456537a0ddb77982c95aa02a71960f284858f26c152a173f747e557fcde"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_2024\\Hybrid_ShuffledK_Gate_metrics.json",
+      "sha256": "3eff7553513c5a344a0e24a95ea716d50ed67fb49e94647f6debcdd9cb393ae4"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_3407\\Hybrid_ShuffledK_Gate_metrics.json",
+      "sha256": "fe2323a14cd47d3894680507449fbffb2577393c81cf513408c2fe70766799f7"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_9999\\Hybrid_ShuffledK_Gate_metrics.json",
+      "sha256": "e3565be6a5cc64b45eeaca891cac58e052f36f7ce3955436924f5ffd22f611b6"
+    }
+  ]
+}

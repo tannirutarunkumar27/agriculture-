@@ -1,0 +1,14 @@
+{
+  "seed": 3407,
+  "model": "XGBoost",
+  "n_test": 330,
+  "accuracy": 0.9939393939393939,
+  "macro_f1": 0.9938206954335986,
+  "ece": 0.02745,
+  "brier": 0.013531,
+  "nll": 0.04317,
+  "trainable_parameters": 0,
+  "training_seconds": 0.8612280999950599,
+  "parameter_unit": "non-neural; see tree count",
+  "tree_count": 4400
+}

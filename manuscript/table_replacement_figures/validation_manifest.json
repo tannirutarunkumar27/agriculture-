@@ -1,0 +1,197 @@
+{
+  "no_retraining": true,
+  "existing_manuscript_modified": false,
+  "source_evidence_modified": false,
+  "original_pdf": "C:\\Users\\tanne\\Downloads\\IEEE_Access_Tarun (4).pdf",
+  "sources": [
+    {
+      "path": "KG-Hybrid\\outputs\\robustness\\full_robustness_report.json",
+      "sha256": "81d3fe7e919df08468d6e6c0f11b726bd766e8f12f690d236a17a2042b93d8f0"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\tables\\realworld_imputation_comparison.csv",
+      "sha256": "b80c0315cb32c2a9174a190517ce905c2f87e1e2e16bfc1fbd1e853e3546bc3a"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_42\\FTTransformer_metrics.json",
+      "sha256": "7b78fe5d73f62ae6dc7b6fa722d5e73e5d245e0f7a1d77cdd78d1cb8a67b5a71"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_123\\FTTransformer_metrics.json",
+      "sha256": "86e941368e9a268da1684d17bbb256290da164ea3489287b6deaf5523dae5496"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_2024\\FTTransformer_metrics.json",
+      "sha256": "56c0af8a6debd024c2429138c2ea21e7073e35abdd1b8e2b19bca9c6215b4d5c"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_3407\\FTTransformer_metrics.json",
+      "sha256": "8fadfd6d57a9e112d895f22cd6d19566ef1ec095a85b07dc8d03ac1cfeae5ec3"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_9999\\FTTransformer_metrics.json",
+      "sha256": "03156a71b4183835668f32e7631123a2053de18892ae2adac0772b8c8ca369bf"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_42\\Hybrid_NoK_metrics.json",
+      "sha256": "f6ebe815680b4552135bc453d7b6328aa46758f7379a3bc793336738301e0023"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_123\\Hybrid_NoK_metrics.json",
+      "sha256": "3d65bf16ac20deed0fb85eaba82b3e5f52caa2a3bff244eba2628ddae532800c"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_2024\\Hybrid_NoK_metrics.json",
+      "sha256": "9d38bc4118f24af2c64fb652f2fef81e4eeeaa2b1e308dd02420f88b0a0b9f75"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_3407\\Hybrid_NoK_metrics.json",
+      "sha256": "099f23377912633504b4aa25f459be9d9277fd98fb14411af33f56035b04a2ca"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_9999\\Hybrid_NoK_metrics.json",
+      "sha256": "3ad7a76945c91e5f41c6c253b6aba4075c299b08ac200f20c4be464f5290673f"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_42\\Hybrid_FixedK_metrics.json",
+      "sha256": "1639d2fe2ae2d76e7bdc8a1477d87c5784a5fe1eecf4b63fdac77ad523e9e885"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_123\\Hybrid_FixedK_metrics.json",
+      "sha256": "bfc29c6a41c9f364bccf58c5a67a3239d7bd0ce56092bae8eabbd81c65e59abb"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_2024\\Hybrid_FixedK_metrics.json",
+      "sha256": "e4e79ead26e2f73baa545042485a6d1cb0b6a5f924d23f1574bf801b003d4ab1"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_3407\\Hybrid_FixedK_metrics.json",
+      "sha256": "f117ec94a7b45e6633017ef5ea24511edad559471cc99b6f19cba488b58ba9d8"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_9999\\Hybrid_FixedK_metrics.json",
+      "sha256": "ffd110a2f8580d335ffb873a65ab030a30a5273d2559583edd729dd63bc99499"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_42\\Hybrid_AnchoredK_metrics.json",
+      "sha256": "bdefc8d1575e05d6e7c0febeee03cbf2bbe881cf80a7504247f2ade8327a87de"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_123\\Hybrid_AnchoredK_metrics.json",
+      "sha256": "d50200bba9425754941819f1e9b05dfcf8e8c972d6c7e37afa184bd9d267d80c"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_2024\\Hybrid_AnchoredK_metrics.json",
+      "sha256": "6328535684449bad60b8130485bfe05b11cfb31a570e08e31ad5adfbf1d329c4"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_3407\\Hybrid_AnchoredK_metrics.json",
+      "sha256": "6783d9b3d9c5b81f220785cb64362d0a2965e51aaa99efbe6086ddddca8e2dc0"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_9999\\Hybrid_AnchoredK_metrics.json",
+      "sha256": "efa8aa67b167dba9b2d5700906c4cea26d5f9fa94671447bf4443120c7b76cc2"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_42\\Hybrid_AnchoredK_Gate_metrics.json",
+      "sha256": "ba3353fd72ed0a15bf1369aec4ca400c71548dc8c059940e212b1b0ba1936523"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_123\\Hybrid_AnchoredK_Gate_metrics.json",
+      "sha256": "6c98d655cfbf472852105bdb02f8ae7b348ea2027950979af404f1fa9f3a3463"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_2024\\Hybrid_AnchoredK_Gate_metrics.json",
+      "sha256": "b61224f504afbfb8a11825fa213ede971c354ed0dcfa05eae6e753e5db73f1b8"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_3407\\Hybrid_AnchoredK_Gate_metrics.json",
+      "sha256": "0b673073c66d8e936d42fd27d2d2f2323699bd0bc552125b27cfbcec489252cb"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_9999\\Hybrid_AnchoredK_Gate_metrics.json",
+      "sha256": "a42c3f3f10825bc7a35a967d728193a375fb57e2dc35925bb20bbc0fdadd51f3"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_42\\Hybrid_ShuffledK_Gate_metrics.json",
+      "sha256": "a8b8a2763236e2a08ce268bdb75e274d9b2debca5c9f6367ac2ff48ed63d9b1b"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_123\\Hybrid_ShuffledK_Gate_metrics.json",
+      "sha256": "5ed39456537a0ddb77982c95aa02a71960f284858f26c152a173f747e557fcde"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_2024\\Hybrid_ShuffledK_Gate_metrics.json",
+      "sha256": "3eff7553513c5a344a0e24a95ea716d50ed67fb49e94647f6debcdd9cb393ae4"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_3407\\Hybrid_ShuffledK_Gate_metrics.json",
+      "sha256": "fe2323a14cd47d3894680507449fbffb2577393c81cf513408c2fe70766799f7"
+    },
+    {
+      "path": "KG-Hybrid\\outputs\\knowledge_comparison_review_fixes\\seed_9999\\Hybrid_ShuffledK_Gate_metrics.json",
+      "sha256": "e3565be6a5cc64b45eeaca891cac58e052f36f7ce3955436924f5ffd22f611b6"
+    }
+  ],
+  "parameter_sd_estimator": "sample SD; ddof=1; five seeds",
+  "robustness_error_bars": "not shown: trial-level SD unavailable",
+  "separate_imputation_checkpoint": true,
+  "neural_counts_exclude_external_xgboost": true,
+  "scaling_is_not_external_dataset": true,
+  "outputs": {
+    "table_ix_registered_parameters": {
+      "replaces": "IX",
+      "caption": "Registered neural parameter counts in the compact controlled comparison. Hybrid bars show means and whiskers show sample standard deviations across five seed-specific runs. The FT-Transformer count is constant across runs. Counts include the retained standalone FT classification head, which is bypassed by hybrid prediction; the separate XGBoost ensemble is excluded.",
+      "sha256": {
+        "pdf": "dd1d611d541bf85db8801408fab1c5ef509ba1346c7e79beaab74a18e38f2b7c",
+        "svg": "dfb061bbd041807ad459b21cb239025015e5d53b8bfb7e72eebde0d7a532ca2c",
+        "png": "71252bbbfb5ea090805842680aa56fed208bede7ce6b9b22ea8b62f095cb351a"
+      }
+    },
+    "table_x_feature_masking": {
+      "replaces": "X",
+      "caption": "Earlier cross-model zero-replacement experiment. Each standardized feature entry is independently replaced by zero at the indicated masking probability. Points are mean accuracies over five perturbation trials; trial-level standard deviations are unavailable. These are not results for the compact five-seed models.",
+      "sha256": {
+        "pdf": "b06e694dd425b513e4b406617974ca4461ddac3ec9dd1413163b1c0eb0ef5cb1",
+        "svg": "f6c220d93e6d336463476612db4e72d850bcd1efa937d718d6c1fc248f448dea",
+        "png": "28ab69d974aae6f40676d4e74fbb9261a0ce75853ce6190b738a78958cadabc8"
+      }
+    },
+    "table_xi_imputation": {
+      "replaces": "XI",
+      "caption": "Earlier within-model KG-Hybrid imputation comparison using a separate checkpoint with clean accuracy 97.88\\%. Missing entries are represented as NaNs for recovery, and all methods share the same mask within each trial. Imputers are fitted on standardized training data. Points are means over five trials; trial-level standard deviations are unavailable. This comparison does not establish an architectural advantage over imputed baselines.",
+      "sha256": {
+        "pdf": "cefaef2dde928d4855f046a4cca2571a9b522bc45c8b774e068ea4ec504bb809",
+        "svg": "8e9140b510320a70712f2a856de5900ee5b78a4944f24441a78aba06cddfbb4b",
+        "png": "d57a0225cb133772d09fa4a295ed9306b211108014e073d3a4037b252149b99c"
+      }
+    },
+    "table_xii_gaussian_noise": {
+      "replaces": "XII",
+      "caption": "Earlier cross-model Gaussian-perturbation experiment. Independent additive noise is applied in standardized feature coordinates. Points show mean accuracies over five trials; trial-level standard deviations are unavailable. These are not compact-model results or sensor-calibrated physical noise levels.",
+      "sha256": {
+        "pdf": "17b70b9a90a9853fcb923d2de8780be382499abfe138f9ea63e2e0bc3dc80ada",
+        "svg": "ed0d65c74c509adc2f95bf7764f992597268e55f0e8bb534b61b1b0b2e2720e6",
+        "png": "7bfac74f28cd4b73b0da67bfba1c4c40ef317ac4662c05a5762f4ebdbf53a2c2"
+      }
+    },
+    "table_xiii_feature_scaling": {
+      "replaces": "XIII",
+      "caption": "Earlier synthetic feature-scaling experiment comparing clean inputs with standardized test vectors multiplied by $1.5\\times$. Values are accuracies on one deterministic evaluation partition with the original labels retained. This transformation is not external-dataset validation and does not guarantee out-of-range measurements.",
+      "sha256": {
+        "pdf": "85139dfbc66fa843ad0a2231cf760479f4f0a89d1679654f09a76babf38b5c36",
+        "svg": "3e700b9472ffc068696294371acb3962594b6a3750df1fce8cf5174ecc247b9d",
+        "png": "31bb424527ae7b5baf48651cf69459f358d44e80f9747e54174d96c48545a3e2"
+      }
+    },
+    "combined_robustness_three_panel": {
+      "replaces": "X+XII+XIII",
+      "caption": "Earlier noncompact-model stress tests: (a) independent zero replacement of standardized feature entries, (b) independent additive Gaussian noise in standardized coordinates, and (c) clean inputs versus $1.5\\times$ standardized feature scaling. Panels (a) and (b) show means over five perturbation trials, without available trial-level standard deviations; panel (c) uses one deterministic transformed partition. Original benchmark labels are retained. These results do not describe the compact five-seed models. The separate within-model imputation comparison is not included.",
+      "sha256": {
+        "pdf": "d3fd07f265bc65372f839df4eb3f95fe407800b246746a9313ff1aa9c1a441af",
+        "svg": "91154dee222e52e814a5689429e31e004d3abd97329a7be5bcbc609fb6e900e5",
+        "png": "5a33b12fe629293b4b16358865d9b6ee0bc7d3d6cfded18189bca5a7ccb4a140"
+      }
+    }
+  }
+}

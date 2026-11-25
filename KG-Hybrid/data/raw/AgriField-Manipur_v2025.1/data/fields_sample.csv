@@ -1,0 +1,101 @@
+field_id,district,lat,lon,crop
+F001,Imphal East,24.811329,93.943287,Jackfruit
+F002,Imphal East,24.831291,93.92444,Lettuce
+F003,Imphal East,24.824663,93.926869,Pearl millet
+F004,Imphal East,24.832436,93.928766,Green gram
+F005,Imphal East,24.812946,93.922399,Mint
+F006,Imphal East,24.821841,93.922882,Turmeric
+F007,Imphal East,24.822538,93.941935,Lemon
+F008,Imphal East,24.816982,93.92158,Ridge gourd
+F009,Imphal East,24.834926,93.930286,Potato
+F010,Imphal East,24.807727,93.916413,Spinach
+F011,Imphal East,24.808289,93.933823,Coriander
+F012,Imphal East,24.828762,93.927665,Ridge gourd
+F013,Imphal East,24.806906,93.926449,Pea
+F014,Imphal East,24.834884,93.930873,Papaya
+F015,Imphal East,24.834132,93.940823,Finger millet
+F016,Imphal East,24.805344,93.936622,Tomato
+F017,Imphal East,24.825451,93.931109,Sweet potato
+F018,Imphal East,24.813005,93.934229,Celosia
+F019,Imphal East,24.808347,93.928043,Strawberry
+F020,Imphal East,24.818612,93.943614,Jackfruit
+F021,Imphal West,24.801276,93.922902,Okra
+F022,Imphal West,24.790018,93.92036,Mango
+F023,Imphal West,24.802379,93.941116,Mint
+F024,Imphal West,24.783953,93.934168,King Chilli
+F025,Imphal West,24.793269,93.919585,Mango
+F026,Imphal West,24.797875,93.931181,Soybean
+F027,Imphal West,24.798359,93.930911,Maize
+F028,Imphal West,24.775017,93.924725,Lentil
+F029,Imphal West,24.775584,93.942873,Brinjal
+F030,Imphal West,24.801362,93.93995,Groundnut
+F031,Imphal West,24.784225,93.916738,Rice
+F032,Imphal West,24.80134,93.943408,Banana
+F033,Imphal West,24.77757,93.92958,Amaranth
+F034,Imphal West,24.777076,93.937818,Chickpea
+F035,Imphal West,24.797975,93.918852,Pineapple
+F036,Imphal West,24.789258,93.931494,King Chilli
+F037,Imphal West,24.782952,93.941173,Chilli (other)
+F038,Imphal West,24.787694,93.921354,Bitter gourd
+F039,Imphal West,24.791179,93.936898,Chickpea
+F040,Imphal West,24.781035,93.924351,Black gram
+F041,Thoubal,24.724854,93.914496,Potato
+F042,Thoubal,24.708143,93.910527,Cabbage
+F043,Thoubal,24.69863,93.901741,Pineapple
+F044,Thoubal,24.705143,93.912649,Lemon
+F045,Thoubal,24.701903,93.901607,Radish
+F046,Thoubal,24.69713,93.913933,Mustard greens
+F047,Thoubal,24.701868,93.922163,Bottle gourd
+F048,Thoubal,24.720789,93.897126,Taro
+F049,Thoubal,24.70214,93.915069,Finger millet
+F050,Thoubal,24.701427,93.898969,Sesame
+F051,Thoubal,24.723065,93.912131,Garlic
+F052,Thoubal,24.70918,93.918539,Coriander
+F053,Thoubal,24.719225,93.900712,Cauliflower
+F054,Thoubal,24.697908,93.907932,Guava
+F055,Thoubal,24.707707,93.909011,Brinjal
+F056,Thoubal,24.716872,93.915201,Passion fruit
+F057,Thoubal,24.724525,93.897953,Bitter gourd
+F058,Thoubal,24.707079,93.905179,Soybean
+F059,Thoubal,24.72085,93.90246,Celosia
+F060,Thoubal,24.700706,93.908458,Papaya
+F061,Bishnupur,24.657656,93.953356,Fenugreek
+F062,Bishnupur,24.652494,93.972698,Okra
+F063,Bishnupur,24.658294,93.97084,Fenugreek
+F064,Bishnupur,24.66151,93.946518,Pearl millet
+F065,Bishnupur,24.674978,93.970081,Yam
+F066,Bishnupur,24.67407,93.972791,Groundnut
+F067,Bishnupur,24.670461,93.949989,Sweet potato
+F068,Bishnupur,24.659569,93.951412,Lentil
+F069,Bishnupur,24.657031,93.946759,French bean
+F070,Bishnupur,24.656369,93.974559,Yam
+F071,Bishnupur,24.652956,93.968522,Cowpea
+F072,Bishnupur,24.65865,93.95769,Ginger
+F073,Bishnupur,24.67372,93.974863,Cowpea
+F074,Bishnupur,24.661673,93.966552,Amaranth
+F075,Bishnupur,24.649644,93.953901,Turmeric
+F076,Bishnupur,24.674061,93.962375,Garlic
+F077,Bishnupur,24.661266,93.967439,Pea
+F078,Bishnupur,24.646715,93.962525,Orange
+F079,Bishnupur,24.660086,93.970582,Carrot
+F080,Bishnupur,24.649723,93.973823,Cauliflower
+F081,Kakching,24.557403,93.860575,Passion fruit
+F082,Kakching,24.572851,93.875256,Banana
+F083,Kakching,24.562056,93.858597,Carrot
+F084,Kakching,24.581709,93.862386,Bottle gourd
+F085,Kakching,24.572836,93.873581,Ginger
+F086,Kakching,24.567577,93.87251,Chilli (other)
+F087,Kakching,24.570683,93.883041,Tomato
+F088,Kakching,24.561128,93.876486,Rice
+F089,Kakching,24.562161,93.866874,Lettuce
+F090,Kakching,24.575151,93.864,Pumpkin
+F091,Kakching,24.564485,93.877556,Black gram
+F092,Kakching,24.557176,93.868749,French bean
+F093,Kakching,24.584954,93.884883,Guava
+F094,Kakching,24.557198,93.861395,Strawberry
+F095,Kakching,24.562956,93.882998,Taro
+F096,Kakching,24.581426,93.881378,Mustard greens
+F097,Kakching,24.566086,93.859732,Orange
+F098,Kakching,24.580012,93.876106,Maize
+F099,Kakching,24.57335,93.884617,Cabbage
+F100,Kakching,24.574619,93.855235,Sesame

@@ -1,0 +1,11 @@
+{
+  "ablation": "A1",
+  "name": "w/o Knowledge Matrix",
+  "best_val_accuracy": 0.996969696969697,
+  "test_accuracy": 0.9939,
+  "precision": 0.9947,
+  "recall": 0.9939,
+  "f1_score": 0.9939,
+  "best_epoch": 3,
+  "device": "cpu"
+}

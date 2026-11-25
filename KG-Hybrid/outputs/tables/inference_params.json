@@ -1,0 +1,26 @@
+{
+  "Logistic Regression": {
+    "inference_ms": 0.229,
+    "params": "176"
+  },
+  "Decision Tree": {
+    "inference_ms": 0.189,
+    "params": "73 nodes"
+  },
+  "Random Forest": {
+    "inference_ms": 8.361,
+    "params": "14464 nodes"
+  },
+  "XGBoost": {
+    "inference_ms": 4.542,
+    "params": "200 trees"
+  },
+  "FT-Transformer": {
+    "inference_ms": 11.979,
+    "params": "212054"
+  },
+  "KG-Hybrid": {
+    "inference_ms": 61.242,
+    "params": "15521606"
+  }
+}

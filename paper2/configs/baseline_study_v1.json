@@ -1,0 +1,45 @@
+{
+  "version": "baseline-development-study-v1",
+  "purpose": "Repeated-seed public-data baseline development study, not independent field confirmation",
+  "seeds": [123, 2024, 3407, 9999, 2718],
+  "tuning_seed": 42,
+  "clients": 5,
+  "min_client_rows": 5,
+  "datasets": {
+    "canonical": {
+      "neural": {"rounds": 80, "local_epochs": 1, "batch_size": 32, "learning_rate": 0.2, "mu": 0.01, "hidden": 64, "participation": 1.0, "threads": 1},
+      "conventional": {
+        "logistic_regression": {"C": 10.0, "max_iter": 2000},
+        "random_forest": {"n_estimators": 200, "min_samples_leaf": 1},
+        "xgboost": {"n_estimators": 200, "max_depth": 3, "learning_rate": 0.1}
+      }
+    },
+    "maharashtra": {
+      "neural": {"rounds": 80, "local_epochs": 1, "batch_size": 32, "learning_rate": 0.2, "mu": 0.01, "hidden": 64, "participation": 1.0, "threads": 1},
+      "conventional": {
+        "logistic_regression": {"C": 10.0, "max_iter": 2000},
+        "random_forest": {"n_estimators": 200, "min_samples_leaf": 1},
+        "xgboost": {"n_estimators": 200, "max_depth": 6, "learning_rate": 0.1}
+      }
+    }
+  },
+  "scenarios": [
+    {"id": "iid_full", "strategy": "iid", "alpha": 0.5, "participation": 1.0, "datasets": ["canonical", "maharashtra"]},
+    {"id": "class_skew_moderate", "strategy": "dirichlet", "alpha": 0.5, "participation": 1.0, "datasets": ["canonical", "maharashtra"]},
+    {"id": "class_skew_severe", "strategy": "dirichlet", "alpha": 0.1, "participation": 1.0, "datasets": ["canonical", "maharashtra"]},
+    {"id": "unequal_sizes", "strategy": "unequal", "alpha": 0.5, "participation": 1.0, "datasets": ["canonical", "maharashtra"]},
+    {"id": "iid_participation_60", "strategy": "iid", "alpha": 0.5, "participation": 0.6, "datasets": ["canonical", "maharashtra"]},
+    {"id": "iid_participation_20", "strategy": "iid", "alpha": 0.5, "participation": 0.2, "datasets": ["canonical", "maharashtra"]},
+    {"id": "district_full", "strategy": "district", "alpha": 0.5, "participation": 1.0, "datasets": ["maharashtra"]}
+  ],
+  "neural_algorithms": ["fedavg", "fedprox", "fednova"],
+  "reference_models": ["centralized", "logistic_regression", "random_forest", "xgboost"],
+  "selection": "minimum_global_validation_nll_first_round_wins_ties",
+  "evaluation": "development_test_once_after_validation_selection_no_test_tuning",
+  "preprocessing": "public_simulation_global_train_only_mean_std_and_categorical_vocab",
+  "metrics": {"primary": "macro_f1", "secondary": ["accuracy", "macro_precision", "macro_recall", "weighted_f1", "nll"], "resources": ["local_sgd_steps", "round_seconds", "aggregation_seconds", "upload_tensor_bytes", "download_tensor_bytes"]},
+  "statistics": "descriptive_mean_sample_sd_and_paired_seed_differences_no_confirmatory_p_values",
+  "safety": {"knowledge_enabled": false, "formal_privacy": false, "automatic_hyperparameter_changes": false, "skip_failed_clients": false},
+  "tuning_evidence": "paper2/results/convergence_pilot_v1/selected_configs.json",
+  "tuning_verification": "paper2/results/convergence_verified_v1/verification.json"
+}

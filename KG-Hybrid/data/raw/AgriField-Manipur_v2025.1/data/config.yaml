@@ -1,0 +1,8 @@
+advisory_file: advisory_rules.yaml
+end_date: '2025-10-31'
+fields_file: fields_sample.csv
+fields_per_district: 20
+output_final: final_dataset.csv
+output_ml: ml_dataset.csv
+soil_file: soil_by_district.csv
+start_date: '2025-06-01'

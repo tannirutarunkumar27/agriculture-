@@ -1,0 +1,19 @@
+{
+  "seed": 42,
+  "model": "Hybrid_FixedK",
+  "n_test": 330,
+  "accuracy": 0.9939393939393939,
+  "macro_f1": 0.9939326524421074,
+  "ece": 0.005869,
+  "brier": 0.005231,
+  "nll": 0.008206,
+  "trainable_parameters": 1690732,
+  "training_seconds": 101.84892109999782,
+  "best_epoch": 12,
+  "leaf_vocabulary_size": 11134,
+  "knowledge_policy": "fixed",
+  "mean_abs_change": 0.0,
+  "max_abs_change": 0.0,
+  "current_min": 0.30000001192092896,
+  "current_max": 0.8999999761581421
+}

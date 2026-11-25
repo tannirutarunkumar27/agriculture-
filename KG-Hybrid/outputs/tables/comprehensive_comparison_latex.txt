@@ -1,0 +1,12 @@
+\begin{tabular}{lrrrrrl}
+\toprule
+Model & N Samples & Top-1 Accuracy & ECE & Brier Score & NLL & Evaluation \\
+\midrule
+Logistic Regression & 330 & 0.978800 & 0.143912 & 0.074149 & 0.203592 & Direct saved-model probabilities; processed test partition N=330 \\
+Decision Tree & 330 & 0.981800 & 0.018182 & 0.036364 & 0.502382 & Direct saved-model probabilities; processed test partition N=330 \\
+Random Forest & 330 & 0.997000 & 0.045303 & 0.014935 & 0.054992 & Direct saved-model probabilities; processed test partition N=330 \\
+XGBoost Baseline & 330 & 0.990900 & 0.016223 & 0.011897 & 0.033439 & Direct saved-model probabilities; processed test partition N=330 \\
+FT-Transformer Baseline & 330 & 0.987900 & 0.006810 & 0.020304 & 0.044111 & Direct saved-model probabilities; processed test partition N=330 \\
+KG-Hybrid (Proposed) & 330 & 0.997000 & 0.121839 & 0.028857 & 0.139790 & Direct saved-model probabilities; processed test partition N=330 \\
+\bottomrule
+\end{tabular}

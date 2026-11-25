@@ -1,0 +1,102 @@
+# Seven containers are independent OS processes on one Docker host.  This
+# supports repeatable local deployment testing only; it is not a multi-host
+# experiment, independent key-custody demonstration, or privacy certificate.
+name: paper2-docker-lab
+
+x-node: &node
+  build:
+    context: ..
+    dockerfile: docker/Dockerfile
+  image: paper2-authenticated-dp-secagg:local
+  depends_on:
+    bootstrap:
+      condition: service_completed_successfully
+    superlink:
+      condition: service_started
+  networks: [paper2]
+  volumes:
+    - runtime:/runtime
+    - ${PAPER2_DOCKER_DATA_DIR:-../results/restart_public_data_v1}:/data:ro
+  entrypoint: ["/usr/local/lib/paper2-docker/node.sh"]
+
+services:
+  bootstrap:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: paper2-authenticated-dp-secagg:local
+    networks: [paper2]
+    volumes: ["runtime:/runtime"]
+    entrypoint: ["/usr/local/lib/paper2-docker/bootstrap.sh"]
+
+  superlink:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: paper2-authenticated-dp-secagg:local
+    depends_on:
+      bootstrap:
+        condition: service_completed_successfully
+    networks: [paper2]
+    volumes: ["runtime:/runtime"]
+    entrypoint: ["/usr/local/lib/paper2-docker/superlink.sh"]
+
+  node-0:
+    <<: *node
+    environment: {PARTITION_ID: "0", CLIENT_ID: "Auzeville"}
+    volumes: ["runtime:/runtime", "node-0-key:/node-key", "${PAPER2_DOCKER_DATA_DIR:-../results/restart_public_data_v1}:/data:ro"]
+  node-1:
+    <<: *node
+    environment: {PARTITION_ID: "1", CLIENT_ID: "Copenhagen+Taastrup"}
+    volumes: ["runtime:/runtime", "node-1-key:/node-key", "${PAPER2_DOCKER_DATA_DIR:-../results/restart_public_data_v1}:/data:ro"]
+  node-2:
+    <<: *node
+    environment: {PARTITION_ID: "2", CLIENT_ID: "Grignon"}
+    volumes: ["runtime:/runtime", "node-2-key:/node-key", "${PAPER2_DOCKER_DATA_DIR:-../results/restart_public_data_v1}:/data:ro"]
+  node-3:
+    <<: *node
+    environment: {PARTITION_ID: "3", CLIENT_ID: "Jyndevad"}
+    volumes: ["runtime:/runtime", "node-3-key:/node-key", "${PAPER2_DOCKER_DATA_DIR:-../results/restart_public_data_v1}:/data:ro"]
+  node-4:
+    <<: *node
+    environment: {PARTITION_ID: "4", CLIENT_ID: "Kassel"}
+    volumes: ["runtime:/runtime", "node-4-key:/node-key", "${PAPER2_DOCKER_DATA_DIR:-../results/restart_public_data_v1}:/data:ro"]
+  node-5:
+    <<: *node
+    environment: {PARTITION_ID: "5", CLIENT_ID: "Reading"}
+    volumes: ["runtime:/runtime", "node-5-key:/node-key", "${PAPER2_DOCKER_DATA_DIR:-../results/restart_public_data_v1}:/data:ro"]
+  node-6:
+    <<: *node
+    environment: {PARTITION_ID: "6", CLIENT_ID: "Sanmarcoargentano"}
+    volumes: ["runtime:/runtime", "node-6-key:/node-key", "${PAPER2_DOCKER_DATA_DIR:-../results/restart_public_data_v1}:/data:ro"]
+
+  coordinator:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: paper2-authenticated-dp-secagg:local
+    depends_on:
+      node-0: {condition: service_started}
+      node-1: {condition: service_started}
+      node-2: {condition: service_started}
+      node-3: {condition: service_started}
+      node-4: {condition: service_started}
+      node-5: {condition: service_started}
+      node-6: {condition: service_started}
+    networks: [paper2]
+    volumes: ["runtime:/runtime"]
+    entrypoint: ["/usr/local/lib/paper2-docker/coordinator.sh"]
+
+networks:
+  paper2:
+    driver: bridge
+
+volumes:
+  runtime:
+  node-0-key:
+  node-1-key:
+  node-2-key:
+  node-3-key:
+  node-4-key:
+  node-5-key:
+  node-6-key:

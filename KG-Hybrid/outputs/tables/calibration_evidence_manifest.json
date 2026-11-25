@@ -1,0 +1,44 @@
+{
+  "partition": "Saved processed test partition, 330 samples; row order preserved",
+  "ece_bins": 10,
+  "metric_source": "saved corrected-v2 probability arrays",
+  "sources": [
+    {
+      "model_name": "Logistic Regression",
+      "source": "outputs\\calibration_reconciled\\probabilities\\logistic_regression_test_probas.npy",
+      "sha256": "83a53ba588e19aac69850c75ae17b67e576357200ee601c3ef7e72eb7013415c",
+      "ece": 0.143912
+    },
+    {
+      "model_name": "Decision Tree",
+      "source": "outputs\\calibration_reconciled\\probabilities\\decision_tree_unconstrained_test_probas.npy",
+      "sha256": "17f1e8c8fd2382e26831cf1d6104c5310199c5a6f30ff4cc36f130f20dc56183",
+      "ece": 0.018182
+    },
+    {
+      "model_name": "Random Forest",
+      "source": "outputs\\calibration_reconciled\\probabilities\\random_forest_unconstrained_test_probas.npy",
+      "sha256": "06a6d23d4c5c285b80a562977ce576a23d68260cdc3a3089ae30b65a66006e5a",
+      "ece": 0.045303
+    },
+    {
+      "model_name": "XGBoost Baseline",
+      "source": "outputs\\calibration_reconciled\\probabilities\\xgboost_baseline_saved_checkpoint_test_probas.npy",
+      "sha256": "65a77f33bcb1c2a47814e8b2de1759c84418db5c3580b7ac81c7605b691b6d40",
+      "ece": 0.016223
+    },
+    {
+      "model_name": "FT-Transformer Baseline",
+      "source": "outputs\\calibration_reconciled\\probabilities\\ft-transformer_baseline_test_probas.npy",
+      "sha256": "e5070c7bc35061f37e248de3ee6d212cbcc59ab204ef1b6a92f1fb14ac62f0e2",
+      "ece": 0.00681
+    },
+    {
+      "model_name": "KG-Hybrid (Proposed)",
+      "source": "outputs\\calibration_reconciled\\probabilities\\kg-hybrid_proposed_corrected_v2_test_probas.npy",
+      "sha256": "ad73532acf618b435ae30ed4d42890c1ebcf3687226db8c84fe09d18bc010203",
+      "ece": 0.121839
+    }
+  ],
+  "note": "Older manuscript metric values must be updated to this recomputed table; they are not enforced as targets."
+}

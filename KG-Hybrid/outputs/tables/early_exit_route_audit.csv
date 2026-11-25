@@ -1,0 +1,9 @@
+evaluation_mode,threshold,xgb_exit_count,hybrid_count,xgb_exit_fraction,xgb_exit_accuracy,hybrid_fallback_accuracy,cascade_accuracy,direct_xgb_accuracy,direct_hybrid_accuracy
+deterministic saved checkpoint probabilities; healthy inputs; no MC Dropout,0.5,329,1,0.996969696969697,0.993920972644377,1.0,0.9939393939393939,0.990909090909091,0.996969696969697
+deterministic saved checkpoint probabilities; healthy inputs; no MC Dropout,0.7,325,5,0.9848484848484849,0.9969230769230769,1.0,0.996969696969697,0.990909090909091,0.996969696969697
+deterministic saved checkpoint probabilities; healthy inputs; no MC Dropout,0.8,324,6,0.9818181818181818,0.9969135802469136,1.0,0.996969696969697,0.990909090909091,0.996969696969697
+deterministic saved checkpoint probabilities; healthy inputs; no MC Dropout,0.85,320,10,0.9696969696969697,1.0,0.9,0.996969696969697,0.990909090909091,0.996969696969697
+deterministic saved checkpoint probabilities; healthy inputs; no MC Dropout,0.9,317,13,0.9606060606060606,1.0,0.9230769230769231,0.996969696969697,0.990909090909091,0.996969696969697
+deterministic saved checkpoint probabilities; healthy inputs; no MC Dropout,0.95,310,20,0.9393939393939394,1.0,0.95,0.996969696969697,0.990909090909091,0.996969696969697
+deterministic saved checkpoint probabilities; healthy inputs; no MC Dropout,0.99,246,84,0.7454545454545455,1.0,0.9880952380952381,0.996969696969697,0.990909090909091,0.996969696969697
+deterministic saved checkpoint probabilities; healthy inputs; no MC Dropout,1.0,0,330,0.0,,0.996969696969697,0.996969696969697,0.990909090909091,0.996969696969697

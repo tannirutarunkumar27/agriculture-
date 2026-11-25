@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0.0",
+  "review_id": "restart_regression_closest_work_v1",
+  "review_date": "2026-10-14",
+  "active_task": "Conditional cereal-legume harvest dry-matter regression under simulated horizontal site federation",
+  "review_scope": "Primary-source comparison of federated agricultural yield or yield-proxy prediction studies that constrain Paper 2 positioning",
+  "claim_boundaries": [
+    "Do not claim that federated crop or yield prediction is novel.",
+    "Do not claim numerical superiority across papers whose targets, units, partitions, clients, metrics, or budgets differ.",
+    "Do not describe local data retention, encrypted communication, aggregation noise, or simulation as a formal privacy guarantee without the corresponding verified mechanism, threat model, and accounting.",
+    "Do not describe the active regression benchmark as best-crop recommendation, independent field validation, or an agronomic utility study.",
+    "Keep post-hoc support guards, development exposure, fixed-grid limits, equal-group metrics, and pooled metrics visibly separated."
+  ],
+  "closest_studies": [
+    {
+      "id": "ieee_delcon_2022_fed_crop_yield",
+      "citation": "A Federated Learning-Based Crop Yield Prediction for Agricultural Production Risk Management, DELCON 2022",
+      "year": 2022,
+      "source_url": "https://doi.org/10.1109/DELCON54057.2022.9752836",
+      "task": "Soybean yield regression with federated deep residual models",
+      "data_and_unit": "Soybean yield setting; exact experimental units and full protocol must be taken from the source before detailed reproduction",
+      "federation": "Horizontal federated learning using FedAvg with ResNet variants",
+      "validation": "Study-specific centralized/federated evaluation; not the eight-group nested geography protocol used in Paper 2",
+      "privacy_scope": "Federated optimization is reported; no Paper 2 claim of formal differential privacy or secure aggregation is inherited from this study",
+      "comparability_limits": "Different crop, model family, data-generating process, client construction, split, metric scale, and training budget",
+      "manuscript_role": "Establishes that federated crop-yield regression predates Paper 2",
+      "numerical_comparison_allowed": false
+    },
+    {
+      "id": "li_2024_fedpruning_yield",
+      "citation": "Li et al., Model pruning enables localized and efficient federated learning for yield forecasting and data sharing, Expert Systems with Applications 242 (2024), 122847",
+      "year": 2024,
+      "source_url": "https://doi.org/10.1016/j.eswa.2023.122847",
+      "task": "Localized soybean-yield forecasting with federated model pruning",
+      "data_and_unit": "Soybean-yield forecasting data distributed among clients",
+      "federation": "Horizontal federation with FedAvg as a reference and client-localized pruning",
+      "validation": "Study-specific forecasting and systems evaluation",
+      "privacy_scope": "Local data sharing is avoided, but that alone is not a formal privacy guarantee for Paper 2",
+      "comparability_limits": "Optimization objective includes localization, pruning, model-size and communication outcomes absent from the active benchmark",
+      "manuscript_role": "Closest methodological comparator for heterogeneous horizontal yield forecasting, while remaining non-equivalent",
+      "numerical_comparison_allowed": false
+    },
+    {
+      "id": "mukherjee_buyya_2025_fl_architectures",
+      "citation": "Mukherjee and Buyya, Federated Learning Architectures: A Performance Evaluation with Crop Yield Prediction Application, Software: Practice and Experience 55(7) (2025), 1165-1184",
+      "year": 2025,
+      "source_url": "https://doi.org/10.1002/spe.3416",
+      "task": "Crop-yield prediction used to compare centralized and decentralized federated architectures",
+      "data_and_unit": "Application-specific crop-yield sequences modeled with an LSTM",
+      "federation": "Centralized federation and decentralized ring/mesh architectures",
+      "validation": "Architecture-focused evaluation using the authors' prediction-accuracy and response-time definitions",
+      "privacy_scope": "Architecture decentralization is distinct from a verified differential-privacy or secure-aggregation guarantee",
+      "comparability_limits": "Different architecture, temporal model, outcome definition, accuracy metric, client graph, and systems objective",
+      "manuscript_role": "Shows that both federated crop-yield prediction and decentralized topology comparisons already exist",
+      "numerical_comparison_allowed": false
+    },
+    {
+      "id": "dey_2025_flyer",
+      "citation": "Dey et al., FLyer: Federated Learning-Based Crop Yield Prediction for Agriculture 5.0, IEEE Transactions on Artificial Intelligence 6(7) (2025), 1943-1952",
+      "year": 2025,
+      "source_url": "https://doi.org/10.1109/TAI.2025.3534149",
+      "task": "Crop-yield prediction with local and global recurrent models",
+      "data_and_unit": "Soil and environmental measurements used for yield prediction",
+      "federation": "Edge/cloud federated LSTM workflow",
+      "validation": "Study-specific local/global model evaluation",
+      "privacy_scope": "The source discusses encrypted gradient transmission; this record does not treat that description as proof of an end-to-end formal privacy guarantee",
+      "comparability_limits": "Different data, sequence model, client infrastructure, evaluation metrics, and cryptographic scope",
+      "manuscript_role": "Relevant recent agriculture-specific federated-yield system; not a matched benchmark",
+      "numerical_comparison_allowed": false
+    },
+    {
+      "id": "cowlishaw_2025_eo_agriculture",
+      "citation": "Cowlishaw, Longepe, and Riccardi, Balancing centralisation and decentralisation in federated learning for Earth Observation-based agricultural predictions, Scientific Reports 15 (2025), 10454",
+      "year": 2025,
+      "source_url": "https://doi.org/10.1038/s41598-025-94244-2",
+      "task": "Earth-observation crop-type segmentation used as a proxy agricultural prediction task",
+      "data_and_unit": "Remote-sensing image patches; the study explains that sufficiently resolved yield data were unavailable",
+      "federation": "Horizontal federation examining client count, aggregation, and imbalance",
+      "validation": "Held-out centralized test patches with distributed training subsets",
+      "privacy_scope": "Data decentralization is evaluated; it does not provide Paper 2 with a formal privacy guarantee",
+      "comparability_limits": "Segmentation proxy rather than yield regression, image inputs rather than experimental systems, and different client/support definitions",
+      "manuscript_role": "Supports discussion of agricultural client heterogeneity while preventing its proxy task from being cited as direct yield-regression evidence",
+      "numerical_comparison_allowed": false
+    },
+    {
+      "id": "nirosha_vennila_2025_flagrn",
+      "citation": "Nirosha and Vennila, Enhancing crop yield prediction for agriculture productivity using federated learning integrating with graph and recurrent neural networks model, Expert Systems with Applications 289 (2025), 128312",
+      "year": 2025,
+      "source_url": "https://doi.org/10.1016/j.eswa.2025.128312",
+      "task": "Federated crop-yield prediction using attention, graph, and recurrent components",
+      "data_and_unit": "Agricultural yield-prediction data under the authors' graph/recurrent representation",
+      "federation": "FedGAvg-style aggregation with a hybrid neural architecture",
+      "validation": "Study-specific prediction evaluation",
+      "privacy_scope": "Federated processing is not treated here as evidence of formal record- or client-level privacy",
+      "comparability_limits": "Different architecture, representation, data, client construction, target, split, and metrics",
+      "manuscript_role": "Documents a recent hybrid federated yield-prediction direction and blocks broad hybrid-model novelty claims",
+      "numerical_comparison_allowed": false
+    },
+    {
+      "id": "utku_2026_edge_fog_cloud",
+      "citation": "Utku et al., Federated agricultural yield forecasting under an Edge-Fog-Cloud framework: a multi-country privacy-preserving approach, Discover Computing 29 (2026), 359",
+      "year": 2026,
+      "source_url": "https://doi.org/10.1007/s10791-026-10291-x",
+      "task": "Multi-country cereal-yield forecasting",
+      "data_and_unit": "Annual European country-level cereal records from 1990-2022 with more than 40 features",
+      "federation": "Country clients in an Edge-Fog-Cloud workflow",
+      "validation": "Time-aware train, validation, and later-year test periods",
+      "privacy_scope": "The authors explicitly limit protection claims under an honest-but-curious model and note that gradient inversion, membership inference, and reconstruction guarantees are absent",
+      "comparability_limits": "Annual country time series and country clients differ from experimental harvest systems, site groups, nested geography folds, features, and target units",
+      "manuscript_role": "Closest recent cereal-yield and non-IID federation context; also supports restrained privacy wording",
+      "numerical_comparison_allowed": false
+    },
+    {
+      "id": "koksal_2026_vertical_crop_yield",
+      "citation": "Koksal, Bennin, and Tekinerdogan, Centralized and vertical federated learning for climate-based crop yield prediction, Computers and Electronics in Agriculture 249 (2026), 111851",
+      "year": 2026,
+      "source_url": "https://doi.org/10.1016/j.compag.2026.111851",
+      "task": "Climate-based maize and wheat yield prediction",
+      "data_and_unit": "Ethiopia case study integrating ERA5, crop-model, and FAO information",
+      "federation": "Vertical federated split-neural-network setting across feature holders",
+      "validation": "Study-specific multi-year external comparison",
+      "privacy_scope": "Vertical feature partitioning is different from Paper 2's simulated horizontal client setting and does not transfer a privacy guarantee",
+      "comparability_limits": "Vertical rather than horizontal federation, different crops, regional unit, feature sources, target definition, model, and split",
+      "manuscript_role": "Separates vertical institutional feature federation from Paper 2's site-group simulation",
+      "numerical_comparison_allowed": false
+    }
+  ],
+  "algorithm_sources": [
+    {
+      "name": "FedAvg",
+      "source_url": "https://proceedings.mlr.press/v54/mcmahan17a.html"
+    },
+    {
+      "name": "FedProx",
+      "source_url": "https://proceedings.mlsys.org/paper_files/paper/2020/hash/1f5fe83998a09396ebe6477d9475ba0c-Abstract.html"
+    },
+    {
+      "name": "FedNova",
+      "source_url": "https://proceedings.neurips.cc/paper/2020/hash/564127c03caab942e503ee6f810f54fd-Abstract.html"
+    }
+  ],
+  "positioning_decision": {
+    "closest_contexts": [
+      "Li et al. (2024) for horizontal localized yield forecasting under client heterogeneity",
+      "Utku et al. (2026) for non-IID multi-country cereal-yield forecasting and explicit privacy limitations"
+    ],
+    "defensible_paper2_focus": "A reproducible, bounded evaluation of centralized and simulated horizontal federated baselines for conditional cereal-legume harvest regression across held-out experimental groups, with equal-group and pooled reporting, support panels, adverse findings, post-hoc safeguards kept separate, and matched aggregation-noise utility simulation.",
+    "not_established": [
+      "Novel federated yield prediction algorithm",
+      "Best-crop recommendation",
+      "Validated agronomic knowledge guidance",
+      "Independent multi-region field utility",
+      "Formal production privacy",
+      "Cross-paper numerical superiority"
+    ]
+  }
+}

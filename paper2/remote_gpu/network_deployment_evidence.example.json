@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "deployment_mode": "PENDING_AUTHENTICATED_MULTI_PROCESS_NETWORK",
+  "flower_version": "1.42.0",
+  "tls_enabled": false,
+  "runtime_api_tls": false,
+  "cli_managed_supernode_auth": false,
+  "all_nodes_online": false,
+  "distinct_processes": false,
+  "secagg_completed": false,
+  "dp_execution_audit_passed": false,
+  "private_keys_exported": false,
+  "tls_ca_fingerprint": "REPLACE_WITH_64_HEX_SHA256",
+  "run_id": "REPLACE_AFTER_EXECUTION",
+  "completion_sha256": "REPLACE_WITH_64_HEX_SHA256",
+  "receipt_sha256": {
+    "tls_handshake": "REPLACE_WITH_64_HEX_SHA256",
+    "supernode_registration": "REPLACE_WITH_64_HEX_SHA256",
+    "online_nodes": "REPLACE_WITH_64_HEX_SHA256",
+    "secagg_run": "REPLACE_WITH_64_HEX_SHA256",
+    "dp_audit": "REPLACE_WITH_64_HEX_SHA256",
+    "result_retrieval": "REPLACE_WITH_64_HEX_SHA256"
+  },
+  "nodes": [
+    {"node_id": "node-1", "address": "REPLACE_HOST_1:9094", "public_key_fingerprint": "REPLACE_WITH_64_HEX_SHA256", "tls_peer_certificate_sha256": "REPLACE_WITH_64_HEX_SHA256", "process_instance_id": "REPLACE_UNIQUE_PROCESS_1", "host_instance_id": "REPLACE_HOST_ID_1", "platform_system": "Linux"},
+    {"node_id": "node-2", "address": "REPLACE_HOST_2:9094", "public_key_fingerprint": "REPLACE_WITH_64_HEX_SHA256", "tls_peer_certificate_sha256": "REPLACE_WITH_64_HEX_SHA256", "process_instance_id": "REPLACE_UNIQUE_PROCESS_2", "host_instance_id": "REPLACE_HOST_ID_2", "platform_system": "Linux"},
+    {"node_id": "node-3", "address": "REPLACE_HOST_3:9094", "public_key_fingerprint": "REPLACE_WITH_64_HEX_SHA256", "tls_peer_certificate_sha256": "REPLACE_WITH_64_HEX_SHA256", "process_instance_id": "REPLACE_UNIQUE_PROCESS_3", "host_instance_id": "REPLACE_HOST_ID_3", "platform_system": "Linux"},
+    {"node_id": "node-4", "address": "REPLACE_HOST_4:9094", "public_key_fingerprint": "REPLACE_WITH_64_HEX_SHA256", "tls_peer_certificate_sha256": "REPLACE_WITH_64_HEX_SHA256", "process_instance_id": "REPLACE_UNIQUE_PROCESS_4", "host_instance_id": "REPLACE_HOST_ID_4", "platform_system": "Linux"},
+    {"node_id": "node-5", "address": "REPLACE_HOST_5:9094", "public_key_fingerprint": "REPLACE_WITH_64_HEX_SHA256", "tls_peer_certificate_sha256": "REPLACE_WITH_64_HEX_SHA256", "process_instance_id": "REPLACE_UNIQUE_PROCESS_5", "host_instance_id": "REPLACE_HOST_ID_5", "platform_system": "Linux"},
+    {"node_id": "node-6", "address": "REPLACE_HOST_6:9094", "public_key_fingerprint": "REPLACE_WITH_64_HEX_SHA256", "tls_peer_certificate_sha256": "REPLACE_WITH_64_HEX_SHA256", "process_instance_id": "REPLACE_UNIQUE_PROCESS_6", "host_instance_id": "REPLACE_HOST_ID_6", "platform_system": "Linux"},
+    {"node_id": "node-7", "address": "REPLACE_HOST_7:9094", "public_key_fingerprint": "REPLACE_WITH_64_HEX_SHA256", "tls_peer_certificate_sha256": "REPLACE_WITH_64_HEX_SHA256", "process_instance_id": "REPLACE_UNIQUE_PROCESS_7", "host_instance_id": "REPLACE_HOST_ID_7", "platform_system": "Linux"}
+  ],
+  "independent_evidence_review": {
+    "status": "PENDING",
+    "reviewer": "",
+    "reviewed_at_utc": "",
+    "review_record_sha256": "REPLACE_WITH_64_HEX_SHA256"
+  }
+}

@@ -1,0 +1,5 @@
+Missing Rate,Raw Zero Fill (Baseline),Median Imputation,KNN Imputation (k=5),MICE Imputation,XGBoost Baseline
+0%,97.88%,97.88%,97.88%,97.88%,99.39%
+20%,71.88%,72.61%,93.94%,72.42%,84.00%
+40%,48.24%,49.27%,81.33%,48.55%,61.15%
+60%,27.52%,29.94%,61.94%,26.67%,41.39%

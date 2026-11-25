@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "validated_model_seed_results": 35,
+  "validated_test_predictions": 11550,
+  "raw_sample_ids_labels_and_shared_partitions": "validated",
+  "training_only_scaler_statistics": "validated",
+  "probabilities_metrics_and_prior_drift": "validated",
+  "limitation": "Repeated splits overlap; source authority and field generalization are not established"
+}

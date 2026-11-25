@@ -1,0 +1,24 @@
+DATASET NOTICE
+==============
+
+This project uses the cereal-legume intercrop field experiment dataset:
+
+  Title:   A global dataset gathering 37 field experiments involving
+           cereal-legume intercrops and their corresponding sole crops
+  Version: 2.0.0
+  DOI:     10.5281/zenodo.14160885
+  URL:     https://zenodo.org/records/14160885
+
+The raw source files from this dataset are NOT included in this
+repository and are NOT redistributed by this project. The dataset
+redistribution status is: REVIEW_REQUIRED_NO_REDISTRIBUTION_AUTHORIZED.
+
+To reproduce this study you must:
+  1. Visit https://zenodo.org/records/14160885
+  2. Download version 2.0.0 of the dataset directly from Zenodo.
+  3. Place the data files in the expected paths as documented in
+     paper2/README.md before running any experiment scripts.
+
+The Apache 2.0 license in this repository covers ONLY the project
+source code, configuration, and analysis scripts. It does NOT grant
+any rights over the dataset or its derivative artifacts.

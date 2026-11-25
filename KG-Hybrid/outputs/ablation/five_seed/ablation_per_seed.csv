@@ -1,0 +1,46 @@
+seed,variant,variant_name,accuracy,macro_f1
+42,Full,Full KG-Hybrid,0.993939,0.993933
+42,A1,w/o Knowledge Matrix,0.993939,0.993933
+42,A2,w/o Adaptive Gate,0.99697,0.996966
+42,A3,w/o XGBoost Branch,0.993939,0.993912
+42,A4,w/o FT-Transformer Branch,0.993939,0.993912
+42,A5,w/o Distillation Loss,0.99697,0.996966
+42,A6,w/o Contrastive Loss,0.99697,0.996966
+42,A7,w/o Auxiliary Losses,1.0,1.0
+42,A8,w/o Adaptive Fusion (Static + Pure CE),1.0,1.0
+123,Full,Full KG-Hybrid,0.993939,0.993933
+123,A1,w/o Knowledge Matrix,0.99697,0.996966
+123,A2,w/o Adaptive Gate,0.987879,0.987845
+123,A3,w/o XGBoost Branch,0.990909,0.990899
+123,A4,w/o FT-Transformer Branch,0.99697,0.996966
+123,A5,w/o Distillation Loss,0.99697,0.996966
+123,A6,w/o Contrastive Loss,0.975758,0.975294
+123,A7,w/o Auxiliary Losses,0.99697,0.996966
+123,A8,w/o Adaptive Fusion (Static + Pure CE),0.993939,0.994024
+2024,Full,Full KG-Hybrid,0.99697,0.996966
+2024,A1,w/o Knowledge Matrix,0.993939,0.993933
+2024,A2,w/o Adaptive Gate,0.993939,0.993936
+2024,A3,w/o XGBoost Branch,0.990909,0.990879
+2024,A4,w/o FT-Transformer Branch,0.993939,0.993936
+2024,A5,w/o Distillation Loss,0.993939,0.993933
+2024,A6,w/o Contrastive Loss,0.993939,0.993936
+2024,A7,w/o Auxiliary Losses,0.99697,0.996966
+2024,A8,w/o Adaptive Fusion (Static + Pure CE),0.993939,0.993933
+3407,Full,Full KG-Hybrid,0.99697,0.996966
+3407,A1,w/o Knowledge Matrix,0.978788,0.978747
+3407,A2,w/o Adaptive Gate,0.99697,0.996966
+3407,A3,w/o XGBoost Branch,0.969697,0.969762
+3407,A4,w/o FT-Transformer Branch,0.99697,0.996966
+3407,A5,w/o Distillation Loss,0.99697,0.996966
+3407,A6,w/o Contrastive Loss,0.987879,0.987946
+3407,A7,w/o Auxiliary Losses,0.99697,0.996966
+3407,A8,w/o Adaptive Fusion (Static + Pure CE),0.993939,0.993933
+9999,Full,Full KG-Hybrid,0.987879,0.987872
+9999,A1,w/o Knowledge Matrix,0.99697,0.996966
+9999,A2,w/o Adaptive Gate,0.99697,0.996966
+9999,A3,w/o XGBoost Branch,0.993939,0.993933
+9999,A4,w/o FT-Transformer Branch,0.99697,0.996966
+9999,A5,w/o Distillation Loss,0.990909,0.990899
+9999,A6,w/o Contrastive Loss,0.99697,0.996966
+9999,A7,w/o Auxiliary Losses,0.99697,0.996966
+9999,A8,w/o Adaptive Fusion (Static + Pure CE),0.99697,0.996966

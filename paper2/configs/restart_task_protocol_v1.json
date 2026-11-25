@@ -1,0 +1,73 @@
+{
+  "protocol_version": "restart-task-draft-v1",
+  "status": "DRAFT_NOT_FROZEN_NOT_AUTHORIZED_FOR_TRAINING",
+  "dataset": {"name": "cereal_legume_trials", "version": "2.0.0", "audit": "paper2/results/restart_feasibility_v1/audit.json"},
+  "primary_task": {
+    "type": "conditional_harvest_outcome_regression",
+    "observation_key": ["experiment_id", "management"],
+    "response": "sum_of_component_harvest_seed_dry_matter",
+    "unit": "t/ha",
+    "scope": "retrospective_observed_crop_systems_not_unrestricted_crop_recommendation",
+    "intercrop_rule": "sum_only_when_all_components_observed_at_their_documented_harvest",
+    "negative_response_policy": "flag_and_review_no_silent_clipping",
+    "transform": "identity_no_log_or_test_selected_transform"
+  },
+  "secondary_task": {
+    "type": "restricted_observed_alternative_ranking",
+    "enabled": false,
+    "objective": "harvest_seed_dry_matter_not_profit_or_nutritional_utility",
+    "requires": ["original_experiment_design_review", "cultivar_density_control_review", "candidate_scope_freeze"],
+    "never": ["label_observed_species_as_best_crop", "impute_unobserved_potential_outcomes", "use_rule_generated_labels_as_independent_validation"]
+  },
+  "decision_timing": {
+    "claim": "retrospective_conditional_outcome_prediction",
+    "pre_sowing_recommendation_claim_enabled": false,
+    "realized_in_season_weather_enabled": false,
+    "actual_harvest_date_as_predictor": false,
+    "measured_crop_traits_as_predictors": false,
+    "applied_management_requires_planned_vs_realized_review": true
+  },
+  "evaluation": {
+    "outer_group": "site",
+    "outer_scheme": "leave_one_site_out_all_sites_no_favorable_fold_selection",
+    "inner_scheme": "leave_one_training_site_out_for_validation_only_selection",
+    "site_labels_require_geographic_alias_review": true,
+    "keep_components_dates_blocks_and_experiment_rows_together": true,
+    "primary_metric": "mean_of_outer_site_RMSE_t_per_ha",
+    "secondary_metrics": ["mean_of_outer_site_MAE_t_per_ha", "pooled_RMSE_t_per_ha", "pooled_MAE_t_per_ha", "per_site_R2_when_defined"],
+    "support_reporting": ["all_test_systems", "all_component_species_seen_in_outer_training", "exact_system_composition_seen_in_outer_training"],
+    "unseen_species_policy": "report_separately_no_claim_of_validated_extrapolation",
+    "seeds": [123, 2024, 3407, 9999, 2718],
+    "seed_role": "initialization_and_client_sampling_not_independent_new_field_experiments",
+    "statistics": "descriptive_paired_site_seed_differences_no_confirmatory_p_values"
+  },
+  "preprocessing": {
+    "fit_on": "training_partition_only_in_each_inner_and_outer_fold",
+    "numeric": "training_median_then_training_standardization_with_missingness_indicators",
+    "categorical": "training_vocabulary_with_unknown_category",
+    "crop_composition": "fixed_public_taxonomy_binary_species_membership_and_crop_type",
+    "missing_target": "exclude_with_audit_reason_never_impute",
+    "missing_feature": "retain_unknown_do_not_convert_to_zero_suitability"
+  },
+  "baselines": {
+    "centralized_candidates": ["training_mean", "ridge_regression", "random_forest_regressor", "xgboost_regressor", "mlp_regressor"],
+    "federated_candidates": ["fedavg", "sample_weighted_fedprox", "restricted_plain_sgd_fednova"],
+    "neural_loss": "mean_squared_error",
+    "client_identity": "research_site_not_farm",
+    "inner_fold_client_has_only_training_rows": true,
+    "default_participation": 1.0,
+    "uniform_sampling_sample_weighted_aggregation": true,
+    "hyperparameter_grid_and_round_budget_frozen": false,
+    "reuse_classification_learning_rate_without_validation": false
+  },
+  "gates": {
+    "approved_feature_and_information_timing_contract": false,
+    "geographic_site_alias_review_complete": false,
+    "regression_pipeline_and_smoke_tests_passed": false,
+    "training_budget_and_search_space_frozen": false,
+    "independent_agronomic_rules_approved": false,
+    "ranking_comparability_approved": false,
+    "privacy_implemented": false
+  },
+  "execution": {"training_enabled": false, "ranking_enabled": false, "knowledge_enabled": false, "privacy_claim_enabled": false}
+}

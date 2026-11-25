@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "status": "PENDING_REMOTE_EXECUTION",
+  "verified": false,
+  "platform": {
+    "system": "Linux",
+    "distribution": "REPLACE_AFTER_EXECUTION",
+    "kernel": "REPLACE_AFTER_EXECUTION",
+    "python": "REPLACE_AFTER_EXECUTION",
+    "cuda": "REPLACE_AFTER_EXECUTION",
+    "nvidia_driver": "REPLACE_AFTER_EXECUTION",
+    "gpu": "REPLACE_AFTER_EXECUTION"
+  },
+  "linux_lock_sha256": "REPLACE_WITH_SHA256",
+  "source_revision": "REPLACE_WITH_GIT_COMMIT_OR_ARCHIVE_SHA256",
+  "checks": {
+    "environment_install": "PENDING",
+    "unit_tests": "PENDING",
+    "bundle_integrity": "PENDING",
+    "recovery": "PENDING",
+    "result_retrieval": "PENDING"
+  },
+  "independent_audit": {
+    "status": "PENDING",
+    "reviewer": "",
+    "reviewed_at_utc": "",
+    "evidence_locator": ""
+  }
+}

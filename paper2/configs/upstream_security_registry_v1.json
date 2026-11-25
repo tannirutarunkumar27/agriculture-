@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "checked_date": "2026-11-02",
+  "component": "Flower SecAgg+",
+  "pinned_framework_version": "1.42.0",
+  "issues": [
+    {
+      "id": "flower-7522",
+      "url": "https://github.com/flwrlabs/flower/issues/7522",
+      "title": "SecAgg+ uses non-cryptographic PRG for mask generation",
+      "upstream_status": "open",
+      "project_disposition": "BLOCK_PRODUCTION_SECURITY_CLAIM",
+      "allowed_scope": "functional simulation and integration evidence only"
+    }
+  ],
+  "all_known_security_issues_resolved": false,
+  "independent_cryptographic_review_complete": false,
+  "production_security_claim_allowed": false
+}

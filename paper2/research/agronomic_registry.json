@@ -1,0 +1,16 @@
+{
+  "checked_date": "2026-10-12",
+  "status": "no_rules_approved",
+  "approved_rules": [],
+  "guidance_enabled": false,
+  "candidate_sources": [
+    {"url": "https://www.fao.org/geospatial/data-and-tools/data-portals/ecocrop/", "status": "source_verified_crop_records_and_dataset_units_pending"},
+    {"url": "https://agritech.tnau.ac.in/agriculture/agri_maize_rainfed_maize.html", "status": "fertilizer_application_rates_not_soil_feature_bounds"}
+  ],
+  "blockers": [
+    "Existing manually specified bounds lack per-cell independent source evidence",
+    "Canonical and Maharashtra nutrient measurement units and rainfall periods not established",
+    "Manipur is synthetic and its daily rainfall/relative nutrient indices cannot use annual rainfall/kg-per-hectare bounds",
+    "Full regional applicability and crop-specific source records still required"
+  ]
+}

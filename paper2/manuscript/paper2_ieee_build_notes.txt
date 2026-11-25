@@ -1,0 +1,116 @@
+Paper 2 — IEEE IEEEtran LaTeX Build Notes
+Generated: 2026-11-16
+Source .tex: paper2_ieee.tex
+========================================================
+
+HOW TO BUILD THE PDF ON WINDOWS (MiKTeX / TeX Live)
+----------------------------------------------------
+Open a Command Prompt or PowerShell in the manuscript directory:
+
+  cd "D:\Final Project\implementation_for _crop recommendation\paper2\manuscript"
+
+Recommended two-pass build (resolves cross-references and bibliography):
+
+  pdflatex paper2_ieee.tex
+  pdflatex paper2_ieee.tex
+
+If you use \cite{} with the thebibliography environment (as in this file),
+two pdflatex passes are sufficient. No BibTeX/Biber run is needed because
+all \bibitem entries are written directly in the .tex file.
+
+If you later switch to \bibliography{references} + \bibliographystyle{IEEEtran},
+run:
+
+  pdflatex paper2_ieee.tex
+  bibtex   paper2_ieee
+  pdflatex paper2_ieee.tex
+  pdflatex paper2_ieee.tex
+
+MiKTeX (Windows): install MiKTeX from https://miktex.org/download
+TeX Live (Windows): install TeX Live from https://tug.org/texlive/
+
+Both distributions include pdflatex and the IEEEtran class.
+
+
+FIGURE FILES THAT MUST BE PLACED IN THE MANUSCRIPT DIRECTORY
+--------------------------------------------------------------
+Place the actual figure files (PDF, PNG, or EPS) in the same folder as
+paper2_ieee.tex before building, using these exact base names
+(pdflatex accepts .pdf, .png, .jpg without the extension in \includegraphics):
+
+  fig_original_baseline_rmse.pdf     (or .png)
+    -> Fig. 1: Original eight-method equal-group and pooled RMSE comparison
+
+  fig_original_xgboost_geographic_rmse.pdf   (or .png)
+    -> Fig. 2: Geographic XGBoost outer RMSE across the eight held-out groups
+
+  fig_geographic_rmse.pdf            (or .png)
+    -> Fig. 3: Fixed-public geographic RMSE across the eight held-out groups
+
+  fig_rmse_overview.pdf              (or .png)
+    -> Fig. 4: Matched aggregation-noise utility overview (all five variants)
+
+  fig_support_rmse.pdf               (or .png)
+    -> Fig. 5: Support-conditioned RMSE across noise variants
+
+These filenames correspond to the accepted figure assets referenced in the
+manuscript (original_baseline_rmse, original_xgboost_geographic_rmse,
+geographic_rmse, rmse_overview, support_rmse). Rename your PNG/PDF/SVG
+exports accordingly.
+
+If a figure file is missing, pdflatex will raise a "File not found" error
+for that \includegraphics command. You can temporarily comment out the
+\begin{figure}...\end{figure} blocks while figures are not yet ready.
+
+
+REMAINING MANUAL STEPS BEFORE SUBMISSION
+-----------------------------------------
+1. AUTHOR BLOCK — Replace the placeholder in the \author{} command:
+     [Author Name(s)]  ->  actual author name(s) with affiliations
+     [email]           ->  corresponding author's email address
+   IEEE journal style uses \IEEEauthorblockN / \IEEEauthorblockA for
+   multi-author layouts; restructure the \author block if needed.
+
+2. AFFILIATION — Add \IEEEauthorblockA{} lines for department, institution,
+   city, country, and email under each author name block.
+
+3. REFERENCE FORMATTING — Verify all 14 \bibitem entries against the
+   authoritative DOI records and IEEE reference style:
+     - Author initials (e.g., "H. B." vs "H.~B.") and name ordering
+     - Volume/issue/page ranges (check "art." vs "pp." usage)
+     - Conference proceeding names and abbreviations
+     - arXiv entries: add "arXiv preprint arXiv:XXXXXXX, YEAR." format
+   The note at the bottom of the original Markdown references section
+   flags this explicitly: "Author initials, pagination, and IEEE
+   punctuation should receive a final bibliographic metadata check."
+
+4. MATH TYPO — Line 335 of the source Markdown contains "mathbf{w}_2"
+   (missing backslash). This was corrected in the .tex file to
+   \mathbf{w}_2. Verify visually in the compiled PDF.
+
+5. HYPERREF LINKS — The \usepackage{hyperref} package turns citations and
+   cross-references into clickable links in the PDF. For final IEEE
+   submission, IEEE sometimes requires hyperref to be disabled or configured
+   without coloured boxes. Use:
+     \usepackage[hidelinks]{hyperref}
+   to suppress coloured link borders while keeping metadata.
+
+6. FIGURE CAPTIONS — Review the five figure captions in the .tex file and
+   update them to match the final accepted figure captions exactly.
+
+7. COLUMN WIDTH — The document uses \columnwidth for all figures, which is
+   correct for a two-column IEEE journal layout. If a figure needs to span
+   both columns, change \begin{figure} to \begin{figure*}.
+
+8. UNITS IN TABLES — The ± symbol is rendered as $\pm$ inside math mode.
+   All table cells using ± have been placed in math mode ($...$). Verify
+   alignment in the compiled output.
+
+9. SCOPE NOTES — The abstract and introduction contain the study's explicit
+   scope disclaimers (no best-crop recommendation, no end-to-end DP, etc.).
+   Retain these unchanged; they are part of the scientific record.
+
+10. CLEAN BUILD — Remove auxiliary files (.aux, .log, .out, .bbl, .blg)
+    before the final submission build:
+      del paper2_ieee.aux paper2_ieee.log paper2_ieee.out
+    Then run two fresh pdflatex passes.

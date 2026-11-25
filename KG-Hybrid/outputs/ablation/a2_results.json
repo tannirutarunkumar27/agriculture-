@@ -1,0 +1,11 @@
+{
+  "ablation": "A2",
+  "name": "w/o Adaptive Gate",
+  "best_val_accuracy": 1.0,
+  "test_accuracy": 1.0,
+  "precision": 1.0,
+  "recall": 1.0,
+  "f1_score": 1.0,
+  "best_epoch": 10,
+  "device": "cpu"
+}

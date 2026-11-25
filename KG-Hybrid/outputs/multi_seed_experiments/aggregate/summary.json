@@ -1,0 +1,446 @@
+{
+    "LogisticRegression": {
+        "accuracy": {
+            "mean": 0.977576,
+            "std": 0.006976,
+            "min": 0.966667,
+            "max": 0.984848,
+            "ci_lower": 0.968914,
+            "ci_upper": 0.986238
+        },
+        "precision_macro": {
+            "mean": 0.978724,
+            "std": 0.006412,
+            "min": 0.968951,
+            "max": 0.985417,
+            "ci_lower": 0.970762,
+            "ci_upper": 0.986685
+        },
+        "recall_macro": {
+            "mean": 0.977576,
+            "std": 0.006976,
+            "min": 0.966667,
+            "max": 0.984848,
+            "ci_lower": 0.968914,
+            "ci_upper": 0.986238
+        },
+        "f1_macro": {
+            "mean": 0.977477,
+            "std": 0.007139,
+            "min": 0.966289,
+            "max": 0.984939,
+            "ci_lower": 0.968613,
+            "ci_upper": 0.986341
+        },
+        "precision_weighted": {
+            "mean": 0.978724,
+            "std": 0.006412,
+            "min": 0.968951,
+            "max": 0.985417,
+            "ci_lower": 0.970762,
+            "ci_upper": 0.986685
+        },
+        "recall_weighted": {
+            "mean": 0.977576,
+            "std": 0.006976,
+            "min": 0.966667,
+            "max": 0.984848,
+            "ci_lower": 0.968914,
+            "ci_upper": 0.986238
+        },
+        "f1_weighted": {
+            "mean": 0.977477,
+            "std": 0.007139,
+            "min": 0.966289,
+            "max": 0.984939,
+            "ci_lower": 0.968613,
+            "ci_upper": 0.986341
+        },
+        "training_time_sec": {
+            "mean": 0.13416,
+            "std": 0.013315,
+            "min": 0.1246,
+            "max": 0.1565,
+            "ci_lower": 0.117628,
+            "ci_upper": 0.150692
+        },
+        "inference_time_ms_per_sample": {
+            "mean": 0.0023,
+            "std": 0.003129,
+            "min": 0.0,
+            "max": 0.0076,
+            "ci_lower": -0.001585,
+            "ci_upper": 0.006185
+        }
+    },
+    "DecisionTree": {
+        "accuracy": {
+            "mean": 0.503636,
+            "std": 0.088747,
+            "min": 0.409091,
+            "max": 0.587879,
+            "ci_lower": 0.393442,
+            "ci_upper": 0.61383
+        },
+        "precision_macro": {
+            "mean": 0.384693,
+            "std": 0.090057,
+            "min": 0.277382,
+            "max": 0.470752,
+            "ci_lower": 0.272873,
+            "ci_upper": 0.496513
+        },
+        "recall_macro": {
+            "mean": 0.503636,
+            "std": 0.088747,
+            "min": 0.409091,
+            "max": 0.587879,
+            "ci_lower": 0.393442,
+            "ci_upper": 0.61383
+        },
+        "f1_macro": {
+            "mean": 0.409339,
+            "std": 0.092173,
+            "min": 0.303362,
+            "max": 0.493607,
+            "ci_lower": 0.294891,
+            "ci_upper": 0.523786
+        },
+        "precision_weighted": {
+            "mean": 0.384693,
+            "std": 0.090057,
+            "min": 0.277382,
+            "max": 0.470752,
+            "ci_lower": 0.272873,
+            "ci_upper": 0.496513
+        },
+        "recall_weighted": {
+            "mean": 0.503636,
+            "std": 0.088747,
+            "min": 0.409091,
+            "max": 0.587879,
+            "ci_lower": 0.393442,
+            "ci_upper": 0.61383
+        },
+        "f1_weighted": {
+            "mean": 0.409339,
+            "std": 0.092173,
+            "min": 0.303362,
+            "max": 0.493607,
+            "ci_lower": 0.294891,
+            "ci_upper": 0.523786
+        },
+        "training_time_sec": {
+            "mean": 0.01524,
+            "std": 0.000829,
+            "min": 0.0139,
+            "max": 0.0161,
+            "ci_lower": 0.01421,
+            "ci_upper": 0.01627
+        },
+        "inference_time_ms_per_sample": {
+            "mean": 0.00152,
+            "std": 0.002404,
+            "min": 0.0,
+            "max": 0.0055,
+            "ci_lower": -0.001464,
+            "ci_upper": 0.004504
+        }
+    },
+    "RandomForest": {
+        "accuracy": {
+            "mean": 0.990909,
+            "std": 0.007107,
+            "min": 0.978788,
+            "max": 0.99697,
+            "ci_lower": 0.982085,
+            "ci_upper": 0.999733
+        },
+        "precision_macro": {
+            "mean": 0.991932,
+            "std": 0.005555,
+            "min": 0.982765,
+            "max": 0.997159,
+            "ci_lower": 0.985034,
+            "ci_upper": 0.998829
+        },
+        "recall_macro": {
+            "mean": 0.990909,
+            "std": 0.007107,
+            "min": 0.978788,
+            "max": 0.99697,
+            "ci_lower": 0.982085,
+            "ci_upper": 0.999733
+        },
+        "f1_macro": {
+            "mean": 0.990818,
+            "std": 0.007291,
+            "min": 0.978352,
+            "max": 0.996966,
+            "ci_lower": 0.981765,
+            "ci_upper": 0.999871
+        },
+        "precision_weighted": {
+            "mean": 0.991932,
+            "std": 0.005555,
+            "min": 0.982765,
+            "max": 0.997159,
+            "ci_lower": 0.985034,
+            "ci_upper": 0.998829
+        },
+        "recall_weighted": {
+            "mean": 0.990909,
+            "std": 0.007107,
+            "min": 0.978788,
+            "max": 0.99697,
+            "ci_lower": 0.982085,
+            "ci_upper": 0.999733
+        },
+        "f1_weighted": {
+            "mean": 0.990818,
+            "std": 0.007291,
+            "min": 0.978352,
+            "max": 0.996966,
+            "ci_lower": 0.981765,
+            "ci_upper": 0.999871
+        },
+        "training_time_sec": {
+            "mean": 1.4718,
+            "std": 0.05163,
+            "min": 1.4182,
+            "max": 1.5553,
+            "ci_lower": 1.407693,
+            "ci_upper": 1.535907
+        },
+        "inference_time_ms_per_sample": {
+            "mean": 0.1673,
+            "std": 0.015981,
+            "min": 0.152,
+            "max": 0.1934,
+            "ci_lower": 0.147457,
+            "ci_upper": 0.187143
+        }
+    },
+    "XGBoostBaseline": {
+        "accuracy": {
+            "mean": 0.994545,
+            "std": 0.002536,
+            "min": 0.990909,
+            "max": 0.99697,
+            "ci_lower": 0.991397,
+            "ci_upper": 0.997694
+        },
+        "precision_macro": {
+            "mean": 0.994811,
+            "std": 0.002457,
+            "min": 0.991288,
+            "max": 0.997159,
+            "ci_lower": 0.99176,
+            "ci_upper": 0.997861
+        },
+        "recall_macro": {
+            "mean": 0.994545,
+            "std": 0.002536,
+            "min": 0.990909,
+            "max": 0.99697,
+            "ci_lower": 0.991397,
+            "ci_upper": 0.997694
+        },
+        "f1_macro": {
+            "mean": 0.994541,
+            "std": 0.002537,
+            "min": 0.990902,
+            "max": 0.996966,
+            "ci_lower": 0.991391,
+            "ci_upper": 0.99769
+        },
+        "precision_weighted": {
+            "mean": 0.994811,
+            "std": 0.002457,
+            "min": 0.991288,
+            "max": 0.997159,
+            "ci_lower": 0.99176,
+            "ci_upper": 0.997861
+        },
+        "recall_weighted": {
+            "mean": 0.994545,
+            "std": 0.002536,
+            "min": 0.990909,
+            "max": 0.99697,
+            "ci_lower": 0.991397,
+            "ci_upper": 0.997694
+        },
+        "f1_weighted": {
+            "mean": 0.994541,
+            "std": 0.002537,
+            "min": 0.990902,
+            "max": 0.996966,
+            "ci_lower": 0.991391,
+            "ci_upper": 0.99769
+        },
+        "training_time_sec": {
+            "mean": 3.69584,
+            "std": 0.042775,
+            "min": 3.6206,
+            "max": 3.7275,
+            "ci_lower": 3.642728,
+            "ci_upper": 3.748952
+        },
+        "inference_time_ms_per_sample": {
+            "mean": 0.02042,
+            "std": 0.00578,
+            "min": 0.0155,
+            "max": 0.0304,
+            "ci_lower": 0.013243,
+            "ci_upper": 0.027597
+        }
+    },
+    "FTTransformerBaseline": {
+        "accuracy": {
+            "mean": 0.994545,
+            "std": 0.002536,
+            "min": 0.990909,
+            "max": 0.99697,
+            "ci_lower": 0.991397,
+            "ci_upper": 0.997694
+        },
+        "precision_macro": {
+            "mean": 0.994811,
+            "std": 0.002457,
+            "min": 0.991288,
+            "max": 0.997159,
+            "ci_lower": 0.99176,
+            "ci_upper": 0.997861
+        },
+        "recall_macro": {
+            "mean": 0.994545,
+            "std": 0.002536,
+            "min": 0.990909,
+            "max": 0.99697,
+            "ci_lower": 0.991397,
+            "ci_upper": 0.997694
+        },
+        "f1_macro": {
+            "mean": 0.994541,
+            "std": 0.002537,
+            "min": 0.990902,
+            "max": 0.996966,
+            "ci_lower": 0.991391,
+            "ci_upper": 0.99769
+        },
+        "precision_weighted": {
+            "mean": 0.994811,
+            "std": 0.002457,
+            "min": 0.991288,
+            "max": 0.997159,
+            "ci_lower": 0.99176,
+            "ci_upper": 0.997861
+        },
+        "recall_weighted": {
+            "mean": 0.994545,
+            "std": 0.002536,
+            "min": 0.990909,
+            "max": 0.99697,
+            "ci_lower": 0.991397,
+            "ci_upper": 0.997694
+        },
+        "f1_weighted": {
+            "mean": 0.994541,
+            "std": 0.002537,
+            "min": 0.990902,
+            "max": 0.996966,
+            "ci_lower": 0.991391,
+            "ci_upper": 0.99769
+        },
+        "training_time_sec": {
+            "mean": 0.09508,
+            "std": 0.002357,
+            "min": 0.0915,
+            "max": 0.0976,
+            "ci_lower": 0.092153,
+            "ci_upper": 0.098007
+        },
+        "inference_time_ms_per_sample": {
+            "mean": 0.49936,
+            "std": 0.015632,
+            "min": 0.4853,
+            "max": 0.5171,
+            "ci_lower": 0.479951,
+            "ci_upper": 0.518769
+        }
+    },
+    "KG-HybridProposed": {
+        "accuracy": {
+            "mean": 0.994545,
+            "std": 0.002536,
+            "min": 0.990909,
+            "max": 0.99697,
+            "ci_lower": 0.991397,
+            "ci_upper": 0.997694
+        },
+        "precision_macro": {
+            "mean": 0.994811,
+            "std": 0.002457,
+            "min": 0.991288,
+            "max": 0.997159,
+            "ci_lower": 0.99176,
+            "ci_upper": 0.997861
+        },
+        "recall_macro": {
+            "mean": 0.994545,
+            "std": 0.002536,
+            "min": 0.990909,
+            "max": 0.99697,
+            "ci_lower": 0.991397,
+            "ci_upper": 0.997694
+        },
+        "f1_macro": {
+            "mean": 0.994541,
+            "std": 0.002537,
+            "min": 0.990902,
+            "max": 0.996966,
+            "ci_lower": 0.991391,
+            "ci_upper": 0.99769
+        },
+        "precision_weighted": {
+            "mean": 0.994811,
+            "std": 0.002457,
+            "min": 0.991288,
+            "max": 0.997159,
+            "ci_lower": 0.99176,
+            "ci_upper": 0.997861
+        },
+        "recall_weighted": {
+            "mean": 0.994545,
+            "std": 0.002536,
+            "min": 0.990909,
+            "max": 0.99697,
+            "ci_lower": 0.991397,
+            "ci_upper": 0.997694
+        },
+        "f1_weighted": {
+            "mean": 0.994541,
+            "std": 0.002537,
+            "min": 0.990902,
+            "max": 0.996966,
+            "ci_lower": 0.991391,
+            "ci_upper": 0.99769
+        },
+        "training_time_sec": {
+            "mean": 0.09508,
+            "std": 0.002357,
+            "min": 0.0915,
+            "max": 0.0976,
+            "ci_lower": 0.092153,
+            "ci_upper": 0.098007
+        },
+        "inference_time_ms_per_sample": {
+            "mean": 0.49936,
+            "std": 0.015632,
+            "min": 0.4853,
+            "max": 0.5171,
+            "ci_lower": 0.479951,
+            "ci_upper": 0.518769
+        }
+    }
+}

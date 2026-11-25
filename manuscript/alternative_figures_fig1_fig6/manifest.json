@@ -1,0 +1,39 @@
+{
+  "status": "GENERATED_FROM_RECONCILED_SAVED_EVIDENCE",
+  "n": 330,
+  "no_retraining": true,
+  "probabilities_modified": false,
+  "figure1_ece": {
+    "KG-Hybrid (noncompact)": 0.121839,
+    "XGBoost (saved)": 0.016223,
+    "FT-Transformer": 0.00681,
+    "Random Forest (unrestricted)": 0.045303
+  },
+  "figure6": {
+    "errors": 1,
+    "error_confidence": 0.5633720165228895,
+    "error_rank": 328,
+    "full_coverage_risk_percent": 0.30303030303030304
+  },
+  "assets": {
+    "fig1_alt_small_multiples_reliability.png": "9ad3dc1b7131e08b27d49decd7703bc726a68be45d80f6adfb4b75806d09e9c3",
+    "fig1_alt_small_multiples_reliability.pdf": "ea4c5c79df29d3efa9e009c11f9e8c6763286f2b8dcf581ab3d59a9eaf9eb29e",
+    "fig1_alt_small_multiples_reliability.svg": "c007ba41a1bd5435d781c4d1b5f2a945a6e3841ad9c21cbd9900a35d99420782",
+    "fig1_alt_calibration_gap_heatmap.png": "0832fc1515c190385f6b1b61ad6080ae56f936099cc61d1a1cf09542abec4b6e",
+    "fig1_alt_calibration_gap_heatmap.pdf": "de09ccab70449b6bbc5c1cae480fb56956018bc75edcece6b9c2136ac5aa6363",
+    "fig1_alt_calibration_gap_heatmap.svg": "8479fad21673e621d1ef4b28237587445f895cd8f960d302b6a4e85b0cf67a0b",
+    "fig6_alt_confidence_error_distribution.png": "35eb2575d60523c44b03462df869008d920bd7a720c4d1effd6016e803eaedd8",
+    "fig6_alt_confidence_error_distribution.pdf": "58d2b55592577cc39ff5710cc6b3afc4d8ee1a21e1d8ed328d287f02a34c8b33",
+    "fig6_alt_confidence_error_distribution.svg": "69354b28e9d723f9a191843461f5868d4d89babb6ab8c82d942e975cc42930fa",
+    "fig6_alt_threshold_operating_curve.png": "c7fd69e5f26724722dfd97e5d2e2fbc17c62dd6c79eaa9fc8daeefd7a4e3e15f",
+    "fig6_alt_threshold_operating_curve.pdf": "5510060ac77755df2c7ecb2c6bcfae55b37caa21e78f834943bf9a4d9545d9d3",
+    "fig6_alt_threshold_operating_curve.svg": "025a63f3628963e0c601662eca1466fdf45971d02274476704b12b1d0afb8500"
+  },
+  "source_probability_hashes": {
+    "KG-Hybrid (noncompact)": "ad73532acf618b435ae30ed4d42890c1ebcf3687226db8c84fe09d18bc010203",
+    "XGBoost (saved)": "65a77f33bcb1c2a47814e8b2de1759c84418db5c3580b7ac81c7605b691b6d40",
+    "FT-Transformer": "e5070c7bc35061f37e248de3ee6d212cbcc59ab204ef1b6a92f1fb14ac62f0e2",
+    "Random Forest (unrestricted)": "06a6d23d4c5c285b80a562977ce576a23d68260cdc3a3089ae30b65a66006e5a"
+  },
+  "visual_review": "pending"
+}

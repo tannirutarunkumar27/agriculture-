@@ -1,0 +1,23 @@
+crop,N,P,K,temperature,humidity,ph,rainfall,provenance_status,definition
+apple,0.5,0.5,0.5,0.6,0.6,0.6,0.5,Manual weights; institutional derivation unverified,Explicit crop-feature weights; no range-to-weight transformation implemented
+banana,0.7,0.6,0.7,0.9,0.8,0.6,0.8,Manual weights; institutional derivation unverified,Explicit crop-feature weights; no range-to-weight transformation implemented
+blackgram,0.5,0.6,0.5,0.7,0.5,0.7,0.5,Manual weights; institutional derivation unverified,Explicit crop-feature weights; no range-to-weight transformation implemented
+chickpea,0.5,0.6,0.6,0.6,0.4,0.8,0.4,Manual weights; institutional derivation unverified,Explicit crop-feature weights; no range-to-weight transformation implemented
+coconut,0.5,0.6,0.7,0.9,0.8,0.6,0.8,Manual weights; institutional derivation unverified,Explicit crop-feature weights; no range-to-weight transformation implemented
+coffee,0.6,0.5,0.6,0.6,0.8,0.6,0.8,Manual weights; institutional derivation unverified,Explicit crop-feature weights; no range-to-weight transformation implemented
+cotton,0.6,0.7,0.7,0.9,0.4,0.6,0.3,Manual weights; institutional derivation unverified,Explicit crop-feature weights; no range-to-weight transformation implemented
+grapes,0.5,0.5,0.6,0.7,0.5,0.6,0.4,Manual weights; institutional derivation unverified,Explicit crop-feature weights; no range-to-weight transformation implemented
+jute,0.8,0.5,0.6,0.9,0.9,0.5,0.9,Manual weights; institutional derivation unverified,Explicit crop-feature weights; no range-to-weight transformation implemented
+kidneybeans,0.5,0.6,0.5,0.6,0.5,0.7,0.5,Manual weights; institutional derivation unverified,Explicit crop-feature weights; no range-to-weight transformation implemented
+lentil,0.5,0.6,0.5,0.6,0.5,0.7,0.4,Manual weights; institutional derivation unverified,Explicit crop-feature weights; no range-to-weight transformation implemented
+maize,0.8,0.8,0.5,0.8,0.6,0.7,0.6,Manual weights; institutional derivation unverified,Explicit crop-feature weights; no range-to-weight transformation implemented
+mango,0.4,0.5,0.5,0.9,0.7,0.6,0.7,Manual weights; institutional derivation unverified,Explicit crop-feature weights; no range-to-weight transformation implemented
+mothbeans,0.5,0.6,0.5,0.7,0.5,0.7,0.4,Manual weights; institutional derivation unverified,Explicit crop-feature weights; no range-to-weight transformation implemented
+mungbean,0.5,0.6,0.5,0.7,0.5,0.7,0.5,Manual weights; institutional derivation unverified,Explicit crop-feature weights; no range-to-weight transformation implemented
+muskmelon,0.6,0.6,0.6,0.9,0.7,0.7,0.5,Manual weights; institutional derivation unverified,Explicit crop-feature weights; no range-to-weight transformation implemented
+orange,0.5,0.5,0.6,0.7,0.7,0.6,0.7,Manual weights; institutional derivation unverified,Explicit crop-feature weights; no range-to-weight transformation implemented
+papaya,0.6,0.5,0.6,0.9,0.8,0.6,0.8,Manual weights; institutional derivation unverified,Explicit crop-feature weights; no range-to-weight transformation implemented
+pigeonpeas,0.5,0.6,0.5,0.7,0.5,0.7,0.5,Manual weights; institutional derivation unverified,Explicit crop-feature weights; no range-to-weight transformation implemented
+pomegranate,0.5,0.5,0.6,0.8,0.5,0.6,0.4,Manual weights; institutional derivation unverified,Explicit crop-feature weights; no range-to-weight transformation implemented
+rice,0.9,0.7,0.8,0.8,0.9,0.9,0.9,Manual weights; institutional derivation unverified,Explicit crop-feature weights; no range-to-weight transformation implemented
+watermelon,0.6,0.6,0.6,0.9,0.7,0.7,0.5,Manual weights; institutional derivation unverified,Explicit crop-feature weights; no range-to-weight transformation implemented

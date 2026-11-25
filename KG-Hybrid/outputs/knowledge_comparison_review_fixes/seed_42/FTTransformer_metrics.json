@@ -1,0 +1,13 @@
+{
+  "seed": 42,
+  "model": "FTTransformer",
+  "n_test": 330,
+  "accuracy": 0.9878787878787879,
+  "macro_f1": 0.987844990104445,
+  "ece": 0.007388,
+  "brier": 0.014047,
+  "nll": 0.02143,
+  "trainable_parameters": 212054,
+  "training_seconds": 21.134010699999635,
+  "best_epoch": 23
+}

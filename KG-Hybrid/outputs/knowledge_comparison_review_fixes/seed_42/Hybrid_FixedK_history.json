@@ -1,0 +1,112 @@
+[
+  {
+    "epoch": 1,
+    "val_nll": 0.140384,
+    "val_accuracy": 0.9696969696969697
+  },
+  {
+    "epoch": 2,
+    "val_nll": 0.116503,
+    "val_accuracy": 0.9636363636363636
+  },
+  {
+    "epoch": 3,
+    "val_nll": 0.042172,
+    "val_accuracy": 0.9878787878787879
+  },
+  {
+    "epoch": 4,
+    "val_nll": 0.048238,
+    "val_accuracy": 0.990909090909091
+  },
+  {
+    "epoch": 5,
+    "val_nll": 0.017908,
+    "val_accuracy": 0.996969696969697
+  },
+  {
+    "epoch": 6,
+    "val_nll": 0.014367,
+    "val_accuracy": 0.996969696969697
+  },
+  {
+    "epoch": 7,
+    "val_nll": 0.044746,
+    "val_accuracy": 0.9848484848484849
+  },
+  {
+    "epoch": 8,
+    "val_nll": 0.015116,
+    "val_accuracy": 0.9939393939393939
+  },
+  {
+    "epoch": 9,
+    "val_nll": 0.010025,
+    "val_accuracy": 0.9939393939393939
+  },
+  {
+    "epoch": 10,
+    "val_nll": 0.011389,
+    "val_accuracy": 0.9939393939393939
+  },
+  {
+    "epoch": 11,
+    "val_nll": 0.010711,
+    "val_accuracy": 0.9939393939393939
+  },
+  {
+    "epoch": 12,
+    "val_nll": 0.00828,
+    "val_accuracy": 0.996969696969697
+  },
+  {
+    "epoch": 13,
+    "val_nll": 0.008514,
+    "val_accuracy": 0.9939393939393939
+  },
+  {
+    "epoch": 14,
+    "val_nll": 0.010434,
+    "val_accuracy": 0.996969696969697
+  },
+  {
+    "epoch": 15,
+    "val_nll": 0.016459,
+    "val_accuracy": 0.9939393939393939
+  },
+  {
+    "epoch": 16,
+    "val_nll": 0.014551,
+    "val_accuracy": 0.9939393939393939
+  },
+  {
+    "epoch": 17,
+    "val_nll": 0.017725,
+    "val_accuracy": 0.9939393939393939
+  },
+  {
+    "epoch": 18,
+    "val_nll": 0.018776,
+    "val_accuracy": 0.990909090909091
+  },
+  {
+    "epoch": 19,
+    "val_nll": 0.027541,
+    "val_accuracy": 0.990909090909091
+  },
+  {
+    "epoch": 20,
+    "val_nll": 0.025559,
+    "val_accuracy": 0.990909090909091
+  },
+  {
+    "epoch": 21,
+    "val_nll": 0.024234,
+    "val_accuracy": 0.9848484848484849
+  },
+  {
+    "epoch": 22,
+    "val_nll": 0.020467,
+    "val_accuracy": 0.9939393939393939
+  }
+]

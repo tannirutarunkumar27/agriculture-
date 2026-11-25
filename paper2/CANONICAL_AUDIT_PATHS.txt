@@ -1,0 +1,53 @@
+# Canonical Audit Path Reference
+# Paper 2 — cereal-legume federated regression
+# Updated: 2026-11-16
+#
+# This file is the single authoritative mapping from logical audit names to
+# the actual result directory paths on disk. Use this file when referencing
+# audit evidence in manuscripts, reports, or completion checks.
+# DO NOT use path strings from earlier session logs that referenced
+# non-existent directories (e.g. restart_completion_audit_v54 never existed).
+
+[canonical_paths]
+
+# ── Completion audit ─────────────────────────────────────────────────────────
+completion_audit_latest  = paper2/results/restart_completion_audit_v9/completion_audit.json
+completion_audit_manifest = paper2/results/restart_completion_audit_v9/manifest.json
+# NOTE: v9 is the highest numbered version that exists on disk (as of 2026-11-16).
+# Earlier session logs erroneously referenced v54 — that path was never created.
+
+# ── Privacy accounting ───────────────────────────────────────────────────────
+privacy_accounting       = paper2/results/restart_authenticated_runtime_privacy_accounting_v1/runtime_privacy_accounting.json
+privacy_review_template  = paper2/results/restart_authenticated_runtime_privacy_accounting_v1/independent_review.template.json
+
+# ── Deployment adapter ───────────────────────────────────────────────────────
+secagg_adapter_manifest  = paper2/results/restart_authenticated_dp_secagg_adapter_v2/manifest.json
+adapter_binding          = paper2/results/restart_authenticated_dp_secagg_adapter_v2/adapter_binding.json
+
+# ── Study results ────────────────────────────────────────────────────────────
+outer_analysis           = paper2/results/restart_outer_analysis_v1/
+public_refit_verified    = paper2/results/restart_public_refit_verified_v2/
+noise_study_audited      = paper2/results/restart_matched_noise_audit_v1/   # R14 — 160/160
+control_search_verified  = paper2/results/restart_control_search_verified_v4/  # R12H
+
+# ── Reviewer gates ───────────────────────────────────────────────────────────
+reviewer_data_audit      = paper2/results/reviewer_data_audit_v1/analysis.json
+rr03_resolution          = paper2/research/rr03_resolution_v1.md
+claim_evidence_matrix    = paper2/research/reviewer_claim_evidence_matrix_v1.md
+
+# ── Reproducibility ──────────────────────────────────────────────────────────
+reproducibility_readiness = paper2/results/restart_reproducibility_readiness_v3/readiness.json
+linux_lock_proposed      = paper2/requirements-linux-lock-proposed.txt
+linux_lock_verified      = paper2/requirements-linux-lock-verified.txt  # DOES NOT EXIST YET
+                                                                          # Create after clean Linux install
+
+# ── Licensing ────────────────────────────────────────────────────────────────
+project_license          = paper2/LICENSE                       # Apache-2.0 (added 2026-11-16)
+dataset_notice           = paper2/DATASET_NOTICE.txt            # added 2026-11-16
+licensing_registry_v1    = paper2/configs/release_licensing_registry_v1.json  # original
+licensing_registry_v2    = paper2/configs/release_licensing_registry_v2.json  # updated with Apache-2.0
+license_inventory        = paper2/configs/third_party_license_inventory_v1.txt # proposed, needs Linux verify
+
+# ── Manuscript ───────────────────────────────────────────────────────────────
+manuscript_draft         = paper2/manuscript/PAPER2_FULL_MANUSCRIPT_DRAFT.md  # V4, regression-scoped
+manuscript_references    = paper2/manuscript/references.bib

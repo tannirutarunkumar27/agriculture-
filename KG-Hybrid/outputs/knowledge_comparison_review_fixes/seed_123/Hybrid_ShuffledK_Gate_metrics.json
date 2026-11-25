@@ -1,0 +1,19 @@
+{
+  "seed": 123,
+  "model": "Hybrid_ShuffledK_Gate",
+  "n_test": 330,
+  "accuracy": 0.9878787878787879,
+  "macro_f1": 0.987844990104445,
+  "ece": 0.004908,
+  "brier": 0.020975,
+  "nll": 0.04712,
+  "trainable_parameters": 1745452,
+  "training_seconds": 55.52010419999715,
+  "best_epoch": 3,
+  "leaf_vocabulary_size": 11175,
+  "knowledge_policy": "fixed",
+  "mean_abs_change": 0.0,
+  "max_abs_change": 0.0,
+  "current_min": 0.30000001192092896,
+  "current_max": 0.8999999761581421
+}

@@ -1,0 +1,69 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "paper2-dp-secagg-pilot"
+version = "0.1.0"
+description = "Simulation-only central-DP plus SecAgg+ pilot for Paper 2"
+license = {file = "LICENSE"}
+# The simulation extra supplies Flower's local Ray-backed Simulation Engine.
+# This profile is intentionally CPU-only and must not be confused with the
+# separate authenticated multi-host deployment protocol.
+dependencies = ["flwr[simulation]>=1.42.0,<1.43.0"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[tool.flwr.app]
+publisher = "paper2-research"
+fab-format-version = 1
+flwr-version-target = "1.42.0"
+
+[tool.flwr.app.components]
+serverapp = "paper2.secagg_pilot.dp_server_app:app"
+clientapp = "paper2.secagg_pilot.dp_client_app:app"
+
+[tool.flwr.app.config]
+num-server-rounds = 1
+learning-rate = 0.01
+features = 54
+fold-id = "outer_0"
+# Replaced by the identity-bound frozen execution package.
+data-root = "UNBOUND"
+client-roster = "UNBOUND"
+noise-multiplier = 8.0
+clipping-norm = 1.0
+central-dp = true
+outer-test-evaluation = false
+differential-privacy-enabled = true
+
+
+#######################################################################
+# CONFIGURATION MIGRATION NOTICE:
+#
+# What was previously called "federation config" for SuperLink
+# connections in pyproject.toml has been renamed and moved.
+#
+# These settings are now **SuperLink connection configuration**
+# and are defined in the Flower configuration file.
+#
+# The entries below are commented out intentionally and are kept
+# only as a migration reference.
+#
+# Docs: https://flower.ai/docs/framework/ref-flower-configuration.html
+#######################################################################
+
+# [tool.flwr.federations]
+# default = "local-cpu-simulation"
+
+# [tool.flwr.federations.local-cpu-simulation]
+# # Keep this equal to the frozen seven-region roster.  These are virtual
+# # SuperNodes on one machine, not independent authenticated participants.
+# options.num-supernodes = 7
+# options.backend.client-resources.num-cpus = 1
+# options.backend.client-resources.num-gpus = 0.0
+
+# # This manifest intentionally names the DP-specific components. The launcher
+# # supplies PYTHONPATH for the research repository; a later deployable release
+# # must package the Paper 2 source tree rather than relying on that local path.

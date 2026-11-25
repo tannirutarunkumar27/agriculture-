@@ -1,0 +1,19 @@
+{
+  "seed": 3407,
+  "model": "Hybrid_AnchoredK",
+  "n_test": 330,
+  "accuracy": 1.0,
+  "macro_f1": 1.0,
+  "ece": 0.007011,
+  "brier": 0.003138,
+  "nll": 0.008134,
+  "trainable_parameters": 1680774,
+  "training_seconds": 100.91190169999027,
+  "best_epoch": 13,
+  "leaf_vocabulary_size": 11055,
+  "knowledge_policy": "anchored_trainable",
+  "mean_abs_change": 0.000503205053973943,
+  "max_abs_change": 0.0016347765922546387,
+  "current_min": 0.2994030714035034,
+  "current_max": 0.9004369378089905
+}

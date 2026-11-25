@@ -1,0 +1,8 @@
+{
+  "model": "Lightweight KG-Hybrid",
+  "parameters": "4,044,134",
+  "clean_accuracy": 99.7,
+  "missing_40pct_knn_acc": 83.82,
+  "noise_sigma_0.2_acc": 88.97,
+  "extrapolation_x1.5_acc": 91.52
+}

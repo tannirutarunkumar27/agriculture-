@@ -1,0 +1,11 @@
+{
+  "ablation": "A5",
+  "name": "w/o Distillation Loss",
+  "best_val_accuracy": 0.9939393939393939,
+  "test_accuracy": 0.9909,
+  "precision": 0.9924,
+  "recall": 0.9909,
+  "f1_score": 0.9908,
+  "best_epoch": 4,
+  "device": "cpu"
+}

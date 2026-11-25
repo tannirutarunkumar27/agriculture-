@@ -1,0 +1,14 @@
+{
+  "seed": 123,
+  "model": "Hybrid_NoK",
+  "n_test": 330,
+  "accuracy": 0.996969696969697,
+  "macro_f1": 0.9969663262210537,
+  "ece": 0.002816,
+  "brier": 0.006072,
+  "nll": 0.013861,
+  "trainable_parameters": 1670636,
+  "training_seconds": 99.18543219999992,
+  "best_epoch": 10,
+  "leaf_vocabulary_size": 11175
+}

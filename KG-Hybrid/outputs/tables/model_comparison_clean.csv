@@ -1,0 +1,8 @@
+Model,Accuracy,Precision,Recall,F1-Score
+Logistic Regression,0.9788,0.9795,0.9788,0.9787
+Decision Tree,0.9818,0.9829,0.9818,0.9818
+Random Forest,0.997,0.9972,0.997,0.997
+XGBoost,0.9939,0.9943,0.9939,0.9939
+FT- Transformer,0.9788,0.9814,0.9788,0.9787
+Hybrid- Concat,1.0,1.0,1.0,1.0
+KG- Hybrid,0.9788,0.9822,0.9788,0.9785

@@ -1,0 +1,55 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "paper2-dp-secagg-deploy"
+version = "0.1.0"
+description = "Deployment-runtime-only central-DP plus SecAgg+ research app for Paper 2"
+license = {file = "LICENSE"}
+# NumPy 2.5.1, pinned for the frozen study runtime, supports Python 3.12+.
+# Declaring older versions makes uv correctly reject the package during its
+# cross-version resolution even when the actual WSL runtime is Python 3.14.
+requires-python = ">=3.12,<3.15"
+dependencies = [
+  # Flower FAB format v1 requires an inclusive lower bound. The upper bound
+  # prevents a silent framework upgrade from changing the frozen protocol.
+  "flwr>=1.42.0,<1.43.0",
+  "numpy==2.5.1",
+  "torch==2.13.0+cpu",
+]
+
+# PyTorch CPU wheels are published on PyTorch's own package index rather than
+# PyPI.  Flower creates an isolated runtime environment for a FAB, so an
+# already-installed host copy of torch cannot satisfy this requirement.  Keep
+# the index explicit: only torch is allowed to come from it.
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["paper2_dp_secagg_deploy"]
+
+[tool.flwr.app]
+publisher = "paper2-research"
+fab-format-version = 1
+flwr-version-target = "1.42.0"
+
+[tool.flwr.app.components]
+serverapp = "paper2_dp_secagg_deploy.server_app:app"
+clientapp = "paper2_dp_secagg_deploy.client_app:app"
+
+[tool.flwr.app.config]
+num-server-rounds = 20
+learning-rate = 0.01
+features = 54
+noise-multiplier = 8.0
+clipping-norm = 1.0
+central-dp = true
+differential-privacy-enabled = true
+outer-test-evaluation = false
+

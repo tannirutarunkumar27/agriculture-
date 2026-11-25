@@ -1,0 +1,10 @@
+Model_File,N_Samples,Dataset_Partition,Top1_Accuracy,Macro_F1,ECE,Brier_Score,NLL
+decision_tree_depth_6_cv_config_test_probas.npy,330,"Held-Out Test (N=330, seed 42)",0.5333,0.4373,0.00718,0.481986,1.060708
+decision_tree_unconstrained_test_probas.npy,330,"Held-Out Test (N=330, seed 42)",0.9818,0.9818,0.018182,0.036364,0.502382
+ft-transformer_baseline_test_probas.npy,330,"Held-Out Test (N=330, seed 42)",0.9879,0.9878,0.00681,0.020304,0.044111
+kg-hybrid_proposed_corrected_v2_test_probas.npy,330,"Held-Out Test (N=330, seed 42)",0.997,0.997,0.121839,0.028857,0.13979
+logistic_regression_test_probas.npy,330,"Held-Out Test (N=330, seed 42)",0.9788,0.9787,0.143912,0.074149,0.203592
+random_forest_depth_6_cv_config_test_probas.npy,330,"Held-Out Test (N=330, seed 42)",0.9939,0.9939,0.335001,0.175408,0.456007
+random_forest_unconstrained_test_probas.npy,330,"Held-Out Test (N=330, seed 42)",0.997,0.997,0.045303,0.014935,0.054992
+xgboost_baseline_saved_checkpoint_test_probas.npy,330,"Held-Out Test (N=330, seed 42)",0.9909,0.9909,0.016223,0.011897,0.033439
+xgboost_baseline_seed_42_test_probas.npy,330,"Held-Out Test (N=330, seed 42)",0.9939,0.9939,0.019835,0.010505,0.031624

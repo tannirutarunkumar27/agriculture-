@@ -1,0 +1,10 @@
+Ablation ID,Description,Accuracy,Precision,Recall,F1-Score
+Full Model,Full KG-Hybrid (Baseline),0.9909,0.9915,0.9909,0.9908
+A1,w/o Knowledge Matrix,0.9939,0.9947,0.9939,0.9939
+A2,w/o Adaptive Gate,0.997,0.9972,0.997,0.997
+A3,w/o XGBoost Branch,0.9939,0.9947,0.9939,0.9939
+A4,w/o FT-Transformer Branch,0.997,0.9972,0.997,0.997
+A5,w/o Distillation Loss,0.9909,0.9924,0.9909,0.9908
+A6,w/o Contrastive Loss,0.9939,0.9943,0.9939,0.9938
+A7,w/o Auxiliary Losses,0.9879,0.989,0.9879,0.9878
+A8,w/o Adaptive Fusion,0.997,0.9972,0.997,0.997

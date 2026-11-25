@@ -1,0 +1,30 @@
+KG-Hybrid final experimental validation report
+Created (UTC): 2026-10-11T14:49:20.312058+00:00
+
+Scope
+- This validation recomputes only metrics supported by saved prediction artifacts.
+- It neither trained models nor modified existing experiment artifacts.
+
+Ablation
+- Expected run count: 45
+- Prediction files found: 45
+- Rows whose accuracy and Macro-F1 exactly match saved predictions: 45
+- Metric comparison failures: 0
+- Prediction CSVs do not contain sample IDs; duplicate/missing sample identity checks cannot be performed.
+- The artifacts contain 5 distinct test-label sequences across the five seeds. Within each seed, all nine variants share that seed's 330-sample test partition.
+- Thus the study does not reuse one single test partition for all 45 runs, but repeatedly compares variants on each seed-specific held-out partition. Treat the ablations as comparative evidence, not an untouched final generalization test after model selection.
+
+Cross-validation
+- Models with saved OOF predictions: DecisionTree, FTTransformerBaseline, KG-HybridProposed, LogisticRegression, RandomForest, XGBoostBaseline.
+- Neural CV complete and validated from OOF predictions: True.
+- All CV models complete and validated from OOF predictions: True.
+- Selected CV evidence directory: outputs\cross_validation_neural_recovery.
+- Highest pooled OOF accuracy: XGBoostBaseline (0.9950).
+- None. The isolated neural-recovery run contains complete five-fold OOF predictions for FT-Transformer and KG-Hybrid.
+- The legacy incomplete CV directory is preserved separately and is not used for the recovered CV comparison.
+
+Paper-ready status
+- The saved five-seed ablation values are internally metric-consistent, but sample identity integrity is unverified and the repeated held-out test use must be disclosed.
+- The isolated recovery run provides complete OOF evidence for all six CV models. Its metrics may be reported with the stated protocol and limitations.
+- The partial neural-CV evidence has not been overwritten; it remains in the legacy CV directory.
+- The recovered OOF results rank XGBoost above KG-Hybrid on pooled accuracy. Do not claim that KG-Hybrid is the top CV performer without a different, pre-specified evaluation basis.

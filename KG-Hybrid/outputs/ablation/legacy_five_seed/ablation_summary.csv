@@ -1,0 +1,10 @@
+variant,variant_name,accuracy_mean,accuracy_std,macro_f1_mean,macro_f1_std,n_seeds
+Full,Full KG-Hybrid,0.991515,0.009191,0.991572,0.009055,5
+A1,w/o Knowledge Matrix,0.988485,0.007545,0.988387,0.007738,5
+A2,w/o Adaptive Gate,0.990909,0.004791,0.990879,0.004825,5
+A3,w/o XGBoost Branch,0.991515,0.004495,0.991453,0.004581,5
+A4,w/o FT-Transformer Branch,0.995151,0.00166,0.995138,0.001668,5
+A5,w/o Distillation Loss,0.992121,0.005907,0.99208,0.005954,5
+A6,w/o Contrastive Loss,0.989697,0.004065,0.989639,0.0041,5
+A7,w/o Auxiliary Losses,0.996364,0.001356,0.996355,0.001366,5
+A8,w/o Adaptive Fusion (Static + Pure CE),0.992727,0.007298,0.992682,0.007355,5

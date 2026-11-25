@@ -1,0 +1,10 @@
+{
+  "status": "PENDING_USER_PROVISIONED_REMOTE_HOST",
+  "ssh_host": "user@gpu-host.example",
+  "ssh_port": 22,
+  "remote_root": "/srv/paper2",
+  "ssh_key_path": "C:/Users/<user>/.ssh/paper2_gpu_ed25519",
+  "gpu_count": 1,
+  "workers": 1,
+  "notes": "Replace placeholders only after the server owner confirms access. Do not commit private keys or credentials."
+}

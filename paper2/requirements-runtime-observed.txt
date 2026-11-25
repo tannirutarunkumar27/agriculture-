@@ -1,0 +1,14 @@
+# Observed working Windows Python 3.12.3 environment; not a cross-platform lock.
+# No dependencies installed this phase. Test Linux compatibility separately.
+torch==2.13.0
+numpy==2.5.1
+pandas==3.0.3
+scikit-learn==1.9.0
+joblib==1.5.3
+xgboost==3.3.0
+pypdf==6.10.0
+flwr==1.42.0
+ray==2.55.1
+cryptography==50.0.2
+openpyxl==3.1.5
+et-xmlfile==2.0.0

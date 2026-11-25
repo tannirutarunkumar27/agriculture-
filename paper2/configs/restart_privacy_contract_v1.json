@@ -1,0 +1,21 @@
+{
+  "version": "restart-privacy-contract-v1",
+  "status": "DESIGN_AND_ACCOUNTING_ONLY",
+  "protected_unit": "entire regional client dataset at one fixed public slot",
+  "adjacency": "replace_one_whole_client",
+  "trusted_party": "central curator/server",
+  "adversary": "external observer of approved released noisy model transcript",
+  "public_client_slots": 7,
+  "participation": 1.0,
+  "aggregation": "equal_fixed_public_slot_weights",
+  "clipping": "one_global_L2_norm_of_flattened_client_model_delta",
+  "sensitivity": "2*C/public_slots",
+  "noise": "independent isotropic Gaussian; std measured against full replacement sensitivity",
+  "accounting": "Gaussian_zCDP_composition_no_subsampling_amplification",
+  "release_policy": "count every released noisy round across all runs involving the protected client",
+  "preprocessing_requirement": "public_independent_transform_or_separately_accounted_private_transform",
+  "private_training_enabled": false,
+  "secure_aggregation_implemented": false,
+  "noise_sampler_implemented": false,
+  "application_privacy_certified": false
+}
