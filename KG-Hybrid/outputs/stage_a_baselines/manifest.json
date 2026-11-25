@@ -1,0 +1,71 @@
+{
+  "created_at_utc": "2026-11-25T16:57:48.119127+00:00",
+  "dataset": "data/raw/Crop_recommendation.csv",
+  "n_rows": 2200,
+  "n_classes": 22,
+  "five_seed_protocol": {
+    "seeds": [
+      42,
+      123,
+      2024,
+      3407,
+      9999
+    ],
+    "split": "70/15/15 stratified via prepare_seed_partitions"
+  },
+  "five_fold_cv_protocol": {
+    "splitter": "StratifiedKFold(n_splits=5, shuffle=True, random_state=42)",
+    "preprocessing": "StandardScaler fit strictly on fold-training split"
+  },
+  "tuning_budgets": {
+    "LightGBM": {
+      "n_estimators": 200,
+      "max_depth": 6,
+      "learning_rate": 0.1,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "note": "Matched tree count, depth, learning rate, and subsampling budget to XGBoost"
+    },
+    "CatBoost": {
+      "iterations": 200,
+      "depth": 6,
+      "learning_rate": 0.1,
+      "note": "Matched tree count, depth, and learning rate budget to XGBoost"
+    },
+    "DecisionTree_Unconstrained": {
+      "max_depth": null,
+      "criterion": "gini",
+      "note": "Unconstrained depth (replaces historical max_depth=6 cap)"
+    }
+  },
+  "five_fold_cv_summary": [
+    {
+      "model": "LightGBM",
+      "oof_rows": 2200,
+      "accuracy": 0.9936363636363637,
+      "macro_f1": 0.9936340109604668,
+      "ece": 0.004181,
+      "brier": 0.010312,
+      "nll": 0.021032
+    },
+    {
+      "model": "CatBoost",
+      "oof_rows": 2200,
+      "accuracy": 0.9945454545454545,
+      "macro_f1": 0.9945431245973988,
+      "ece": 0.021317,
+      "brier": 0.010671,
+      "nll": 0.033538
+    },
+    {
+      "model": "DecisionTree_Unconstrained",
+      "oof_rows": 2200,
+      "accuracy": 0.9877272727272727,
+      "macro_f1": 0.9877267954221562,
+      "ece": 0.012273,
+      "brier": 0.024545,
+      "nll": 0.339108
+    }
+  ],
+  "five_seed_records_count": 15
+}

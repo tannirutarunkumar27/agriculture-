@@ -146,26 +146,13 @@ def fig6_shap():
 
 
 def fig7_api():
+    import json
     fig, ax = plt.subplots(figsize=(10.5, 6))
     fig.patch.set_facecolor(BG_COLOR)
     ax.axis('off')
-    sample_json = ('{\n'
-        '  "timestamp": "2026-08-17T16:45:00.000Z",\n'
-        '  "model_version": "v1.2.0-ProductionLightweight",\n'
-        '  "recommended_crop": "coffee",\n'
-        '  "confidence": 0.9956,\n'
-        '  "uncertainty_std": 0.0020,\n'
-        '  "top_3_crops": [\n'
-        '    {"crop": "coffee", "probability": 0.9956, "uncertainty_std": 0.0020},\n'
-        '    {"crop": "jute",   "probability": 0.0012, "uncertainty_std": 0.0004},\n'
-        '    {"crop": "rice",   "probability": 0.0009, "uncertainty_std": 0.0004}\n'
-        '  ],\n'
-        '  "inference_route": "STAGE_1_EARLY_EXIT (XGBoost)",\n'
-        '  "data_quality": "HEALTHY (All 7 features provided)",\n'
-        '  "sensor_health": "OK",\n'
-        '  "latency_ms": 5.99,\n'
-        '  "safety_alert": null\n'
-        '}')
+    prod_path = PROJECT_ROOT / "outputs" / "tables" / "production_readiness_results.json"
+    payload = json.loads(prod_path.read_text(encoding="utf-8"))["uncertainty_samples"]["clean"]
+    sample_json = json.dumps(payload, indent=2)
     rect = patches.FancyBboxPatch((0.04, 0.04), 0.92, 0.90, boxstyle="round,pad=0.03",
                                   facecolor='#F8FAFC', edgecolor=COL_GREEN, linewidth=2.5)
     ax.add_patch(rect)
